@@ -1,0 +1,1813 @@
+{
+  "snapshots": {
+    "29": {
+      "away_team": "澳大利亚",
+      "home_team": "美国",
+      "match_date": "2026-06-20T03:00:00+08:00",
+      "match_id": 29,
+      "prediction": {
+        "away_win_probability": 0.211,
+        "draw_probability": 0.227,
+        "factors": [
+          "Elo/实力: 美国 1800 vs 澳大利亚 1710",
+          "FIFA排名: #17 vs #27",
+          "状态权重: 美国 7.5/10 vs 澳大利亚 6.7/10",
+          "主场地域: 美国 完整主场 +95 Elo",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 美国 首轮状态校准 +0.054; 澳大利亚 首轮状态校准 +0.036",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "比分纪律: 证据未完整或热门优势不足，Top3加入防平比分",
+          "比分纪律: 首选落在2-0/2-1模板簇，已用比分池校验防平和溢出",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.6 个，黄牌 2.7 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.562,
+        "possible_scores": [
+          {
+            "probability": 10.64,
+            "score": "2-1"
+          },
+          {
+            "probability": 8.97,
+            "score": "2-0"
+          },
+          {
+            "probability": 7.8,
+            "score": "1-1"
+          }
+        ],
+        "predicted_score": "2-1",
+        "total_goals_prediction": {
+          "confidence": 0.623,
+          "expected_total": 3.22,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.838,
+              "under_probability": 0.162
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.623,
+              "under_probability": 0.377
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.401,
+              "under_probability": 0.599
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 3,
+          "over_probability": 0.623,
+          "recommendation": "大2.5",
+          "under_probability": 0.377
+        },
+        "upset_prediction": {
+          "against": "美国",
+          "favorite_probability": 0.562,
+          "label": "客队爆冷",
+          "outcome": "away",
+          "probability": 0.261,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考"
+          ],
+          "risk_level": "medium",
+          "score": "1-2",
+          "score_probability": 5.97,
+          "team": "澳大利亚"
+        },
+        "xg_away": 1.19,
+        "xg_home": 2.03
+      },
+      "saved_at": "2026-06-19T17:22:33.174239+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "Australia",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "United States",
+        "is_knockout": false,
+        "match_id": 29,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": null,
+        "venue_factor": "normal",
+        "weather": null
+      }
+    },
+    "30": {
+      "away_team": "摩洛哥",
+      "home_team": "苏格兰",
+      "match_date": "2026-06-20T06:00:00+08:00",
+      "match_id": 30,
+      "prediction": {
+        "away_win_probability": 0.681,
+        "draw_probability": 0.192,
+        "factors": [
+          "Elo/实力: 苏格兰 1620 vs 摩洛哥 1940",
+          "FIFA排名: #42 vs #7",
+          "状态权重: 苏格兰 5.8/10 vs 摩洛哥 8.0/10",
+          "主场地域: 中立或已手动强制中立",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 苏格兰 首轮状态校准 +0.018",
+          "阵型相克: 苏格兰三中卫对摩洛哥三前锋有宽度保护，反击出口略增",
+          "阵型相克: 苏格兰压迫对摩洛哥低位出球有抢断收益，但会抬高转换节奏",
+          "阵型相克: 苏格兰翼卫/三中卫结构会压缩摩洛哥边路爆点空间",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.8 个，黄牌 2.8 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.127,
+        "possible_scores": [
+          {
+            "probability": 7.57,
+            "score": "1-3"
+          },
+          {
+            "probability": 12.3,
+            "score": "0-2"
+          },
+          {
+            "probability": 9.85,
+            "score": "0-1"
+          }
+        ],
+        "predicted_score": "1-3",
+        "total_goals_prediction": {
+          "confidence": 0.629,
+          "expected_total": 3.25,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.841,
+              "under_probability": 0.159
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.629,
+              "under_probability": 0.371
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.407,
+              "under_probability": 0.593
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 3,
+          "over_probability": 0.629,
+          "recommendation": "大2.5",
+          "under_probability": 0.371
+        },
+        "upset_prediction": {
+          "against": "摩洛哥",
+          "favorite_probability": 0.681,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.203,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "1-1",
+          "score_probability": 6.26,
+          "team": "平局"
+        },
+        "xg_away": 2.32,
+        "xg_home": 0.92
+      },
+      "saved_at": "2026-06-19T17:42:23.621759+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "摩洛哥",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "苏格兰",
+        "is_knockout": false,
+        "match_id": 30,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Gillette Stadium，Foxborough, Massachusetts",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "32": {
+      "away_team": "巴拉圭",
+      "home_team": "土耳其",
+      "match_date": "2026-06-20T11:00:00+08:00",
+      "match_id": 32,
+      "prediction": {
+        "away_win_probability": 0.282,
+        "draw_probability": 0.262,
+        "factors": [
+          "Elo/实力: 土耳其 1660 vs 巴拉圭 1550",
+          "FIFA排名: #22 vs #41",
+          "状态权重: 土耳其 6.8/10 vs 巴拉圭 5.6/10",
+          "主场地域: 巴拉圭 半主场 +48 Elo",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 土耳其 首轮状态校准 -0.036; 巴拉圭 首轮状态校准 -0.054",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.5 个，黄牌 2.8 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.456,
+        "possible_scores": [
+          {
+            "probability": 12.39,
+            "score": "1-1"
+          },
+          {
+            "probability": 9.34,
+            "score": "2-1"
+          },
+          {
+            "probability": 8.5,
+            "score": "1-0"
+          }
+        ],
+        "predicted_score": "1-1",
+        "total_goals_prediction": {
+          "confidence": 0.542,
+          "expected_total": 2.85,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.786,
+              "under_probability": 0.214
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.542,
+              "under_probability": 0.458
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.319,
+              "under_probability": 0.681
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 2,
+          "over_probability": 0.542,
+          "recommendation": "大2.5",
+          "under_probability": 0.458
+        },
+        "upset_prediction": {
+          "against": "土耳其",
+          "favorite_probability": 0.456,
+          "label": "客队爆冷",
+          "outcome": "away",
+          "probability": 0.34,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "平局基准较高，比赛进入胶着后会放大爆冷窗口"
+          ],
+          "risk_level": "high",
+          "score": "1-2",
+          "score_probability": 7.09,
+          "team": "巴拉圭"
+        },
+        "xg_away": 1.23,
+        "xg_home": 1.62
+      },
+      "saved_at": "2026-06-20T01:03:44.694205+00:00",
+      "scenario_settings": {
+        "advantage_level": "half",
+        "advantage_team": "away",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "巴拉圭",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "土耳其",
+        "is_knockout": false,
+        "match_id": 32,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Levi's Stadium，Santa Clara, California",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "33": {
+      "away_team": "瑞典",
+      "home_team": "荷兰",
+      "match_date": "2026-06-21T01:00:00+08:00",
+      "match_id": 33,
+      "prediction": {
+        "away_win_probability": 0.098,
+        "draw_probability": 0.172,
+        "factors": [
+          "Elo/实力: 荷兰 1980 vs 瑞典 1630",
+          "FIFA排名: #8 vs #38",
+          "状态权重: 荷兰 8.2/10 vs 瑞典 6.0/10",
+          "主场地域: 中立或已手动强制中立",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 瑞典 首轮状态校准 +0.055",
+          "阵型相克: 荷兰翼卫/三中卫结构会压缩瑞典边路爆点空间",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "V3.5比分纪律: 强队突破场景加入大胜溢出候选",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.9 个，黄牌 2.7 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.73,
+        "possible_scores": [
+          {
+            "probability": 10.82,
+            "score": "3-0"
+          },
+          {
+            "probability": 13.16,
+            "score": "2-0"
+          },
+          {
+            "probability": 6.68,
+            "score": "4-0"
+          }
+        ],
+        "predicted_score": "3-0",
+        "total_goals_prediction": {
+          "confidence": 0.637,
+          "expected_total": 3.28,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.845,
+              "under_probability": 0.155
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.637,
+              "under_probability": 0.363
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.415,
+              "under_probability": 0.585
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 3,
+          "over_probability": 0.637,
+          "recommendation": "大2.5",
+          "under_probability": 0.363
+        },
+        "upset_prediction": {
+          "against": "荷兰",
+          "favorite_probability": 0.73,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.183,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "1-1",
+          "score_probability": 5.59,
+          "team": "平局"
+        },
+        "xg_away": 0.82,
+        "xg_home": 2.47
+      },
+      "saved_at": "2026-06-20T16:06:21.959167+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "瑞典",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "荷兰",
+        "is_knockout": false,
+        "match_id": 33,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "NRG Stadium，Houston, Texas",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "34": {
+      "away_team": "科特迪瓦",
+      "home_team": "德国",
+      "match_date": "2026-06-21T04:00:00+08:00",
+      "match_id": 34,
+      "prediction": {
+        "away_win_probability": 0.124,
+        "draw_probability": 0.186,
+        "factors": [
+          "Elo/实力: 德国 1960 vs 科特迪瓦 1680",
+          "FIFA排名: #10 vs #33",
+          "状态权重: 德国 8.7/10 vs 科特迪瓦 6.4/10",
+          "主场地域: 中立或已手动强制中立",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 德国 首轮状态校准 +0.055; 科特迪瓦 首轮状态校准 +0.018",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.9 个，黄牌 2.8 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.689,
+        "possible_scores": [
+          {
+            "probability": 7.71,
+            "score": "3-1"
+          },
+          {
+            "probability": 11.95,
+            "score": "2-0"
+          },
+          {
+            "probability": 9.67,
+            "score": "2-1"
+          }
+        ],
+        "predicted_score": "3-1",
+        "total_goals_prediction": {
+          "confidence": 0.647,
+          "expected_total": 3.33,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.851,
+              "under_probability": 0.149
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.647,
+              "under_probability": 0.353
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.426,
+              "under_probability": 0.574
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 3,
+          "over_probability": 0.647,
+          "recommendation": "大2.5",
+          "under_probability": 0.353
+        },
+        "upset_prediction": {
+          "against": "德国",
+          "favorite_probability": 0.689,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.197,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "1-1",
+          "score_probability": 6.02,
+          "team": "平局"
+        },
+        "xg_away": 0.94,
+        "xg_home": 2.39
+      },
+      "saved_at": "2026-06-20T00:44:23.467727+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "科特迪瓦",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "德国",
+        "is_knockout": false,
+        "match_id": 34,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "BMO Field，Toronto",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "35": {
+      "away_team": "库拉索",
+      "home_team": "厄瓜多尔",
+      "match_date": "2026-06-21T08:00:00+08:00",
+      "match_id": 35,
+      "prediction": {
+        "away_win_probability": 0.109,
+        "draw_probability": 0.186,
+        "factors": [
+          "Elo/实力: 厄瓜多尔 1720 vs 库拉索 1430",
+          "FIFA排名: #23 vs #82",
+          "状态权重: 厄瓜多尔 7.0/10 vs 库拉索 3.8/10",
+          "主场地域: 中立或已手动强制中立",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 厄瓜多尔 首轮状态校准 -0.018; 库拉索 首轮状态校准 -0.055",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "比分纪律: 强队突破场景加入大胜溢出候选",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.5 个，黄牌 3.0 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.705,
+        "possible_scores": [
+          {
+            "probability": 10.5,
+            "score": "3-0"
+          },
+          {
+            "probability": 13.59,
+            "score": "2-0"
+          },
+          {
+            "probability": 6.09,
+            "score": "4-0"
+          }
+        ],
+        "predicted_score": "3-0",
+        "total_goals_prediction": {
+          "confidence": 0.605,
+          "expected_total": 3.13,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.826,
+              "under_probability": 0.174
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.605,
+              "under_probability": 0.395
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.382,
+              "under_probability": 0.618
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 3,
+          "over_probability": 0.605,
+          "recommendation": "大2.5",
+          "under_probability": 0.395
+        },
+        "upset_prediction": {
+          "against": "厄瓜多尔",
+          "favorite_probability": 0.705,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.198,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "1-1",
+          "score_probability": 6.12,
+          "team": "平局"
+        },
+        "xg_away": 0.81,
+        "xg_home": 2.32
+      },
+      "saved_at": "2026-06-20T00:44:22.620122+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "库拉索",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "厄瓜多尔",
+        "is_knockout": false,
+        "match_id": 35,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "GEHA Field at Arrowhead Stadium，Kansas City, Missouri",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "36": {
+      "away_team": "日本",
+      "home_team": "突尼斯",
+      "match_date": "2026-06-21T12:00:00+08:00",
+      "match_id": 36,
+      "prediction": {
+        "away_win_probability": 0.555,
+        "draw_probability": 0.238,
+        "factors": [
+          "Elo/实力: 突尼斯 1620 vs 日本 1760",
+          "FIFA排名: #45 vs #18",
+          "状态权重: 突尼斯 5.6/10 vs 日本 7.3/10",
+          "主场地域: 中立或已手动强制中立",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 突尼斯 首轮状态校准 -0.055",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 外部共识未接入，保持模型独立预测",
+          "比分纪律: 证据未完整或热门优势不足，Top3加入防平比分",
+          "比分纪律: 首选落在2-0/2-1模板簇，已用比分池校验防平和溢出",
+          "天气：常规条件",
+          "场地：常规条件",
+          "小组赛首轮：试探因素存在，但开幕阶段进攻意愿保留",
+          "Form Weighted: Elo + 排名 + 近期状态 + 外部因子",
+          "角球/黄牌: 预计角球 9.5 个，黄牌 2.7 张，按近况画像、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.207,
+        "possible_scores": [
+          {
+            "probability": 10.77,
+            "score": "1-2"
+          },
+          {
+            "probability": 9.83,
+            "score": "0-2"
+          },
+          {
+            "probability": 8.41,
+            "score": "1-1"
+          }
+        ],
+        "predicted_score": "1-2",
+        "total_goals_prediction": {
+          "confidence": 0.577,
+          "expected_total": 3.0,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.809,
+              "under_probability": 0.191
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.577,
+              "under_probability": 0.423
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.353,
+              "under_probability": 0.647
+            }
+          ],
+          "main_line": 2.5,
+          "most_likely_total": 2,
+          "over_probability": 0.577,
+          "recommendation": "大2.5",
+          "under_probability": 0.423
+        },
+        "upset_prediction": {
+          "against": "日本",
+          "favorite_probability": 0.555,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.252,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选"
+          ],
+          "risk_level": "medium",
+          "score": "2-2",
+          "score_probability": 4.08,
+          "team": "平局"
+        },
+        "xg_away": 1.91,
+        "xg_home": 1.09
+      },
+      "saved_at": "2026-06-20T00:44:20.449387+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "日本",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "突尼斯",
+        "is_knockout": false,
+        "match_id": 36,
+        "match_round": 1,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Estadio BBVA，Guadalupe",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "37": {
+      "away_team": "沙特阿拉伯",
+      "home_team": "西班牙",
+      "match_date": "2026-06-22T00:00:00+08:00",
+      "match_id": 37,
+      "prediction": {
+        "away_win_probability": 0.048,
+        "draw_probability": 0.116,
+        "factors": [
+          "Elo/实力: 西班牙 2100 vs 沙特阿拉伯 1560",
+          "FIFA排名: #2 vs #61",
+          "首发/阵型: 西班牙暂无官方/赛前首发，暂用赛前候选池 4-3-3",
+          "首发/阵型: 沙特阿拉伯暂无官方/赛前首发，暂用赛前候选池 4-3-3",
+          "状态权重: 西班牙 7.3/10 vs 沙特阿拉伯 4.4/10（本届世界杯最近1场正式赛）",
+          "近况窗口: 西班牙本届世界杯最近1场正式赛：场均1.0分，净胜球+0.0，进失球0.0-0.0，射正差+6.0",
+          "近况窗口: 沙特阿拉伯本届世界杯最近1场正式赛：场均1.0分，净胜球+0.0，进失球1.0-1.0，射正差-7.0",
+          "阵型相克: 西班牙压迫对沙特阿拉伯低位出球有抢断收益，但会抬高转换节奏",
+          "市场信号校准: 公开历史赔率样本与模型分歧 13.6%，仅按 4% 低权重修正",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 14.4 个，黄牌 1.8 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.836,
+        "possible_scores": [
+          {
+            "probability": 13.01,
+            "score": "3-0"
+          },
+          {
+            "probability": 12.81,
+            "score": "2-0"
+          },
+          {
+            "probability": 9.91,
+            "score": "4-0"
+          }
+        ],
+        "predicted_score": "3-0",
+        "total_goals_prediction": {
+          "confidence": 0.713,
+          "expected_total": 3.7,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.887,
+              "under_probability": 0.113
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.713,
+              "under_probability": 0.287
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.503,
+              "under_probability": 0.497
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.64,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.36,
+          "most_likely_total": 3,
+          "over_probability": 0.713,
+          "recommendation": "大2.5",
+          "under_probability": 0.287
+        },
+        "upset_prediction": {
+          "against": "西班牙",
+          "favorite_probability": 0.836,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.165,
+          "reasons": [
+            "冷门比分已避开首选与前三候选比分，保留低概率但接近主分布的参考",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "实时赔率对弱势结果的隐含概率高于模型原始判断",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "low",
+          "score": "1-1",
+          "score_probability": 3.64,
+          "team": "平局"
+        },
+        "xg_away": 0.65,
+        "xg_home": 3.05
+      },
+      "saved_at": "2026-06-21T14:47:32.479086+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "沙特阿拉伯",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "西班牙",
+        "is_knockout": false,
+        "match_id": 37,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Mercedes-Benz Stadium，Atlanta, Georgia",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "41": {
+      "away_team": "奥地利",
+      "home_team": "阿根廷",
+      "match_date": "2026-06-23T01:00:00+08:00",
+      "match_id": 41,
+      "prediction": {
+        "away_win_probability": 0.084,
+        "draw_probability": 0.207,
+        "factors": [
+          "Elo/实力: 阿根廷 2100 vs 奥地利 1700",
+          "FIFA排名: #1 vs #24",
+          "首发/阵型: 阿根廷暂无当场官方首发，按官方26人名单与 4-3-3 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 奥地利暂无当场官方首发，按官方26人名单与 4-2-3-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 阿根廷 7.7/10 vs 奥地利 7.6/10（本届世界杯1场 + 世界杯前3场正式赛均值）",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 阿根廷 首轮状态校准 +0.030; 奥地利 首轮状态校准 +0.024",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 阿根廷 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 7.46; 球队特征库: 奥地利 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 7.47",
+          "近况窗口: 阿根廷本届世界杯1场 + 世界杯前3场正式赛均值：场均2.2分，净胜球+1.8，进失球2.2-0.3，射正差+3.0；窗口含红牌变量，状态分已做降噪",
+          "近况窗口: 奥地利本届世界杯1场 + 世界杯前3场正式赛均值：场均2.2分，净胜球+1.2，进失球2.0-0.8，射正差+1.2",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "赛后复盘: 小组出线形势提高平局动机 +5.0%",
+          "大小球校验: 大2.5，主线概率 67.7%，信号强度 35.4%",
+          "市场信号校准: 已接入公开历史赔率样本，方向接近，未调整原始预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 6.9 个，黄牌 2.0 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.708,
+        "possible_scores": [
+          {
+            "probability": 7.54,
+            "score": "3-1"
+          },
+          {
+            "probability": 11.79,
+            "score": "2-0"
+          },
+          {
+            "probability": 10.42,
+            "score": "3-0"
+          }
+        ],
+        "predicted_score": "3-1",
+        "total_goals_prediction": {
+          "confidence": 0.354,
+          "expected_total": 3.49,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.868,
+              "under_probability": 0.132
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.677,
+              "under_probability": 0.323
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.46,
+              "under_probability": 0.54
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.634,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.366,
+          "most_likely_total": 3,
+          "over_probability": 0.677,
+          "recommendation": "大2.5",
+          "recommendation_level": "high",
+          "risk_note": "主线偏大，但是否追到3.5以上需看强队转化率和弱方进球能力。",
+          "side_probability": 0.677,
+          "signal_strength": 0.354,
+          "under_probability": 0.323
+        },
+        "upset_prediction": {
+          "against": "阿根廷",
+          "favorite_probability": 0.708,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.22,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "主预测已进入高总进球/双方进球形态，冷门平局上移到 2-2",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "2-2",
+          "score_probability": 3.48,
+          "team": "平局"
+        },
+        "xg_away": 0.84,
+        "xg_home": 2.65
+      },
+      "saved_at": "2026-06-22T13:07:27.323047+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "奥地利",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "阿根廷",
+        "is_knockout": false,
+        "match_id": 41,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "AT&T Stadium，Arlington, Texas",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "42": {
+      "away_team": "伊拉克",
+      "home_team": "法国",
+      "match_date": "2026-06-23T05:00:00+08:00",
+      "match_id": 42,
+      "prediction": {
+        "away_win_probability": 0.039,
+        "draw_probability": 0.1,
+        "factors": [
+          "Elo/实力: 法国 2120 vs 伊拉克 1530",
+          "FIFA排名: #3 vs #57",
+          "首发/阵型: 法国暂无官方/赛前首发，暂用赛前候选池 4-3-3",
+          "首发/阵型: 伊拉克暂无官方/赛前首发，暂用赛前候选池 4-2-3-1",
+          "状态权重: 法国 9.4/10 vs 伊拉克 4.4/10（本届世界杯1场 + 世界杯前3场正式赛均值）",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 法国 首轮状态校准 +0.048; 伊拉克 首轮状态校准 -0.018",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 法国 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 9.39; 球队特征库: 伊拉克 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 4.52",
+          "近况窗口: 法国本届世界杯1场 + 世界杯前3场正式赛均值：场均2.7分，净胜球+2.0，进失球3.0-1.0，射正差+6.3",
+          "近况窗口: 伊拉克本届世界杯1场 + 世界杯前3场正式赛均值：场均0.5分，净胜球-1.8，进失球0.8-2.7，射正差-3.3；窗口含红牌变量，状态分已做降噪",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "市场信号校准: 公开历史赔率样本与模型分歧 16.3%，仅按 4% 低权重修正",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 11.1 个，黄牌 1.1 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.861,
+        "possible_scores": [
+          {
+            "probability": 13.27,
+            "score": "3-0"
+          },
+          {
+            "probability": 12.24,
+            "score": "2-0"
+          },
+          {
+            "probability": 10.79,
+            "score": "4-0"
+          }
+        ],
+        "predicted_score": "3-0",
+        "total_goals_prediction": {
+          "confidence": 0.74,
+          "expected_total": 3.86,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.9,
+              "under_probability": 0.1
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.74,
+              "under_probability": 0.26
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.537,
+              "under_probability": 0.463
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.64,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.36,
+          "most_likely_total": 3,
+          "over_probability": 0.74,
+          "recommendation": "大2.5",
+          "under_probability": 0.26
+        },
+        "upset_prediction": {
+          "against": "法国",
+          "favorite_probability": 0.861,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.155,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "强队冷门优先看进球效率断电，0-0 是干净胜主选池的低位邻近解",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "实时赔率对弱势结果的隐含概率高于模型原始判断"
+          ],
+          "risk_level": "low",
+          "score": "0-0",
+          "score_probability": 1.67,
+          "team": "平局"
+        },
+        "xg_away": 0.61,
+        "xg_home": 3.25
+      },
+      "saved_at": "2026-06-22T10:34:19.944735+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "伊拉克",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "法国",
+        "is_knockout": false,
+        "match_id": 42,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Lincoln Financial Field，Philadelphia, Pennsylvania",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "43": {
+      "away_team": "塞内加尔",
+      "home_team": "挪威",
+      "match_date": "2026-06-23T08:00:00+08:00",
+      "match_id": 43,
+      "prediction": {
+        "away_win_probability": 0.396,
+        "draw_probability": 0.254,
+        "factors": [
+          "Elo/实力: 挪威 1640 vs 塞内加尔 1780",
+          "FIFA排名: #31 vs #15",
+          "首发/阵型: 挪威暂无当场官方首发，按官方26人名单与 4-3-3 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 塞内加尔暂无当场官方首发，按官方26人名单与 4-3-3 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 挪威 9.4/10 vs 塞内加尔 5.2/10（本届世界杯1场 + 世界杯前3场正式赛均值）",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 挪威 首轮状态校准 +0.054; 塞内加尔 首轮状态校准 -0.024",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 挪威 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 9.4; 球队特征库: 塞内加尔 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 5.3",
+          "近况窗口: 挪威本届世界杯1场 + 世界杯前3场正式赛均值：场均3.0分，净胜球+3.3，进失球4.2-0.8，射正差+3.5",
+          "近况窗口: 塞内加尔本届世界杯1场 + 世界杯前3场正式赛均值：场均1.0分，净胜球-1.2，进失球0.8-2.0，射正差-1.0；窗口含红牌变量，状态分已做降噪",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "大小球校验: 大2.5轻微 / 3.5防小，主线概率 60.8%，信号强度 21.6%",
+          "市场信号校准: 公开历史赔率样本与模型分歧 18.5%，仅按 4% 低权重修正",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 9.4 个，黄牌 1.9 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.35,
+        "possible_scores": [
+          {
+            "probability": 11.54,
+            "score": "1-1"
+          },
+          {
+            "probability": 8.7,
+            "score": "1-2"
+          },
+          {
+            "probability": 8.0,
+            "score": "2-1"
+          }
+        ],
+        "predicted_score": "1-1",
+        "total_goals_prediction": {
+          "confidence": 0.216,
+          "expected_total": 3.14,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.829,
+              "under_probability": 0.171
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.608,
+              "under_probability": 0.392
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.384,
+              "under_probability": 0.616
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.578,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.422,
+          "most_likely_total": 3,
+          "over_probability": 0.608,
+          "recommendation": "大2.5轻微 / 3.5防小",
+          "recommendation_level": "medium",
+          "risk_note": "2.5大成立但3.5小保护更强，倾向2-1、3-0、2-0这类不过度追高比分。",
+          "side_probability": 0.608,
+          "signal_strength": 0.216,
+          "under_probability": 0.392
+        },
+        "upset_prediction": {
+          "against": "塞内加尔",
+          "favorite_probability": 0.396,
+          "label": "主队爆冷",
+          "outcome": "home",
+          "probability": 0.406,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "主选池已覆盖一种冷门形态，冷门比分允许向相邻低总进球或小胜方向漂移",
+            "胜负冷门优先选热门方少进 1-2 球、弱方 1 球起步的小比分路径",
+            "平局基准较高，比赛进入胶着后会放大爆冷窗口"
+          ],
+          "risk_level": "high",
+          "score": "2-0",
+          "score_probability": 4.97,
+          "team": "挪威"
+        },
+        "xg_away": 1.61,
+        "xg_home": 1.53
+      },
+      "saved_at": "2026-06-22T13:07:27.382676+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "塞内加尔",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "挪威",
+        "is_knockout": false,
+        "match_id": 43,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "MetLife Stadium，East Rutherford, New Jersey",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "44": {
+      "away_team": "阿尔及利亚",
+      "home_team": "约旦",
+      "match_date": "2026-06-23T11:00:00+08:00",
+      "match_id": 44,
+      "prediction": {
+        "away_win_probability": 0.469,
+        "draw_probability": 0.257,
+        "factors": [
+          "Elo/实力: 约旦 1490 vs 阿尔及利亚 1600",
+          "FIFA排名: #63 vs #28",
+          "首发/阵型: 约旦暂无当场官方首发，按官方26人名单与 3-4-2-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 阿尔及利亚暂无当场官方首发，按官方26人名单与 4-2-3-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 约旦 5.4/10 vs 阿尔及利亚 4.7/10（本届世界杯1场 + 世界杯前3场正式赛均值）",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 约旦 首轮状态校准 -0.012; 阿尔及利亚 首轮状态校准 -0.024",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 约旦 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 5.45; 球队特征库: 阿尔及利亚 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 4.78",
+          "近况窗口: 约旦本届世界杯1场 + 世界杯前3场正式赛均值：场均1.0分，净胜球-0.8，进失球1.2-2.0，射正差+0.2；窗口含红牌变量，状态分已做降噪",
+          "近况窗口: 阿尔及利亚本届世界杯1场 + 世界杯前3场正式赛均值：场均1.0分，净胜球-1.3，进失球0.7-2.0，射正差-2.2",
+          "阵型相克: 约旦翼卫/三中卫结构会压缩阿尔及利亚边路爆点空间",
+          "世界杯底蕴: 约旦 新军，大赛紧张变量已纳入",
+          "大小球校验: 大2.5观察，主线概率 56.7%，信号强度 13.4%",
+          "市场信号校准: 公开历史赔率样本与模型分歧 14.4%，仅按 4% 低权重修正",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 7.1 个，黄牌 1.4 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.274,
+        "possible_scores": [
+          {
+            "probability": 12.0,
+            "score": "1-1"
+          },
+          {
+            "probability": 9.5,
+            "score": "1-2"
+          },
+          {
+            "probability": 8.02,
+            "score": "0-1"
+          }
+        ],
+        "predicted_score": "1-1",
+        "total_goals_prediction": {
+          "confidence": 0.134,
+          "expected_total": 2.96,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.803,
+              "under_probability": 0.197
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.567,
+              "under_probability": 0.433
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.343,
+              "under_probability": 0.657
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.549,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.451,
+          "most_likely_total": 2,
+          "over_probability": 0.567,
+          "recommendation": "大2.5观察",
+          "recommendation_level": "low",
+          "risk_note": "2.5球主线优势不足，比分池优先看具体强弱和双方进球。",
+          "side_probability": 0.567,
+          "signal_strength": 0.134,
+          "under_probability": 0.433
+        },
+        "upset_prediction": {
+          "against": "阿尔及利亚",
+          "favorite_probability": 0.469,
+          "label": "主队爆冷",
+          "outcome": "home",
+          "probability": 0.331,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "胜负冷门优先选热门方少进 1-2 球、弱方 1 球起步的小比分路径",
+            "平局基准较高，比赛进入胶着后会放大爆冷窗口",
+            "总进球外部信号偏向大2.5，会改变冷门比分形态"
+          ],
+          "risk_level": "high",
+          "score": "1-0",
+          "score_probability": 5.64,
+          "team": "约旦"
+        },
+        "xg_away": 1.69,
+        "xg_home": 1.27
+      },
+      "saved_at": "2026-06-23T02:52:10.590337+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "阿尔及利亚",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "约旦",
+        "is_knockout": false,
+        "match_id": 44,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Levi's Stadium，Santa Clara, California",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "45": {
+      "away_team": "乌兹别克斯坦",
+      "home_team": "葡萄牙",
+      "match_date": "2026-06-24T01:00:00+08:00",
+      "match_id": 45,
+      "prediction": {
+        "away_win_probability": 0.074,
+        "draw_probability": 0.182,
+        "factors": [
+          "Elo/实力: 葡萄牙 2020 vs 乌兹别克斯坦 1520",
+          "FIFA排名: #5 vs #50",
+          "首发/阵型: 葡萄牙暂无当场官方首发，按官方26人名单与 4-3-3 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 乌兹别克斯坦暂无当场官方首发，按官方26人名单与 3-4-2-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 葡萄牙 6.6/10 vs 乌兹别克斯坦 5.0/10（本届世界杯1场 + 世界杯前3场正式赛均值）",
+          "人工补充: 葡萄牙 关键伤停/停赛",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 葡萄牙 首轮状态校准 +0.036; 乌兹别克斯坦 首轮状态校准 +0.006",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 葡萄牙 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 6.48; 球队特征库: 乌兹别克斯坦 本届世界杯1场 + 世界杯前3场正式赛均值，状态分 5.07",
+          "近况窗口: 葡萄牙本届世界杯1场 + 世界杯前3场正式赛均值：场均1.2分，净胜球+1.0，进失球2.3-1.3，射正差+2.2；窗口含红牌变量，状态分已做降噪",
+          "近况窗口: 乌兹别克斯坦本届世界杯1场 + 世界杯前3场正式赛均值：场均0.8分，净胜球-0.5，进失球1.3-1.8，射正差-1.3",
+          "阵型相克: 乌兹别克斯坦三中卫可覆盖葡萄牙三前锋宽度，葡萄牙阵地战效率小降",
+          "阵型相克: 乌兹别克斯坦翼卫/三中卫结构会压缩葡萄牙边路爆点空间",
+          "世界杯底蕴: 乌兹别克斯坦 新军，大赛紧张变量已纳入",
+          "球队特征库: 低比分/平局倾向修正 +1.8%",
+          "大小球校验: 大2.5轻微 / 3.5防小，主线概率 59.6%，信号强度 19.2%",
+          "市场信号校准: 已接入公开历史赔率样本，方向接近，未调整原始预测",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "小组赛第二轮：抢分关键战，节奏略升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 9.1 个，黄牌 2.6 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.743,
+        "possible_scores": [
+          {
+            "probability": 12.22,
+            "score": "3-0"
+          },
+          {
+            "probability": 15.08,
+            "score": "2-0"
+          },
+          {
+            "probability": 11.8,
+            "score": "1-0"
+          }
+        ],
+        "predicted_score": "3-0",
+        "total_goals_prediction": {
+          "confidence": 0.192,
+          "expected_total": 3.09,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.819,
+              "under_probability": 0.181
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.596,
+              "under_probability": 0.404
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.372,
+              "under_probability": 0.628
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.57,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.43,
+          "most_likely_total": 3,
+          "over_probability": 0.596,
+          "recommendation": "大2.5轻微 / 3.5防小",
+          "recommendation_level": "medium",
+          "risk_note": "2.5大成立但3.5小保护更强，倾向2-1、3-0、2-0这类不过度追高比分。",
+          "side_probability": 0.596,
+          "signal_strength": 0.192,
+          "under_probability": 0.404
+        },
+        "upset_prediction": {
+          "against": "葡萄牙",
+          "favorite_probability": 0.743,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.204,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "强队冷门优先看进球效率断电，0-0 是干净胜主选池的低位邻近解",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "强弱差明显，强队若早段久攻不下，心理与转换风险会集中暴露"
+          ],
+          "risk_level": "medium",
+          "score": "0-0",
+          "score_probability": 3.87,
+          "team": "平局"
+        },
+        "xg_away": 0.66,
+        "xg_home": 2.43
+      },
+      "saved_at": "2026-06-23T08:26:03.874276+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "乌兹别克斯坦",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "葡萄牙",
+        "is_knockout": false,
+        "match_id": 45,
+        "match_round": 2,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "NRG Stadium，Houston, Texas",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "49": {
+      "away_team": "加拿大",
+      "home_team": "瑞士",
+      "match_date": "2026-06-25T03:00:00+08:00",
+      "match_id": 49,
+      "prediction": {
+        "away_win_probability": 0.28,
+        "draw_probability": 0.362,
+        "factors": [
+          "Elo/实力: 瑞士 1770 vs 加拿大 1700",
+          "FIFA排名: #19 vs #30",
+          "首发/阵型: 瑞士暂无当场官方首发，按官方26人名单与 3-4-2-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 加拿大暂无当场官方首发，按官方26人名单与 4-4-2 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 瑞士 7.3/10 vs 加拿大 7.6/10（本届世界杯2场 + 世界杯前3场正式赛均值）",
+          "主场地域: 加拿大 完整主场 +95 Elo",
+          "人工补充: 加拿大 关键伤停/停赛",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 瑞士 小组前两轮状态校准 +0.018; 加拿大 小组前两轮状态校准 +0.036",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 瑞士 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 7.1; 球队特征库: 加拿大 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 7.36",
+          "近况窗口: 瑞士本届世界杯2场 + 世界杯前3场正式赛均值：场均1.8分，净胜球+1.2，进失球2.1-0.8，射正差+3.0；窗口含红牌变量，状态分已做降噪",
+          "近况窗口: 加拿大本届世界杯2场 + 世界杯前3场正式赛均值：场均1.8分，净胜球+1.8，进失球2.4-0.6，射正差+3.4；窗口含红牌变量，状态分已做降噪",
+          "阵型相克: 加拿大压迫对瑞士低位出球有抢断收益，但会抬高转换节奏",
+          "阵型相克: 瑞士翼卫/三中卫结构会压缩加拿大边路爆点空间",
+          "第三轮战意: 出线形势高权重；双方接近出线区，优先稳住不败，平局/小比分权重上调；潜在路径低权重，不直接假设主动挑对手；xG倍率 0.98/0.98，总节奏 0.94",
+          "赛后复盘: 小组出线形势提高平局动机 +5.0%",
+          "第三轮战意: 出线/路径情景提高平局或不败动机 +4.0%，单项上限 50%",
+          "球队特征库: 低比分/平局倾向修正 +1.2%",
+          "大小球校验: 大2.5观察，主线概率 56.0%，信号强度 12.0%",
+          "市场信号校准: 公开历史赔率样本与模型分歧 19.2%，仅按 4% 低权重修正",
+          "小组赛末轮：战意/轮换变量放大，总进球波动上升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 11.1 个，黄牌 2.0 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.359,
+        "possible_scores": [
+          {
+            "probability": 16.93,
+            "score": "1-1"
+          },
+          {
+            "probability": 8.57,
+            "score": "0-0"
+          },
+          {
+            "probability": 8.4,
+            "score": "2-2"
+          }
+        ],
+        "predicted_score": "1-1",
+        "total_goals_prediction": {
+          "confidence": 0.12,
+          "expected_total": 2.93,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.798,
+              "under_probability": 0.202
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.56,
+              "under_probability": 0.44
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.336,
+              "under_probability": 0.664
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.544,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.456,
+          "most_likely_total": 2,
+          "over_probability": 0.56,
+          "recommendation": "大2.5观察",
+          "recommendation_level": "low",
+          "risk_note": "2.5球主线优势不足，比分池优先看具体强弱和双方进球。",
+          "side_probability": 0.56,
+          "signal_strength": 0.12,
+          "under_probability": 0.44
+        },
+        "upset_prediction": {
+          "against": "加拿大",
+          "favorite_probability": 0.359,
+          "label": "平局冷门",
+          "outcome": "home",
+          "probability": 0.48,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "胜负冷门优先选热门方少进 1-2 球、弱方 1 球起步的小比分路径",
+            "平局基准较高，比赛进入胶着后会放大爆冷窗口",
+            "实时赔率对弱势结果的隐含概率高于模型原始判断"
+          ],
+          "risk_level": "high",
+          "score": "2-0",
+          "score_probability": 5.67,
+          "team": "瑞士"
+        },
+        "xg_away": 1.38,
+        "xg_home": 1.55
+      },
+      "saved_at": "2026-06-24T05:11:11.059464+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "加拿大",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "瑞士",
+        "is_knockout": false,
+        "match_id": 49,
+        "match_round": 3,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "BC Place，Vancouver",
+        "venue_factor": "normal",
+        "weather": null
+      }
+    },
+    "51": {
+      "away_team": "巴西",
+      "home_team": "苏格兰",
+      "match_date": "2026-06-25T06:00:00+08:00",
+      "match_id": 51,
+      "prediction": {
+        "away_win_probability": 0.647,
+        "draw_probability": 0.241,
+        "factors": [
+          "Elo/实力: 苏格兰 1620 vs 巴西 2080",
+          "FIFA排名: #42 vs #6",
+          "首发/阵型: 苏格兰暂无当场官方首发，按官方26人名单与 3-4-2-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 巴西暂无当场官方首发，按官方26人名单与 4-2-3-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 苏格兰 6.3/10 vs 巴西 7.7/10（本届世界杯2场 + 世界杯前3场正式赛均值）",
+          "人工补充: 巴西 关键伤停/停赛",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 苏格兰 小组前两轮状态校准 +0.012; 巴西 小组前两轮状态校准 +0.012",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 苏格兰 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 6.25; 球队特征库: 巴西 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 7.48",
+          "近况窗口: 苏格兰本届世界杯2场 + 世界杯前3场正式赛均值：场均1.8分，净胜球+0.3，进失球1.6-1.2，射正差-0.3；窗口含红牌变量，状态分已做降噪",
+          "近况窗口: 巴西本届世界杯2场 + 世界杯前3场正式赛均值：场均2.0分，净胜球+1.2，进失球1.7-0.4，射正差+1.5",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "第三轮战意: 出线形势高权重；苏格兰出线边缘，抢分/净胜球动机上升；潜在路径低权重，不直接假设主动挑对手；xG倍率 1.05/1.0，总节奏 1.01",
+          "赛后复盘: 小组出线形势提高平局动机 +5.0%",
+          "第三轮战意: 出线/路径情景提高平局或不败动机 +1.2%，单项上限 50%",
+          "大小球校验: 大2.5，主线概率 66.9%，信号强度 33.8%",
+          "市场信号校准: 公开历史赔率样本与模型分歧 6.0%，仅按 4% 低权重修正",
+          "本届节奏校准: 小组赛按更长补时和尾段进球倾向，提高高总进球代表比分权重",
+          "比分纪律: 首选落在2-0/2-1模板簇，已用比分池校验防平和溢出",
+          "小组赛末轮：战意/轮换变量放大，总进球波动上升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 10.0 个，黄牌 2.5 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.112,
+        "possible_scores": [
+          {
+            "probability": 9.05,
+            "score": "1-2"
+          },
+          {
+            "probability": 10.84,
+            "score": "0-2"
+          },
+          {
+            "probability": 8.95,
+            "score": "0-3"
+          }
+        ],
+        "predicted_score": "1-2",
+        "total_goals_prediction": {
+          "confidence": 0.338,
+          "expected_total": 3.45,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.864,
+              "under_probability": 0.136
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.669,
+              "under_probability": 0.331
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.451,
+              "under_probability": 0.549
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.627,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.373,
+          "most_likely_total": 3,
+          "over_probability": 0.669,
+          "recommendation": "大2.5",
+          "recommendation_level": "high",
+          "risk_note": "主线偏大，但是否追到3.5以上需看强队转化率和弱方进球能力。",
+          "side_probability": 0.669,
+          "signal_strength": 0.338,
+          "under_probability": 0.331
+        },
+        "upset_prediction": {
+          "against": "巴西",
+          "favorite_probability": 0.647,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.255,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "弱方进球预期接近达标位，平局冷门优先落在 1-1",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "平局基准较高，比赛进入胶着后会放大爆冷窗口"
+          ],
+          "risk_level": "medium",
+          "score": "1-1",
+          "score_probability": 7.83,
+          "team": "平局"
+        },
+        "xg_away": 2.48,
+        "xg_home": 0.97
+      },
+      "saved_at": "2026-06-24T11:19:47.292504+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": true,
+        "away_team": "巴西",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "苏格兰",
+        "is_knockout": false,
+        "match_id": 51,
+        "match_round": 3,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "Hard Rock Stadium，Miami Gardens, Florida",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    },
+    "67": {
+      "away_team": "英格兰",
+      "home_team": "巴拿马",
+      "match_date": "2026-06-28T05:00:00+08:00",
+      "match_id": 67,
+      "prediction": {
+        "away_win_probability": 0.767,
+        "draw_probability": 0.15,
+        "factors": [
+          "Elo/实力: 巴拿马 1530 vs 英格兰 2050",
+          "FIFA排名: #34 vs #4",
+          "首发/阵型: 巴拿马暂无当场官方首发，按官方26人名单与 5-4-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "首发/阵型: 英格兰暂无当场官方首发，按官方26人名单与 4-2-3-1 阵型生成候选首发；临场首发接入后自动覆盖",
+          "状态权重: 巴拿马 6.4/10 vs 英格兰 9.2/10（本届世界杯2场 + 世界杯前3场正式赛均值）",
+          "赛后复盘: 已根据完赛表现/积分形势校准: 巴拿马 小组前两轮状态校准 +0.006; 英格兰 小组前两轮状态校准 +0.024",
+          "球队特征库: 已按赛后画像低权重校准: 球队特征库: 巴拿马 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 6.28; 球队特征库: 英格兰 本届世界杯2场 + 世界杯前3场正式赛均值，状态分 8.83",
+          "近况窗口: 巴拿马本届世界杯2场 + 世界杯前3场正式赛均值：场均1.2分，净胜球+0.2，进失球1.2-1.0，射正差+1.8",
+          "近况窗口: 英格兰本届世界杯2场 + 世界杯前3场正式赛均值：场均2.5分，净胜球+2.0，进失球2.5-0.5，射正差+4.5",
+          "阵型相克: 双方阵型相克不明显，模型按基础实力、状态和场地因素为主",
+          "第三轮战意: 出线形势高权重；巴拿马必须争胜，主动提速和弱侧xG上调；潜在路径低权重，不直接假设主动挑对手；xG倍率 1.12/1.02，总节奏 1.03",
+          "球队特征库: 低比分/平局倾向修正 +1.8%",
+          "大小球校验: 大2.5偏强 / 3.5可跟进，主线概率 78.9%，信号强度 57.8%",
+          "市场信号校准: 公开历史赔率样本与模型分歧 6.4%，仅按 4% 低权重修正",
+          "本届节奏校准: 高总进球代表比分保留在比分池，用于提示尾段进球和大胜溢出",
+          "小组赛末轮：战意/轮换变量放大，总进球波动上升",
+          "Form Weighted: Elo + FIFA排名 + 本届正式赛状态窗口 + 市场信号",
+          "角球/黄牌: 预计角球 10.7 个，黄牌 1.7 张，按本届正式赛窗口、xG和比赛强度修正"
+        ],
+        "home_win_probability": 0.083,
+        "possible_scores": [
+          {
+            "probability": 9.01,
+            "score": "0-3"
+          },
+          {
+            "probability": 8.53,
+            "score": "0-2"
+          },
+          {
+            "probability": 8.02,
+            "score": "1-3"
+          }
+        ],
+        "predicted_score": "0-3",
+        "total_goals_prediction": {
+          "confidence": 0.578,
+          "expected_total": 4.2,
+          "lines": [
+            {
+              "line": 1.5,
+              "over_probability": 0.925,
+              "under_probability": 0.075
+            },
+            {
+              "line": 2.5,
+              "over_probability": 0.789,
+              "under_probability": 0.211
+            },
+            {
+              "line": 3.5,
+              "over_probability": 0.603,
+              "under_probability": 0.397
+            }
+          ],
+          "main_line": 2.5,
+          "market_line": 2.5,
+          "market_over_probability": 0.64,
+          "market_recommendation": "大2.5",
+          "market_under_probability": 0.36,
+          "most_likely_total": 4,
+          "over_probability": 0.789,
+          "recommendation": "大2.5偏强 / 3.5可跟进",
+          "recommendation_level": "high",
+          "risk_note": "3.5球上沿也有支撑，比分池允许4球以上溢出。",
+          "side_probability": 0.789,
+          "signal_strength": 0.578,
+          "under_probability": 0.211
+        },
+        "upset_prediction": {
+          "against": "英格兰",
+          "favorite_probability": 0.767,
+          "label": "平局冷门",
+          "outcome": "draw",
+          "probability": 0.185,
+          "reasons": [
+            "冷门比分按强队进球下修、弱方达标或微超筛选，避免与主选比分极端反转",
+            "主预测已进入高总进球/双方进球形态，冷门平局上移到 2-2",
+            "强热门场景下平局已属于冷门，比分按主预测附近的期望总进球筛选",
+            "实时赔率对弱势结果的隐含概率高于模型原始判断"
+          ],
+          "risk_level": "medium",
+          "score": "2-2",
+          "score_probability": 3.21,
+          "team": "平局"
+        },
+        "xg_away": 3.17,
+        "xg_home": 1.03
+      },
+      "saved_at": "2026-06-27T16:48:14.137239+00:00",
+      "scenario_settings": {
+        "advantage_level": "none",
+        "advantage_team": "none",
+        "away_fatigue": false,
+        "away_key_absence": false,
+        "away_team": "英格兰",
+        "force_neutral": false,
+        "high_press": false,
+        "home_fatigue": false,
+        "home_key_absence": false,
+        "home_team": "巴拿马",
+        "is_knockout": false,
+        "match_id": 67,
+        "match_round": 3,
+        "model_type": "form_weighted",
+        "stage": null,
+        "venue": "MetLife Stadium，East Rutherford, New Jersey",
+        "venue_factor": "normal",
+        "weather": "normal"
+      }
+    }
+  },
+  "version": 1
+}

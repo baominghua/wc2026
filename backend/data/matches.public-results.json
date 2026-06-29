@@ -1,0 +1,1843 @@
+{
+  "source": "espn_scoreboard_public_result_backfill",
+  "last_updated": "2026-06-19T00:45:33+08:00",
+  "matches": [
+    {
+      "id": 1,
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 0,
+      "report": {
+        "attendance": 80824,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 9,
+            "team": "墨西哥",
+            "player": "Julián Quiñones",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "墨西哥",
+            "player": "Raúl Jiménez",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 17,
+            "team": "南非",
+            "player": "Teboho Mokoena",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 23,
+            "team": "墨西哥",
+            "player": "Brian Gutiérrez",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 49,
+            "team": "南非",
+            "player": "Sphephelo Sithole",
+            "type": "red_card"
+          },
+          {
+            "minute": 74,
+            "team": "南非",
+            "player": "Nkosinathi Sibisi",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 84,
+            "team": "南非",
+            "player": "Themba Zwane",
+            "type": "red_card"
+          },
+          {
+            "minute": 90,
+            "team": "墨西哥",
+            "player": "César Montes",
+            "type": "red_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 60.5,
+          "possession_away": 39.5,
+          "shots_home": 16,
+          "shots_away": 3,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 3,
+          "corners_away": 1,
+          "fouls_home": 12,
+          "fouls_away": 11,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 2,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico",
+          "https://www.espn.com/soccer/video/_/gameId/760415",
+          "https://www.espn.com/soccer/report/_/gameId/760415",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760415"
+        ]
+      },
+      "espn_event_id": "760415"
+    },
+    {
+      "id": 2,
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 1,
+      "report": {
+        "attendance": 44985,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 59,
+            "team": "捷克",
+            "player": "Ladislav Krejcí",
+            "type": "goal"
+          },
+          {
+            "minute": 67,
+            "team": "韩国",
+            "player": "Hwang In-Beom",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "韩国",
+            "player": "Oh Hyeon-Gyu",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 90,
+            "team": "韩国",
+            "player": "Lee Gi-Hyuk",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 61.5,
+          "possession_away": 38.5,
+          "shots_home": 15,
+          "shots_away": 7,
+          "shots_on_target_home": 6,
+          "shots_on_target_away": 4,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 5,
+          "fouls_home": 9,
+          "fouls_away": 16,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760414/czechia-south-korea",
+          "https://www.espn.com/soccer/video/_/gameId/760414",
+          "https://www.espn.com/soccer/report/_/gameId/760414",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760414"
+        ]
+      },
+      "espn_event_id": "760414"
+    },
+    {
+      "id": 3,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 43002,
+        "referee": "Facundo Tello",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 21,
+            "team": "波黑",
+            "player": "Jovo Lukic",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "加拿大",
+            "player": "Cyle Larin",
+            "assist": "Promise David",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 11,
+            "team": "加拿大",
+            "player": "Alistair Johnston",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 45,
+            "team": "波黑",
+            "player": "Ermedin Demirovic",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 45,
+            "team": "波黑",
+            "player": "Jovo Lukic",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 53,
+            "team": "加拿大",
+            "player": "Luc de Fougerolles",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "波黑",
+            "player": "Nikola Katic",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 61.1,
+          "possession_away": 38.9,
+          "shots_home": 13,
+          "shots_away": 8,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 3,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 9,
+          "corners_away": 4,
+          "fouls_home": 10,
+          "fouls_away": 20,
+          "yellow_cards_home": 2,
+          "yellow_cards_away": 3,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "赛果来自公开赛后战报手动同步；技术统计待官方数据源补齐。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760416/bosnia-herzegovina-canada",
+          "https://www.espn.com/soccer/video/_/gameId/760416",
+          "https://www.espn.com/soccer/report/_/gameId/760416",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760416"
+        ]
+      },
+      "espn_event_id": "760416"
+    },
+    {
+      "id": 4,
+      "status": "completed",
+      "home_score": 4,
+      "away_score": 1,
+      "report": {
+        "attendance": 70209,
+        "referee": "Mohammed Al Hoaish",
+        "player_of_match": "Folarin Balogun",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "美国",
+            "player": "Damian Bobadilla",
+            "type": "own_goal",
+            "note": "乌龙球"
+          },
+          {
+            "minute": 31,
+            "team": "美国",
+            "player": "Folarin Balogun",
+            "type": "goal"
+          },
+          {
+            "minute": 45,
+            "team": "美国",
+            "player": "Folarin Balogun",
+            "assist": "Christian Pulisic",
+            "type": "goal",
+            "note": "上半场补时"
+          },
+          {
+            "minute": 73,
+            "team": "巴拉圭",
+            "player": "Mauricio",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "美国",
+            "player": "Giovanni Reyna",
+            "type": "goal",
+            "note": "下半场补时"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 10,
+            "team": "巴拉圭",
+            "player": "Juan Jose Cáceres",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 53,
+            "team": "巴拉圭",
+            "player": "Miguel Almirón",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 59,
+            "team": "美国",
+            "player": "Tyler Adams",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 79,
+            "team": "巴拉圭",
+            "player": "Diego Gómez",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 88,
+            "team": "巴拉圭",
+            "player": "Alex Arce",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "巴拉圭",
+            "player": "Júnior Alonso",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 65.3,
+          "possession_away": 34.7,
+          "shots_home": 16,
+          "shots_away": 9,
+          "shots_on_target_home": 6,
+          "shots_on_target_away": 1,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 3,
+          "corners_away": 1,
+          "fouls_home": 13,
+          "fouls_away": 17,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 5,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "赛果来自公开赛后战报手动同步；技术统计待官方数据源补齐。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760417/paraguay-united-states",
+          "https://www.espn.com/soccer/video/_/gameId/760417",
+          "https://www.espn.com/soccer/report/_/gameId/760417",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760417"
+        ]
+      },
+      "espn_event_id": "760417"
+    },
+    {
+      "id": 5,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 67966,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 17,
+            "team": "瑞士",
+            "player": "Breel Embolo",
+            "type": "penalty"
+          },
+          {
+            "minute": 90,
+            "team": "卡塔尔",
+            "player": "Miro Muheim",
+            "type": "own_goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "卡塔尔",
+            "player": "Mahmoud Abunada",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 23,
+            "team": "卡塔尔",
+            "player": "Jassem Gaber",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 42,
+            "team": "瑞士",
+            "player": "Denis Zakaria",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 32.0,
+          "possession_away": 68.0,
+          "shots_home": 6,
+          "shots_away": 26,
+          "shots_on_target_home": 3,
+          "shots_on_target_away": 7,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 3,
+          "corners_away": 10,
+          "fouls_home": 12,
+          "fouls_away": 11,
+          "yellow_cards_home": 2,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760420/switzerland-qatar",
+          "https://www.espn.com/soccer/video/_/gameId/760420",
+          "https://www.espn.com/soccer/report/_/gameId/760420",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760420"
+        ]
+      },
+      "espn_event_id": "760420"
+    },
+    {
+      "id": 6,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 80663,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 21,
+            "team": "摩洛哥",
+            "player": "Ismael Saibari",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "巴西",
+            "player": "Vinícius Júnior",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 37,
+            "team": "巴西",
+            "player": "Casemiro",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 43,
+            "team": "巴西",
+            "player": "Roger Ibañez",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 51.4,
+          "possession_away": 48.6,
+          "shots_home": 12,
+          "shots_away": 14,
+          "shots_on_target_home": 5,
+          "shots_on_target_away": 3,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 6,
+          "corners_away": 2,
+          "fouls_home": 16,
+          "fouls_away": 14,
+          "yellow_cards_home": 2,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760419/morocco-brazil",
+          "https://www.espn.com/soccer/video/_/gameId/760419",
+          "https://www.espn.com/soccer/report/_/gameId/760419",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760419"
+        ]
+      },
+      "espn_event_id": "760419"
+    },
+    {
+      "id": 7,
+      "status": "completed",
+      "home_score": 0,
+      "away_score": 1,
+      "report": {
+        "attendance": 64146,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 28,
+            "team": "苏格兰",
+            "player": "John McGinn",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 39,
+            "team": "海地",
+            "player": "Jean-Ricner Bellegarde",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 46,
+            "team": "苏格兰",
+            "player": "Aaron Hickey",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "苏格兰",
+            "player": "Findlay Curtis",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "苏格兰",
+            "player": "Kenny McLean",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 53.7,
+          "possession_away": 46.3,
+          "shots_home": 15,
+          "shots_away": 9,
+          "shots_on_target_home": 2,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 3,
+          "fouls_home": 23,
+          "fouls_away": 21,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 3,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760418/scotland-haiti",
+          "https://www.espn.com/soccer/video/_/gameId/760418",
+          "https://www.espn.com/soccer/report/_/gameId/760418",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760418"
+        ]
+      },
+      "espn_event_id": "760418"
+    },
+    {
+      "id": 8,
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 0,
+      "report": {
+        "attendance": 52497,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 27,
+            "team": "澳大利亚",
+            "player": "Nestory Irankunda",
+            "type": "goal"
+          },
+          {
+            "minute": 75,
+            "team": "澳大利亚",
+            "player": "Connor Metcalfe",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 86,
+            "team": "土耳其",
+            "player": "Yunus Akgün",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 28.4,
+          "possession_away": 71.6,
+          "shots_home": 9,
+          "shots_away": 30,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 8,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 5,
+          "corners_away": 8,
+          "fouls_home": 12,
+          "fouls_away": 4,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760421/turkiye-australia",
+          "https://www.espn.com/soccer/video/_/gameId/760421",
+          "https://www.espn.com/soccer/report/_/gameId/760421",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760421"
+        ]
+      },
+      "espn_event_id": "760421"
+    },
+    {
+      "id": 9,
+      "status": "completed",
+      "home_score": 7,
+      "away_score": 1,
+      "report": {
+        "attendance": 68021,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 6,
+            "team": "德国",
+            "player": "Felix Nmecha",
+            "type": "goal"
+          },
+          {
+            "minute": 21,
+            "team": "库拉索",
+            "player": "Livano Comenencia",
+            "type": "goal"
+          },
+          {
+            "minute": 38,
+            "team": "德国",
+            "player": "Nico Schlotterbeck",
+            "type": "goal"
+          },
+          {
+            "minute": 45,
+            "team": "德国",
+            "player": "Kai Havertz",
+            "type": "penalty"
+          },
+          {
+            "minute": 47,
+            "team": "德国",
+            "player": "Jamal Musiala",
+            "type": "goal"
+          },
+          {
+            "minute": 68,
+            "team": "德国",
+            "player": "Nathaniel Brown",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "德国",
+            "player": "Deniz Undav",
+            "type": "goal"
+          },
+          {
+            "minute": 88,
+            "team": "德国",
+            "player": "Kai Havertz",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "stats": {
+          "possession_home": 64.6,
+          "possession_away": 35.4,
+          "shots_home": 26,
+          "shots_away": 8,
+          "shots_on_target_home": 12,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 8,
+          "corners_away": 1,
+          "fouls_home": 18,
+          "fouls_away": 11,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760422/curacao-germany",
+          "https://www.espn.com/soccer/video/_/gameId/760422",
+          "https://www.espn.com/soccer/report/_/gameId/760422",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760422"
+        ]
+      },
+      "espn_event_id": "760422"
+    },
+    {
+      "id": 10,
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 2,
+      "report": {
+        "attendance": 69285,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 51,
+            "team": "荷兰",
+            "player": "Virgil van Dijk",
+            "type": "goal"
+          },
+          {
+            "minute": 57,
+            "team": "日本",
+            "player": "Keito Nakamura",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "荷兰",
+            "player": "Crysencio Summerville",
+            "type": "goal"
+          },
+          {
+            "minute": 89,
+            "team": "日本",
+            "player": "Daichi Kamada",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 61,
+            "team": "荷兰",
+            "player": "Crysencio Summerville",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 83,
+            "team": "荷兰",
+            "player": "Memphis Depay",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "荷兰",
+            "player": "Micky van de Ven",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 59.8,
+          "possession_away": 40.2,
+          "shots_home": 10,
+          "shots_away": 10,
+          "shots_on_target_home": 6,
+          "shots_on_target_away": 3,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 5,
+          "corners_away": 4,
+          "fouls_home": 7,
+          "fouls_away": 7,
+          "yellow_cards_home": 3,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands",
+          "https://www.espn.com/soccer/video/_/gameId/760425",
+          "https://www.espn.com/soccer/report/_/gameId/760425",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760425"
+        ]
+      },
+      "espn_event_id": "760425"
+    },
+    {
+      "id": 11,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 0,
+      "report": {
+        "attendance": 68274,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 90,
+            "team": "科特迪瓦",
+            "player": "Amad Diallo",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 28,
+            "team": "科特迪瓦",
+            "player": "Seko Fofana",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 38,
+            "team": "科特迪瓦",
+            "player": "Franck Kessié",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 40,
+            "team": "科特迪瓦",
+            "player": "Guela Doué",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 73,
+            "team": "厄瓜多尔",
+            "player": "Jackson Porozo",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 48.4,
+          "possession_away": 51.6,
+          "shots_home": 15,
+          "shots_away": 12,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 1,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 3,
+          "corners_away": 6,
+          "fouls_home": 10,
+          "fouls_away": 13,
+          "yellow_cards_home": 3,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760423/ecuador-ivory-coast",
+          "https://www.espn.com/soccer/video/_/gameId/760423",
+          "https://www.espn.com/soccer/report/_/gameId/760423",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760423"
+        ]
+      },
+      "espn_event_id": "760423"
+    },
+    {
+      "id": 12,
+      "status": "completed",
+      "home_score": 5,
+      "away_score": 1,
+      "report": {
+        "attendance": 0,
+        "referee": "待官方确认",
+        "player_of_match": "Alexander Isak",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "瑞典",
+            "player": "Yasin Ayari",
+            "type": "goal"
+          },
+          {
+            "minute": 30,
+            "team": "瑞典",
+            "player": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "突尼斯",
+            "player": "Omar Rekik",
+            "type": "goal"
+          },
+          {
+            "minute": 59,
+            "team": "瑞典",
+            "player": "Viktor Gyökeres",
+            "assist": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 84,
+            "team": "瑞典",
+            "player": "Mattias Svanberg",
+            "assist": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "瑞典",
+            "player": "Yasin Ayari",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 54,
+            "team": "突尼斯",
+            "player": "Rani Khedira",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 48.7,
+          "possession_away": 51.3,
+          "shots_home": 13,
+          "shots_away": 6,
+          "shots_on_target_home": 7,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 2,
+          "fouls_home": 10,
+          "fouls_away": 8,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "助攻数据来自人工赛后校正；比分与进球事件会继续由官方实时源自动覆盖校验。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760424/tunisia-sweden",
+          "https://www.espn.com/soccer/video/_/gameId/760424",
+          "https://www.espn.com/soccer/report/_/gameId/760424",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760424"
+        ]
+      },
+      "espn_event_id": "760424"
+    },
+    {
+      "id": 13,
+      "status": "completed",
+      "home_score": 0,
+      "away_score": 0,
+      "report": {
+        "attendance": 67640,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "佛得角",
+            "player": "Sidny Lopes Cabral",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "西班牙",
+            "player": "Pedri ",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 74.3,
+          "possession_away": 25.7,
+          "shots_home": 27,
+          "shots_away": 6,
+          "shots_on_target_home": 7,
+          "shots_on_target_away": 1,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 11,
+          "corners_away": 1,
+          "fouls_home": 10,
+          "fouls_away": 1,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760428/cape-verde-spain",
+          "https://www.espn.com/soccer/video/_/gameId/760428",
+          "https://www.espn.com/soccer/report/_/gameId/760428",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760428"
+        ]
+      },
+      "espn_event_id": "760428"
+    },
+    {
+      "id": 14,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 66775,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 20,
+            "team": "埃及",
+            "player": "Emam Ashour",
+            "type": "goal"
+          },
+          {
+            "minute": 66,
+            "team": "比利时",
+            "player": "Mohamed Hany",
+            "type": "own_goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "埃及",
+            "player": "Marawan Attia",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 14,
+            "team": "比利时",
+            "player": "Timothy Castagne",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 34,
+            "team": "埃及",
+            "player": "Ahmed Fatouh",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 75,
+            "team": "比利时",
+            "player": "Maxim De Cuyper",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 53.6,
+          "possession_away": 46.4,
+          "shots_home": 15,
+          "shots_away": 14,
+          "shots_on_target_home": 3,
+          "shots_on_target_away": 3,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 2,
+          "corners_away": 7,
+          "fouls_home": 15,
+          "fouls_away": 15,
+          "yellow_cards_home": 2,
+          "yellow_cards_away": 2,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760426/egypt-belgium",
+          "https://www.espn.com/soccer/video/_/gameId/760426",
+          "https://www.espn.com/soccer/report/_/gameId/760426",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760426"
+        ]
+      },
+      "espn_event_id": "760426"
+    },
+    {
+      "id": 15,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 62764,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 41,
+            "team": "沙特阿拉伯",
+            "player": "Abdulelah Al-Amri",
+            "type": "goal"
+          },
+          {
+            "minute": 80,
+            "team": "乌拉圭",
+            "player": "Maxi Araújo",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 44,
+            "team": "沙特阿拉伯",
+            "player": "Abdulelah Al-Amri",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 33.2,
+          "possession_away": 66.8,
+          "shots_home": 7,
+          "shots_away": 27,
+          "shots_on_target_home": 3,
+          "shots_on_target_away": 10,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 14,
+          "fouls_home": 11,
+          "fouls_away": 6,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760429/uruguay-saudi-arabia",
+          "https://www.espn.com/soccer/video/_/gameId/760429",
+          "https://www.espn.com/soccer/report/_/gameId/760429",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760429"
+        ]
+      },
+      "espn_event_id": "760429"
+    },
+    {
+      "id": 16,
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 2,
+      "report": {
+        "attendance": 70108,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 7,
+            "team": "新西兰",
+            "player": "Elijah Just",
+            "type": "goal"
+          },
+          {
+            "minute": 32,
+            "team": "伊朗",
+            "player": "Ramin Rezaeian",
+            "type": "goal"
+          },
+          {
+            "minute": 54,
+            "team": "新西兰",
+            "player": "Elijah Just",
+            "type": "goal"
+          },
+          {
+            "minute": 64,
+            "team": "伊朗",
+            "player": "Mohammad Mohebbi",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 89,
+            "team": "伊朗",
+            "player": "Ehsan Hajsafi",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 48.5,
+          "possession_away": 51.5,
+          "shots_home": 17,
+          "shots_away": 14,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 8,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 1,
+          "fouls_home": 10,
+          "fouls_away": 8,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760427/new-zealand-iran",
+          "https://www.espn.com/soccer/video/_/gameId/760427",
+          "https://www.espn.com/soccer/report/_/gameId/760427",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760427"
+        ]
+      },
+      "espn_event_id": "760427"
+    },
+    {
+      "id": 17,
+      "status": "completed",
+      "home_score": 3,
+      "away_score": 1,
+      "report": {
+        "attendance": 80545,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 66,
+            "team": "法国",
+            "player": "Kylian Mbappé",
+            "type": "goal"
+          },
+          {
+            "minute": 82,
+            "team": "法国",
+            "player": "Bradley Barcola",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "塞内加尔",
+            "player": "Ibrahim Mbaye",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "法国",
+            "player": "Kylian Mbappé",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "stats": {
+          "possession_home": 53.4,
+          "possession_away": 46.6,
+          "shots_home": 11,
+          "shots_away": 6,
+          "shots_on_target_home": 8,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 6,
+          "corners_away": 4,
+          "fouls_home": 5,
+          "fouls_away": 9,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760432/senegal-france",
+          "https://www.espn.com/soccer/video/_/gameId/760432",
+          "https://www.espn.com/soccer/report/_/gameId/760432",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760432"
+        ]
+      },
+      "espn_event_id": "760432"
+    },
+    {
+      "id": 18,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 4,
+      "report": {
+        "attendance": 63106,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 29,
+            "team": "挪威",
+            "player": "Erling Haaland",
+            "type": "goal"
+          },
+          {
+            "minute": 39,
+            "team": "伊拉克",
+            "player": "Aymen Hussein",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "挪威",
+            "player": "Erling Haaland",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "挪威",
+            "player": "Leo Østigard",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "挪威",
+            "player": "Aymen Hussein",
+            "type": "own_goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 86,
+            "team": "伊拉克",
+            "player": "Zaid Tahseen",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 38.7,
+          "possession_away": 61.3,
+          "shots_home": 11,
+          "shots_away": 12,
+          "shots_on_target_home": 1,
+          "shots_on_target_away": 5,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 2,
+          "corners_away": 5,
+          "fouls_home": 12,
+          "fouls_away": 13,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760430/norway-iraq",
+          "https://www.espn.com/soccer/video/_/gameId/760430",
+          "https://www.espn.com/soccer/report/_/gameId/760430",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760430"
+        ]
+      },
+      "espn_event_id": "760430"
+    },
+    {
+      "id": 19,
+      "status": "completed",
+      "home_score": 3,
+      "away_score": 0,
+      "report": {
+        "attendance": 69045,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 17,
+            "team": "阿根廷",
+            "player": "Lionel Messi",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "阿根廷",
+            "player": "Lionel Messi",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "阿根廷",
+            "player": "Lionel Messi",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "stats": {
+          "possession_home": 47.8,
+          "possession_away": 52.2,
+          "shots_home": 10,
+          "shots_away": 7,
+          "shots_on_target_home": 6,
+          "shots_on_target_away": 1,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 2,
+          "corners_away": 2,
+          "fouls_home": 13,
+          "fouls_away": 8,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760433/algeria-argentina",
+          "https://www.espn.com/soccer/video/_/gameId/760433",
+          "https://www.espn.com/soccer/report/_/gameId/760433",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760433"
+        ]
+      },
+      "espn_event_id": "760433"
+    },
+    {
+      "id": 20,
+      "status": "completed",
+      "home_score": 3,
+      "away_score": 1,
+      "report": {
+        "attendance": 68527,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 21,
+            "team": "奥地利",
+            "player": "Romano Schmid",
+            "type": "goal"
+          },
+          {
+            "minute": 50,
+            "team": "约旦",
+            "player": "Ali Olwan",
+            "type": "goal"
+          },
+          {
+            "minute": 76,
+            "team": "奥地利",
+            "player": "Yazan Al-Arab",
+            "type": "own_goal"
+          },
+          {
+            "minute": 90,
+            "team": "奥地利",
+            "player": "Marko Arnautovic",
+            "type": "penalty"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 77,
+            "team": "奥地利",
+            "player": "Marcel Sabitzer",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 63.2,
+          "possession_away": 36.8,
+          "shots_home": 11,
+          "shots_away": 11,
+          "shots_on_target_home": 4,
+          "shots_on_target_away": 4,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 4,
+          "corners_away": 3,
+          "fouls_home": 12,
+          "fouls_away": 7,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760431/jordan-austria",
+          "https://www.espn.com/soccer/video/_/gameId/760431",
+          "https://www.espn.com/soccer/report/_/gameId/760431",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760431"
+        ]
+      },
+      "espn_event_id": "760431"
+    },
+    {
+      "id": 21,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 68777,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 6,
+            "team": "葡萄牙",
+            "player": "João Neves",
+            "type": "goal"
+          },
+          {
+            "minute": 45,
+            "team": "民主刚果",
+            "player": "Yoane Wissa",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 13,
+            "team": "葡萄牙",
+            "player": "Bernardo Silva",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 32,
+            "team": "民主刚果",
+            "player": "Chancel Mbemba",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 88,
+            "team": "葡萄牙",
+            "player": "Nélson Semedo",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "葡萄牙",
+            "player": "Tomás Araújo",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 75.4,
+          "possession_away": 24.6,
+          "shots_home": 7,
+          "shots_away": 8,
+          "shots_on_target_home": 1,
+          "shots_on_target_away": 2,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 5,
+          "corners_away": 4,
+          "fouls_home": 9,
+          "fouls_away": 10,
+          "yellow_cards_home": 3,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760435/congo-dr-portugal",
+          "https://www.espn.com/soccer/video/_/gameId/760435",
+          "https://www.espn.com/soccer/report/_/gameId/760435",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760435"
+        ]
+      },
+      "espn_event_id": "760435"
+    },
+    {
+      "id": 22,
+      "status": "completed",
+      "home_score": 4,
+      "away_score": 2,
+      "report": {
+        "attendance": 70389,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 12,
+            "team": "英格兰",
+            "player": "Harry Kane",
+            "type": "penalty"
+          },
+          {
+            "minute": 36,
+            "team": "克罗地亚",
+            "player": "Martin Baturina",
+            "type": "goal"
+          },
+          {
+            "minute": 42,
+            "team": "英格兰",
+            "player": "Harry Kane",
+            "type": "goal"
+          },
+          {
+            "minute": 45,
+            "team": "克罗地亚",
+            "player": "Petar Musa",
+            "type": "goal"
+          },
+          {
+            "minute": 47,
+            "team": "英格兰",
+            "player": "Jude Bellingham",
+            "type": "goal"
+          },
+          {
+            "minute": 85,
+            "team": "英格兰",
+            "player": "Marcus Rashford",
+            "type": "goal"
+          }
+        ],
+        "cards": [],
+        "stats": {
+          "possession_home": 51.7,
+          "possession_away": 48.3,
+          "shots_home": 22,
+          "shots_away": 10,
+          "shots_on_target_home": 11,
+          "shots_on_target_away": 5,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 8,
+          "corners_away": 2,
+          "fouls_home": 10,
+          "fouls_away": 12,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760437/croatia-england",
+          "https://www.espn.com/soccer/video/_/gameId/760437",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760437"
+        ]
+      },
+      "espn_event_id": "760437"
+    },
+    {
+      "id": 23,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 0,
+      "report": {
+        "attendance": 42942,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 90,
+            "team": "加纳",
+            "player": "Caleb Yirenkyi",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 16,
+            "team": "加纳",
+            "player": "Caleb Yirenkyi",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 72,
+            "team": "巴拿马",
+            "player": "César Blackman",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 90,
+            "team": "巴拿马",
+            "player": "Carlos Harvey",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 37.9,
+          "possession_away": 62.1,
+          "shots_home": 8,
+          "shots_away": 11,
+          "shots_on_target_home": 2,
+          "shots_on_target_away": 4,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 2,
+          "corners_away": 2,
+          "fouls_home": 9,
+          "fouls_away": 11,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 2,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760434/panama-ghana",
+          "https://www.espn.com/soccer/video/_/gameId/760434",
+          "https://www.espn.com/soccer/report/_/gameId/760434",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760434"
+        ]
+      },
+      "espn_event_id": "760434"
+    },
+    {
+      "id": 24,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 3,
+      "report": {
+        "attendance": 80824,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "lineups": [],
+        "goals": [
+          {
+            "minute": 40,
+            "team": "哥伦比亚",
+            "player": "Daniel Muñoz",
+            "type": "goal"
+          },
+          {
+            "minute": 60,
+            "team": "乌兹别克斯坦",
+            "player": "Abbosbek Fayzullaev",
+            "type": "goal"
+          },
+          {
+            "minute": 65,
+            "team": "哥伦比亚",
+            "player": "Luis Díaz",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "哥伦比亚",
+            "player": "Jáminton Campaz",
+            "type": "goal"
+          }
+        ],
+        "cards": [
+          {
+            "minute": 7,
+            "team": "哥伦比亚",
+            "player": "Johan Mojica",
+            "type": "yellow_card"
+          },
+          {
+            "minute": 34,
+            "team": "乌兹别克斯坦",
+            "player": "Abdukodir Khusanov",
+            "type": "yellow_card"
+          }
+        ],
+        "stats": {
+          "possession_home": 38.6,
+          "possession_away": 61.4,
+          "shots_home": 8,
+          "shots_away": 15,
+          "shots_on_target_home": 2,
+          "shots_on_target_away": 4,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 3,
+          "corners_away": 4,
+          "fouls_home": 14,
+          "fouls_away": 11,
+          "yellow_cards_home": 1,
+          "yellow_cards_away": 1,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "ESPN scoreboard 自动同步。"
+        ],
+        "source_urls": [
+          "https://www.espn.com/soccer/match/_/gameId/760436/colombia-uzbekistan",
+          "https://www.espn.com/soccer/video/_/gameId/760436",
+          "https://www.espn.com/soccer/report/_/gameId/760436",
+          "https://www.espn.com/soccer/matchstats/_/gameId/760436"
+        ]
+      },
+      "espn_event_id": "760436"
+    }
+  ]
+}

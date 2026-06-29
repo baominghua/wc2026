@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "name": "墨西哥",
+    "code": "MEX",
+    "group": "A",
+    "fifa_rank": 14,
+    "elo_rating": 1830,
+    "flag": "🇲🇽",
+    "flagCode": "mx"
+  },
+  {
+    "id": 2,
+    "name": "南非",
+    "code": "RSA",
+    "group": "A",
+    "fifa_rank": 60,
+    "elo_rating": 1520,
+    "flag": "🇿🇦",
+    "flagCode": "za"
+  },
+  {
+    "id": 3,
+    "name": "韩国",
+    "code": "KOR",
+    "group": "A",
+    "fifa_rank": 25,
+    "elo_rating": 1720,
+    "flag": "🇰🇷",
+    "flagCode": "kr"
+  },
+  {
+    "id": 4,
+    "name": "捷克",
+    "code": "CZE",
+    "group": "A",
+    "fifa_rank": 40,
+    "elo_rating": 1650,
+    "flag": "🇨🇿",
+    "flagCode": "cz"
+  },
+  {
+    "id": 5,
+    "name": "加拿大",
+    "code": "CAN",
+    "group": "B",
+    "fifa_rank": 30,
+    "elo_rating": 1700,
+    "flag": "🇨🇦",
+    "flagCode": "ca"
+  },
+  {
+    "id": 6,
+    "name": "波黑",
+    "code": "BIH",
+    "group": "B",
+    "fifa_rank": 64,
+    "elo_rating": 1580,
+    "flag": "🇧🇦",
+    "flagCode": "ba"
+  },
+  {
+    "id": 7,
+    "name": "卡塔尔",
+    "code": "QAT",
+    "group": "B",
+    "fifa_rank": 56,
+    "elo_rating": 1610,
+    "flag": "🇶🇦",
+    "flagCode": "qa"
+  },
+  {
+    "id": 8,
+    "name": "瑞士",
+    "code": "SUI",
+    "group": "B",
+    "fifa_rank": 19,
+    "elo_rating": 1770,
+    "flag": "🇨🇭",
+    "flagCode": "ch"
+  },
+  {
+    "id": 9,
+    "name": "巴西",
+    "code": "BRA",
+    "group": "C",
+    "fifa_rank": 6,
+    "elo_rating": 2080,
+    "flag": "🇧🇷",
+    "flagCode": "br"
+  },
+  {
+    "id": 10,
+    "name": "摩洛哥",
+    "code": "MAR",
+    "group": "C",
+    "fifa_rank": 7,
+    "elo_rating": 1940,
+    "flag": "🇲🇦",
+    "flagCode": "ma"
+  },
+  {
+    "id": 11,
+    "name": "海地",
+    "code": "HAI",
+    "group": "C",
+    "fifa_rank": 83,
+    "elo_rating": 1440,
+    "flag": "🇭🇹",
+    "flagCode": "ht"
+  },
+  {
+    "id": 12,
+    "name": "苏格兰",
+    "code": "SCO",
+    "group": "C",
+    "fifa_rank": 42,
+    "elo_rating": 1620,
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "flagCode": "gb-sct"
+  },
+  {
+    "id": 13,
+    "name": "美国",
+    "code": "USA",
+    "group": "D",
+    "fifa_rank": 17,
+    "elo_rating": 1800,
+    "flag": "🇺🇸",
+    "flagCode": "us"
+  },
+  {
+    "id": 14,
+    "name": "巴拉圭",
+    "code": "PAR",
+    "group": "D",
+    "fifa_rank": 41,
+    "elo_rating": 1550,
+    "flag": "🇵🇾",
+    "flagCode": "py"
+  },
+  {
+    "id": 15,
+    "name": "澳大利亚",
+    "code": "AUS",
+    "group": "D",
+    "fifa_rank": 27,
+    "elo_rating": 1710,
+    "flag": "🇦🇺",
+    "flagCode": "au"
+  },
+  {
+    "id": 16,
+    "name": "土耳其",
+    "code": "TUR",
+    "group": "D",
+    "fifa_rank": 22,
+    "elo_rating": 1660,
+    "flag": "🇹🇷",
+    "flagCode": "tr"
+  },
+  {
+    "id": 17,
+    "name": "德国",
+    "code": "GER",
+    "group": "E",
+    "fifa_rank": 10,
+    "elo_rating": 1960,
+    "flag": "🇩🇪",
+    "flagCode": "de"
+  },
+  {
+    "id": 18,
+    "name": "库拉索",
+    "code": "CUW",
+    "group": "E",
+    "fifa_rank": 82,
+    "elo_rating": 1430,
+    "flag": "🇨🇼",
+    "flagCode": "cw"
+  },
+  {
+    "id": 19,
+    "name": "科特迪瓦",
+    "code": "CIV",
+    "group": "E",
+    "fifa_rank": 33,
+    "elo_rating": 1680,
+    "flag": "🇨🇮",
+    "flagCode": "ci"
+  },
+  {
+    "id": 20,
+    "name": "厄瓜多尔",
+    "code": "ECU",
+    "group": "E",
+    "fifa_rank": 23,
+    "elo_rating": 1720,
+    "flag": "🇪🇨",
+    "flagCode": "ec"
+  },
+  {
+    "id": 21,
+    "name": "荷兰",
+    "code": "NED",
+    "group": "F",
+    "fifa_rank": 8,
+    "elo_rating": 1980,
+    "flag": "🇳🇱",
+    "flagCode": "nl"
+  },
+  {
+    "id": 22,
+    "name": "日本",
+    "code": "JPN",
+    "group": "F",
+    "fifa_rank": 18,
+    "elo_rating": 1760,
+    "flag": "🇯🇵",
+    "flagCode": "jp"
+  },
+  {
+    "id": 23,
+    "name": "瑞典",
+    "code": "SWE",
+    "group": "F",
+    "fifa_rank": 38,
+    "elo_rating": 1630,
+    "flag": "🇸🇪",
+    "flagCode": "se"
+  },
+  {
+    "id": 24,
+    "name": "突尼斯",
+    "code": "TUN",
+    "group": "F",
+    "fifa_rank": 45,
+    "elo_rating": 1620,
+    "flag": "🇹🇳",
+    "flagCode": "tn"
+  },
+  {
+    "id": 25,
+    "name": "比利时",
+    "code": "BEL",
+    "group": "G",
+    "fifa_rank": 9,
+    "elo_rating": 1950,
+    "flag": "🇧🇪",
+    "flagCode": "be"
+  },
+  {
+    "id": 26,
+    "name": "埃及",
+    "code": "EGY",
+    "group": "G",
+    "fifa_rank": 29,
+    "elo_rating": 1690,
+    "flag": "🇪🇬",
+    "flagCode": "eg"
+  },
+  {
+    "id": 27,
+    "name": "伊朗",
+    "code": "IRN",
+    "group": "G",
+    "fifa_rank": 20,
+    "elo_rating": 1730,
+    "flag": "🇮🇷",
+    "flagCode": "ir"
+  },
+  {
+    "id": 28,
+    "name": "新西兰",
+    "code": "NZL",
+    "group": "G",
+    "fifa_rank": 85,
+    "elo_rating": 1400,
+    "flag": "🇳🇿",
+    "flagCode": "nz"
+  },
+  {
+    "id": 29,
+    "name": "西班牙",
+    "code": "ESP",
+    "group": "H",
+    "fifa_rank": 2,
+    "elo_rating": 2100,
+    "flag": "🇪🇸",
+    "flagCode": "es"
+  },
+  {
+    "id": 30,
+    "name": "佛得角",
+    "code": "CPV",
+    "group": "H",
+    "fifa_rank": 67,
+    "elo_rating": 1490,
+    "flag": "🇨🇻",
+    "flagCode": "cv"
+  },
+  {
+    "id": 31,
+    "name": "沙特阿拉伯",
+    "code": "KSA",
+    "group": "H",
+    "fifa_rank": 61,
+    "elo_rating": 1560,
+    "flag": "🇸🇦",
+    "flagCode": "sa"
+  },
+  {
+    "id": 32,
+    "name": "乌拉圭",
+    "code": "URU",
+    "group": "H",
+    "fifa_rank": 16,
+    "elo_rating": 1790,
+    "flag": "🇺🇾",
+    "flagCode": "uy"
+  },
+  {
+    "id": 33,
+    "name": "法国",
+    "code": "FRA",
+    "group": "I",
+    "fifa_rank": 3,
+    "elo_rating": 2120,
+    "flag": "🇫🇷",
+    "flagCode": "fr"
+  },
+  {
+    "id": 34,
+    "name": "塞内加尔",
+    "code": "SEN",
+    "group": "I",
+    "fifa_rank": 15,
+    "elo_rating": 1780,
+    "flag": "🇸🇳",
+    "flagCode": "sn"
+  },
+  {
+    "id": 35,
+    "name": "伊拉克",
+    "code": "IRQ",
+    "group": "I",
+    "fifa_rank": 57,
+    "elo_rating": 1530,
+    "flag": "🇮🇶",
+    "flagCode": "iq"
+  },
+  {
+    "id": 36,
+    "name": "挪威",
+    "code": "NOR",
+    "group": "I",
+    "fifa_rank": 31,
+    "elo_rating": 1640,
+    "flag": "🇳🇴",
+    "flagCode": "no"
+  },
+  {
+    "id": 37,
+    "name": "阿根廷",
+    "code": "ARG",
+    "group": "J",
+    "fifa_rank": 1,
+    "elo_rating": 2100,
+    "flag": "🇦🇷",
+    "flagCode": "ar"
+  },
+  {
+    "id": 38,
+    "name": "阿尔及利亚",
+    "code": "ALG",
+    "group": "J",
+    "fifa_rank": 28,
+    "elo_rating": 1600,
+    "flag": "🇩🇿",
+    "flagCode": "dz"
+  },
+  {
+    "id": 39,
+    "name": "奥地利",
+    "code": "AUT",
+    "group": "J",
+    "fifa_rank": 24,
+    "elo_rating": 1700,
+    "flag": "🇦🇹",
+    "flagCode": "at"
+  },
+  {
+    "id": 40,
+    "name": "约旦",
+    "code": "JOR",
+    "group": "J",
+    "fifa_rank": 63,
+    "elo_rating": 1490,
+    "flag": "🇯🇴",
+    "flagCode": "jo"
+  },
+  {
+    "id": 41,
+    "name": "葡萄牙",
+    "code": "POR",
+    "group": "K",
+    "fifa_rank": 5,
+    "elo_rating": 2020,
+    "flag": "🇵🇹",
+    "flagCode": "pt"
+  },
+  {
+    "id": 42,
+    "name": "民主刚果",
+    "code": "COD",
+    "group": "K",
+    "fifa_rank": 46,
+    "elo_rating": 1580,
+    "flag": "🇨🇩",
+    "flagCode": "cd"
+  },
+  {
+    "id": 43,
+    "name": "乌兹别克斯坦",
+    "code": "UZB",
+    "group": "K",
+    "fifa_rank": 50,
+    "elo_rating": 1520,
+    "flag": "🇺🇿",
+    "flagCode": "uz"
+  },
+  {
+    "id": 44,
+    "name": "哥伦比亚",
+    "code": "COL",
+    "group": "K",
+    "fifa_rank": 13,
+    "elo_rating": 1800,
+    "flag": "🇨🇴",
+    "flagCode": "co"
+  },
+  {
+    "id": 45,
+    "name": "英格兰",
+    "code": "ENG",
+    "group": "L",
+    "fifa_rank": 4,
+    "elo_rating": 2050,
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "flagCode": "gb-eng"
+  },
+  {
+    "id": 46,
+    "name": "克罗地亚",
+    "code": "CRO",
+    "group": "L",
+    "fifa_rank": 11,
+    "elo_rating": 1880,
+    "flag": "🇭🇷",
+    "flagCode": "hr"
+  },
+  {
+    "id": 47,
+    "name": "加纳",
+    "code": "GHA",
+    "group": "L",
+    "fifa_rank": 73,
+    "elo_rating": 1540,
+    "flag": "🇬🇭",
+    "flagCode": "gh"
+  },
+  {
+    "id": 48,
+    "name": "巴拿马",
+    "code": "PAN",
+    "group": "L",
+    "fifa_rank": 34,
+    "elo_rating": 1530,
+    "flag": "🇵🇦",
+    "flagCode": "pa"
+  }
+]

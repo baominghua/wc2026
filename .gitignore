@@ -1,0 +1,50 @@
+# Local dependency folders
+frontend/node_modules/
+frontend/dist/
+backend/venv/
+.venvs/
+
+# Local build, cache, and generated artifacts
+.pytest_cache/
+.codex-artifacts/
+.workbuddy/
+artifacts/
+wc2026-codex-video/
+*.tar.gz
+*.zip
+
+# Runtime logs
+*.log
+*.err.log
+*.out.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python cache and local tooling cache
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+
+# Local databases and mutable runtime state
+backend/wc2026.db
+backend/data/wc2026.db
+*.sqlite
+*.sqlite3
+
+# Local environment files. Keep checked-in *.example templates.
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+backend/.env
+backend/.env.local
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

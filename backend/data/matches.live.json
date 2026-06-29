@@ -1,0 +1,145 @@
+{
+  "source": "public_match_reports_manual_sync",
+  "last_updated": "2026-06-15T12:40:00+08:00",
+  "matches": [
+    {
+      "id": 3,
+      "status": "completed",
+      "home_score": 1,
+      "away_score": 1,
+      "report": {
+        "attendance": 43002,
+        "referee": "Facundo Tello",
+        "player_of_match": "待官方确认",
+        "goals": [
+          {
+            "minute": 21,
+            "team": "波黑",
+            "player": "Jovo Lukic",
+            "type": "goal"
+          },
+          {
+            "minute": 78,
+            "team": "加拿大",
+            "player": "Cyle Larin",
+            "assist": "Promise David",
+            "type": "goal"
+          }
+        ],
+        "lineups": [],
+        "stats": {},
+        "notes": [
+          "赛果来自公开赛后战报手动同步；技术统计待官方数据源补齐。"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "status": "completed",
+      "home_score": 4,
+      "away_score": 1,
+      "report": {
+        "attendance": 70209,
+        "referee": "Mohammed Al Hoaish",
+        "player_of_match": "Folarin Balogun",
+        "goals": [
+          {
+            "minute": 7,
+            "team": "美国",
+            "player": "Damian Bobadilla",
+            "type": "own_goal",
+            "note": "乌龙球"
+          },
+          {
+            "minute": 31,
+            "team": "美国",
+            "player": "Folarin Balogun",
+            "type": "goal"
+          },
+          {
+            "minute": 45,
+            "team": "美国",
+            "player": "Folarin Balogun",
+            "assist": "Christian Pulisic",
+            "type": "goal",
+            "note": "上半场补时"
+          },
+          {
+            "minute": 73,
+            "team": "巴拉圭",
+            "player": "Mauricio",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "美国",
+            "player": "Giovanni Reyna",
+            "type": "goal",
+            "note": "下半场补时"
+          }
+        ],
+        "lineups": [],
+        "stats": {},
+        "notes": [
+          "赛果来自公开赛后战报手动同步；技术统计待官方数据源补齐。"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "status": "completed",
+      "home_score": 5,
+      "away_score": 1,
+      "report": {
+        "attendance": 0,
+        "referee": "待官方确认",
+        "player_of_match": "Alexander Isak",
+        "goals": [
+          {
+            "minute": 7,
+            "team": "瑞典",
+            "player": "Yasin Ayari",
+            "type": "goal"
+          },
+          {
+            "minute": 30,
+            "team": "瑞典",
+            "player": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 43,
+            "team": "突尼斯",
+            "player": "Omar Rekik",
+            "type": "goal"
+          },
+          {
+            "minute": 59,
+            "team": "瑞典",
+            "player": "Viktor Gyökeres",
+            "assist": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 84,
+            "team": "瑞典",
+            "player": "Mattias Svanberg",
+            "assist": "Alexander Isak",
+            "type": "goal"
+          },
+          {
+            "minute": 90,
+            "team": "瑞典",
+            "player": "Yasin Ayari",
+            "type": "goal"
+          }
+        ],
+        "lineups": [],
+        "stats": {},
+        "notes": [
+          "助攻数据来自人工赛后校正；比分与进球事件会继续由官方实时源自动覆盖校验。"
+        ]
+      }
+    }
+  ]
+}

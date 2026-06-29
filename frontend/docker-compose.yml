@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  wc2026-frontend:
+    build: .
+    container_name: wc2026-frontend
+    ports:
+      - "2026:80"
+    restart: unless-stopped
+    networks:
+      - wc2026-net
+
+networks:
+  wc2026-net:
+    driver: bridge

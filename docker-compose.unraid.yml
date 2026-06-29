@@ -1,0 +1,80 @@
+services:
+  backend:
+    build:
+      context: ${PROJECT_DIR:-/mnt/user/appdata/wc2026}/backend
+      dockerfile: Dockerfile.unraid
+      args:
+        PYTHON_BASE_IMAGE: ${PYTHON_BASE_IMAGE:-public.ecr.aws/docker/library/python:3.13-slim}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-}
+    image: wc2026-backend:latest
+    container_name: wc2026-backend
+    environment:
+      PORT: "8000"
+      DATABASE_URL: "sqlite+aiosqlite:////app/data/wc2026.db"
+      AUTH_ENABLED: "${AUTH_ENABLED:-true}"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:-}"
+      AUTH_SESSION_SECRET: "${AUTH_SESSION_SECRET:-}"
+      AUTH_SESSION_MAX_AGE_SECONDS: "${AUTH_SESSION_MAX_AGE_SECONDS:-604800}"
+      AUTH_COOKIE_SECURE: "${AUTH_COOKIE_SECURE:-false}"
+      LIVE_SYNC_ENABLED: "${LIVE_SYNC_ENABLED:-true}"
+      LIVE_SYNC_INTERVAL_SECONDS: "${LIVE_SYNC_INTERVAL_SECONDS:-60}"
+      LIVE_FEED_STALE_SECONDS: "${LIVE_FEED_STALE_SECONDS:-43200}"
+      LOCAL_MATCH_FEED_ENABLED: "${LOCAL_MATCH_FEED_ENABLED:-true}"
+      MATCH_FEED_PATH: "/app/data/matches.live.json"
+      MATCH_FEED_URL: "${MATCH_FEED_URL:-}"
+      MATCH_RESULTS_BACKFILL_PATH: "/app/data/matches.public-results.json"
+      MATCH_RESULTS_BACKFILL_URL: "${MATCH_RESULTS_BACKFILL_URL:-}"
+      ESPN_SCOREBOARD_ENABLED: "${ESPN_SCOREBOARD_ENABLED:-false}"
+      ESPN_SCOREBOARD_START_DATE: "${ESPN_SCOREBOARD_START_DATE:-20260611}"
+      ESPN_SCOREBOARD_MAX_DAYS: "${ESPN_SCOREBOARD_MAX_DAYS:-60}"
+      ESPN_SCOREBOARD_DAYS_BACK: "${ESPN_SCOREBOARD_DAYS_BACK:-14}"
+      ESPN_SCOREBOARD_DAYS_FORWARD: "${ESPN_SCOREBOARD_DAYS_FORWARD:-2}"
+      ESPN_SCOREBOARD_TIMEOUT_SECONDS: "${ESPN_SCOREBOARD_TIMEOUT_SECONDS:-8}"
+      ESPN_SCOREBOARD_MAX_WORKERS: "${ESPN_SCOREBOARD_MAX_WORKERS:-6}"
+      API_FOOTBALL_ENABLED: "${API_FOOTBALL_ENABLED:-true}"
+      API_FOOTBALL_KEY: "${API_FOOTBALL_KEY:-}"
+      API_FOOTBALL_LEAGUE_ID: "${API_FOOTBALL_LEAGUE_ID:-1}"
+      API_FOOTBALL_SEASON: "${API_FOOTBALL_SEASON:-2026}"
+      SPORTMONKS_ENABLED: "${SPORTMONKS_ENABLED:-true}"
+      SPORTMONKS_TOKEN: "${SPORTMONKS_TOKEN:-}"
+      SPORTMONKS_API_TOKEN: "${SPORTMONKS_API_TOKEN:-}"
+      SPORTMONKS_TIMEOUT_SECONDS: "${SPORTMONKS_TIMEOUT_SECONDS:-12}"
+      SPORTMONKS_TEAM_IDS_JSON: "${SPORTMONKS_TEAM_IDS_JSON:-}"
+      INJURY_FEED_PATH: "/app/data/injuries.json"
+    volumes:
+      - ${PROJECT_DIR:-/mnt/user/appdata/wc2026}/backend/data:/app/data
+    expose:
+      - "8000"
+    restart: unless-stopped
+    networks:
+      - wc2026-net
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ${PROJECT_DIR:-/mnt/user/appdata/wc2026}/frontend
+      dockerfile: Dockerfile.unraid
+      args:
+        NPM_REGISTRY: ${NPM_REGISTRY:-}
+    image: wc2026-frontend:latest
+    container_name: wc2026-frontend
+    ports:
+      - "0.0.0.0:${APP_PORT:-2026}:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - wc2026-net
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  wc2026-net:
+    driver: bridge

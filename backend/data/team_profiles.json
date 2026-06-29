@@ -1,0 +1,2699 @@
+{
+  "feature_source_match_count": 198,
+  "fixture_match_count": 104,
+  "generated_at": "2026-06-28T05:52:01.419933+00:00",
+  "match_count": 104,
+  "profile_count": 48,
+  "profiles": {
+    "乌兹别克斯坦": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": -3.0,
+        "avg_goals_against": 3.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 0.0,
+        "avg_shots_diff": -11.0,
+        "avg_shots_on_target_diff": -4.0,
+        "latest_score": "1-3 vs 民主刚果",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-28T07:30:00+08:00",
+      "last_match_id": 70,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "乌兹别克斯坦近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "乌兹别克斯坦近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip"
+      ],
+      "team": "乌兹别克斯坦",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "乌拉圭": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 1,
+        "risk": "watch",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": -0.33,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 1.0,
+        "avg_points": 0.67,
+        "avg_shots_diff": 8.0,
+        "avg_shots_on_target_diff": 1.67,
+        "latest_score": "0-1 vs 西班牙",
+        "score": 5.74
+      },
+      "last_match_date": "2026-06-27T08:00:00+08:00",
+      "last_match_id": 64,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "乌拉圭近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "乌拉圭纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "乌拉圭样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "乌拉圭近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "乌拉圭纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "乌拉圭样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "乌拉圭",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "伊拉克": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 2,
+        "risk": "watch",
+        "yellow_cards_for": 1.25
+      },
+      "form_state": {
+        "avg_goal_diff": -2.33,
+        "avg_goals_against": 2.67,
+        "avg_goals_for": 0.33,
+        "avg_points": 0.5,
+        "avg_shots_diff": -9.75,
+        "avg_shots_on_target_diff": -5.33,
+        "latest_score": "0-5 vs 塞内加尔",
+        "score": 4.08
+      },
+      "last_match_date": "2026-06-27T03:00:00+08:00",
+      "last_match_id": 62,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "伊拉克近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "伊拉克纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "伊拉克样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "伊拉克近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "伊拉克纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "伊拉克样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "伊拉克",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 2
+    },
+    "伊朗": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.0
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 1.0,
+        "avg_points": 1.0,
+        "avg_shots_diff": -5.0,
+        "avg_shots_on_target_diff": -2.33,
+        "latest_score": "1-1 vs 埃及",
+        "score": 5.57
+      },
+      "last_match_date": "2026-06-27T11:00:00+08:00",
+      "last_match_id": 65,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "伊朗近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "伊朗纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "伊朗样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "伊朗近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "伊朗纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "伊朗样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "伊朗",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "佛得角": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.0,
+        "avg_shots_diff": -6.0,
+        "avg_shots_on_target_diff": -1.67,
+        "latest_score": "0-0 vs 沙特阿拉伯",
+        "score": 5.49
+      },
+      "last_match_date": "2026-06-27T08:00:00+08:00",
+      "last_match_id": 63,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "佛得角近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "佛得角近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "佛得角",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "克罗地亚": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.67
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 1.67,
+        "avg_goals_for": 1.67,
+        "avg_points": 2.0,
+        "avg_shots_diff": -4.0,
+        "avg_shots_on_target_diff": -0.67,
+        "latest_score": "2-1 vs 加纳",
+        "score": 6.41
+      },
+      "last_match_date": "2026-06-28T05:00:00+08:00",
+      "last_match_id": 68,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "克罗地亚近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "克罗地亚近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky"
+      ],
+      "team": "克罗地亚",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "加拿大": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 1.67,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 2.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": 14.0,
+        "avg_shots_on_target_diff": 4.67,
+        "latest_score": "1-2 vs 瑞士",
+        "score": 7.12
+      },
+      "last_match_date": "2026-06-25T03:00:00+08:00",
+      "last_match_id": 49,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "加拿大近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "加拿大纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "加拿大样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "加拿大近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "加拿大纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "加拿大样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "加拿大",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "加纳": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.0
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": -7.67,
+        "avg_shots_on_target_diff": -2.33,
+        "latest_score": "1-2 vs 克罗地亚",
+        "score": 5.67
+      },
+      "last_match_date": "2026-06-28T05:00:00+08:00",
+      "last_match_id": 68,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "加纳近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "加纳近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "加纳",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "南非": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 2,
+        "risk": "watch",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": -0.33,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": -1.67,
+        "avg_shots_on_target_diff": 0.0,
+        "latest_score": "1-0 vs 韩国",
+        "score": 5.92
+      },
+      "last_match_date": "2026-06-25T09:00:00+08:00",
+      "last_match_id": 54,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "南非近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "南非纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "南非样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "南非近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "南非纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "南非样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "南非",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "卡塔尔": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 2,
+        "risk": "watch",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": -2.67,
+        "avg_goals_against": 3.33,
+        "avg_goals_for": 0.67,
+        "avg_points": 0.33,
+        "avg_shots_diff": -18.33,
+        "avg_shots_on_target_diff": -5.33,
+        "latest_score": "1-3 vs 波黑",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-25T03:00:00+08:00",
+      "last_match_id": 50,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "卡塔尔近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "卡塔尔纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "卡塔尔样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "卡塔尔近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "卡塔尔纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "卡塔尔样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "卡塔尔",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "厄瓜多尔": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": 3.33,
+        "avg_shots_on_target_diff": 3.0,
+        "latest_score": "2-1 vs 德国",
+        "score": 6.53
+      },
+      "last_match_date": "2026-06-26T04:00:00+08:00",
+      "last_match_id": 56,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "厄瓜多尔近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "厄瓜多尔近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "厄瓜多尔",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "哥伦比亚": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": 1.0,
+        "avg_goals_against": 0.33,
+        "avg_goals_for": 1.33,
+        "avg_points": 2.33,
+        "avg_shots_diff": 10.33,
+        "avg_shots_on_target_diff": 4.67,
+        "latest_score": "0-0 vs 葡萄牙",
+        "score": 8.24
+      },
+      "last_match_date": "2026-06-28T07:30:00+08:00",
+      "last_match_id": 69,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "哥伦比亚近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "哥伦比亚近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot"
+      ],
+      "team": "哥伦比亚",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "土耳其": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 1.0
+      },
+      "form_state": {
+        "avg_goal_diff": -0.67,
+        "avg_goals_against": 1.67,
+        "avg_goals_for": 1.0,
+        "avg_points": 1.0,
+        "avg_shots_diff": 12.33,
+        "avg_shots_on_target_diff": 1.0,
+        "latest_score": "3-2 vs 美国",
+        "score": 5.83
+      },
+      "last_match_date": "2026-06-26T10:00:00+08:00",
+      "last_match_id": 59,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "土耳其近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "土耳其纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "土耳其样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "土耳其近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "土耳其纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "土耳其样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "土耳其",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "埃及": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.0
+      },
+      "form_state": {
+        "avg_goal_diff": 0.67,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 1.67,
+        "avg_points": 1.67,
+        "avg_shots_diff": 3.0,
+        "avg_shots_on_target_diff": 0.33,
+        "latest_score": "1-1 vs 伊朗",
+        "score": 6.74
+      },
+      "last_match_date": "2026-06-27T11:00:00+08:00",
+      "last_match_id": 65,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "discipline_watch"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "埃及纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "埃及纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "discipline_watch"
+      ],
+      "team": "埃及",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "塞内加尔": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.5
+      },
+      "form_state": {
+        "avg_goal_diff": 0.83,
+        "avg_goals_against": 1.25,
+        "avg_goals_for": 2.08,
+        "avg_points": 1.75,
+        "avg_shots_diff": 8.42,
+        "avg_shots_on_target_diff": 4.0,
+        "latest_score": "5-0 vs 伊拉克",
+        "score": 6.98
+      },
+      "last_match_date": "2026-06-27T03:00:00+08:00",
+      "last_match_id": 62,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "塞内加尔近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "塞内加尔纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "塞内加尔样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "塞内加尔近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "塞内加尔纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "塞内加尔样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "塞内加尔",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 2
+    },
+    "墨西哥": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 1,
+        "risk": "watch",
+        "yellow_cards_for": 0.67
+      },
+      "form_state": {
+        "avg_goal_diff": 2.0,
+        "avg_goals_against": 0.0,
+        "avg_goals_for": 2.0,
+        "avg_points": 3.0,
+        "avg_shots_diff": 3.33,
+        "avg_shots_on_target_diff": 2.67,
+        "latest_score": "3-0 vs 捷克",
+        "score": 8.05
+      },
+      "last_match_date": "2026-06-25T09:00:00+08:00",
+      "last_match_id": 53,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "momentum_up",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "墨西哥纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "墨西哥样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "墨西哥纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "墨西哥样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "momentum_up",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "墨西哥",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "奥地利": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 2.0,
+        "avg_goals_for": 2.0,
+        "avg_points": 1.33,
+        "avg_shots_diff": -2.67,
+        "avg_shots_on_target_diff": -2.0,
+        "latest_score": "3-3 vs 阿尔及利亚",
+        "score": 5.63
+      },
+      "last_match_date": "2026-06-28T10:00:00+08:00",
+      "last_match_id": 71,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "奥地利近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "奥地利近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "奥地利近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "奥地利近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "draw_resilience"
+      ],
+      "team": "奥地利",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "巴拉圭": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 1,
+        "risk": "watch",
+        "yellow_cards_for": 2.33
+      },
+      "form_state": {
+        "avg_goal_diff": -0.67,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": -12.33,
+        "avg_shots_on_target_diff": -3.67,
+        "latest_score": "0-0 vs 澳大利亚",
+        "score": 5.33
+      },
+      "last_match_date": "2026-06-26T10:00:00+08:00",
+      "last_match_id": 60,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "巴拉圭纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "巴拉圭样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "巴拉圭纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "巴拉圭样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "巴拉圭",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "巴拿马": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": -1.33,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 0.0,
+        "avg_points": 0.0,
+        "avg_shots_diff": 0.67,
+        "avg_shots_on_target_diff": -1.0,
+        "latest_score": "0-2 vs 英格兰",
+        "score": 4.15
+      },
+      "last_match_date": "2026-06-28T05:00:00+08:00",
+      "last_match_id": 67,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "巴拿马样本较少，特征库只做低权重提示；当前状态分 4.15。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "巴拿马样本较少，特征库只做低权重提示；当前状态分 4.15。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "form_dip"
+      ],
+      "team": "巴拿马",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "巴西": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 2.0,
+        "avg_goals_against": 0.33,
+        "avg_goals_for": 2.33,
+        "avg_points": 2.33,
+        "avg_shots_diff": 2.0,
+        "avg_shots_on_target_diff": 2.67,
+        "latest_score": "3-0 vs 苏格兰",
+        "score": 8.25
+      },
+      "last_match_date": "2026-06-25T06:00:00+08:00",
+      "last_match_id": 51,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "momentum_up"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "巴西样本较少，特征库只做低权重提示；当前状态分 8.25。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "巴西样本较少，特征库只做低权重提示；当前状态分 8.25。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "momentum_up"
+      ],
+      "team": "巴西",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "库拉索": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.33
+      },
+      "form_state": {
+        "avg_goal_diff": -2.67,
+        "avg_goals_against": 3.0,
+        "avg_goals_for": 0.33,
+        "avg_points": 0.33,
+        "avg_shots_diff": -10.33,
+        "avg_shots_on_target_diff": -7.67,
+        "latest_score": "0-2 vs 科特迪瓦",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-26T04:00:00+08:00",
+      "last_match_id": 55,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip",
+          "discipline_watch"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "库拉索近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "库拉索纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "库拉索近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "库拉索纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip",
+        "discipline_watch"
+      ],
+      "team": "库拉索",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "德国": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.33
+      },
+      "form_state": {
+        "avg_goal_diff": 2.0,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 3.33,
+        "avg_points": 2.0,
+        "avg_shots_diff": 9.67,
+        "avg_shots_on_target_diff": 5.0,
+        "latest_score": "1-2 vs 厄瓜多尔",
+        "score": 8.55
+      },
+      "last_match_date": "2026-06-26T04:00:00+08:00",
+      "last_match_id": 56,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "德国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "德国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot"
+      ],
+      "team": "德国",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "挪威": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.58
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 1.83,
+        "avg_goals_for": 3.17,
+        "avg_points": 2.25,
+        "avg_shots_diff": 0.92,
+        "avg_shots_on_target_diff": 1.0,
+        "latest_score": "1-4 vs 法国",
+        "score": 7.77
+      },
+      "last_match_date": "2026-06-27T03:00:00+08:00",
+      "last_match_id": 61,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "defense_leaky"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "挪威近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "挪威近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "挪威近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "挪威近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "defense_leaky"
+      ],
+      "team": "挪威",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 2
+    },
+    "捷克": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.33
+      },
+      "form_state": {
+        "avg_goal_diff": -1.33,
+        "avg_goals_against": 2.0,
+        "avg_goals_for": 0.67,
+        "avg_points": 0.33,
+        "avg_shots_diff": -3.0,
+        "avg_shots_on_target_diff": -2.33,
+        "latest_score": "0-3 vs 墨西哥",
+        "score": 4.12
+      },
+      "last_match_date": "2026-06-25T09:00:00+08:00",
+      "last_match_id": 53,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "捷克近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "捷克近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip"
+      ],
+      "team": "捷克",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "摩洛哥": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.33
+      },
+      "form_state": {
+        "avg_goal_diff": 1.0,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 2.0,
+        "avg_points": 2.33,
+        "avg_shots_diff": 7.0,
+        "avg_shots_on_target_diff": 3.0,
+        "latest_score": "4-2 vs 海地",
+        "score": 7.88
+      },
+      "last_match_date": "2026-06-25T06:00:00+08:00",
+      "last_match_id": 52,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": []
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "摩洛哥样本较少，特征库只做低权重提示；当前状态分 7.88。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "摩洛哥样本较少，特征库只做低权重提示；当前状态分 7.88。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [],
+      "team": "摩洛哥",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "新西兰": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": -2.0,
+        "avg_goals_against": 3.33,
+        "avg_goals_for": 1.33,
+        "avg_points": 0.33,
+        "avg_shots_diff": -13.33,
+        "avg_shots_on_target_diff": -2.0,
+        "latest_score": "1-5 vs 比利时",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-27T11:00:00+08:00",
+      "last_match_id": 66,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "新西兰近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "新西兰近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip"
+      ],
+      "team": "新西兰",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "日本": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.33
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 2.33,
+        "avg_points": 1.67,
+        "avg_shots_diff": 2.0,
+        "avg_shots_on_target_diff": 0.0,
+        "latest_score": "1-1 vs 瑞典",
+        "score": 6.96
+      },
+      "last_match_date": "2026-06-26T07:00:00+08:00",
+      "last_match_id": 57,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": []
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "日本样本较少，特征库只做低权重提示；当前状态分 6.96。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "日本样本较少，特征库只做低权重提示；当前状态分 6.96。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [],
+      "team": "日本",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "比利时": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 1,
+        "risk": "watch",
+        "yellow_cards_for": 1.0
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 2.0,
+        "avg_points": 1.67,
+        "avg_shots_diff": 15.33,
+        "avg_shots_on_target_diff": 4.0,
+        "latest_score": "5-1 vs 新西兰",
+        "score": 7.23
+      },
+      "last_match_date": "2026-06-27T11:00:00+08:00",
+      "last_match_id": 66,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "比利时近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "比利时纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "比利时样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "比利时近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "比利时纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "比利时样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "比利时",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "民主刚果": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 0.33,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 1.33,
+        "avg_points": 1.33,
+        "avg_shots_diff": 1.33,
+        "avg_shots_on_target_diff": -1.33,
+        "latest_score": "3-1 vs 乌兹别克斯坦",
+        "score": 6.07
+      },
+      "last_match_date": "2026-06-28T07:30:00+08:00",
+      "last_match_id": 70,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "民主刚果近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "民主刚果近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "民主刚果",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "沙特阿拉伯": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.0
+      },
+      "form_state": {
+        "avg_goal_diff": -1.33,
+        "avg_goals_against": 1.67,
+        "avg_goals_for": 0.33,
+        "avg_points": 0.67,
+        "avg_shots_diff": -15.67,
+        "avg_shots_on_target_diff": -4.33,
+        "latest_score": "0-0 vs 佛得角",
+        "score": 3.97
+      },
+      "last_match_date": "2026-06-27T08:00:00+08:00",
+      "last_match_id": 63,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip",
+          "discipline_watch"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "沙特阿拉伯近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "沙特阿拉伯纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "沙特阿拉伯近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "沙特阿拉伯纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip",
+        "discipline_watch"
+      ],
+      "team": "沙特阿拉伯",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "法国": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.58
+      },
+      "form_state": {
+        "avg_goal_diff": 2.5,
+        "avg_goals_against": 0.75,
+        "avg_goals_for": 3.25,
+        "avg_points": 2.67,
+        "avg_shots_diff": 14.92,
+        "avg_shots_on_target_diff": 5.83,
+        "latest_score": "4-1 vs 挪威",
+        "score": 9.4
+      },
+      "last_match_date": "2026-06-27T03:00:00+08:00",
+      "last_match_id": 61,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "momentum_up"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "法国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "法国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "momentum_up"
+      ],
+      "team": "法国",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 2
+    },
+    "波黑": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 1,
+        "risk": "watch",
+        "yellow_cards_for": 2.0
+      },
+      "form_state": {
+        "avg_goal_diff": -0.33,
+        "avg_goals_against": 2.0,
+        "avg_goals_for": 1.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": -2.67,
+        "avg_shots_on_target_diff": -1.0,
+        "latest_score": "3-1 vs 卡塔尔",
+        "score": 5.72
+      },
+      "last_match_date": "2026-06-25T03:00:00+08:00",
+      "last_match_id": 50,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "draw_resilience",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "波黑近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "波黑近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "波黑纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "波黑样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "波黑近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "波黑近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "波黑纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "波黑样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "draw_resilience",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "波黑",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "海地": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 2.33
+      },
+      "form_state": {
+        "avg_goal_diff": -2.0,
+        "avg_goals_against": 2.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 0.0,
+        "avg_shots_diff": -2.67,
+        "avg_shots_on_target_diff": -3.67,
+        "latest_score": "2-4 vs 摩洛哥",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-25T06:00:00+08:00",
+      "last_match_id": 52,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip",
+          "discipline_watch"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "海地近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "海地纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "海地近期失球偏高，双方进球和对手进球预期需要小幅上调。",
+        "海地纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip",
+        "discipline_watch"
+      ],
+      "team": "海地",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "澳大利亚": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.33,
+        "avg_shots_diff": -7.0,
+        "avg_shots_on_target_diff": -0.33,
+        "latest_score": "0-0 vs 巴拉圭",
+        "score": 5.93
+      },
+      "last_match_date": "2026-06-26T10:00:00+08:00",
+      "last_match_id": 60,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "澳大利亚近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "澳大利亚近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "澳大利亚",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "瑞典": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 0.0,
+        "avg_goals_against": 2.33,
+        "avg_goals_for": 2.33,
+        "avg_points": 1.33,
+        "avg_shots_diff": 5.33,
+        "avg_shots_on_target_diff": 2.67,
+        "latest_score": "1-1 vs 日本",
+        "score": 6.3
+      },
+      "last_match_date": "2026-06-26T07:00:00+08:00",
+      "last_match_id": 57,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "瑞典近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "瑞典近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "瑞典近期平局韧性存在，强弱差不大时保留1-1或0-0保护。",
+        "瑞典近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "draw_resilience"
+      ],
+      "team": "瑞典",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "瑞士": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 1.0
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 2.33,
+        "avg_points": 2.33,
+        "avg_shots_diff": 7.0,
+        "avg_shots_on_target_diff": 1.67,
+        "latest_score": "2-1 vs 加拿大",
+        "score": 7.3
+      },
+      "last_match_date": "2026-06-25T03:00:00+08:00",
+      "last_match_id": 49,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "瑞士纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "瑞士样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "瑞士纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "瑞士样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "瑞士",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "科特迪瓦": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": 0.67,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 1.33,
+        "avg_points": 2.0,
+        "avg_shots_diff": -2.67,
+        "avg_shots_on_target_diff": -0.33,
+        "latest_score": "2-0 vs 库拉索",
+        "score": 6.89
+      },
+      "last_match_date": "2026-06-26T04:00:00+08:00",
+      "last_match_id": 55,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": []
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "科特迪瓦样本较少，特征库只做低权重提示；当前状态分 6.89。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "科特迪瓦样本较少，特征库只做低权重提示；当前状态分 6.89。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [],
+      "team": "科特迪瓦",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "突尼斯": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.33
+      },
+      "form_state": {
+        "avg_goal_diff": -3.33,
+        "avg_goals_against": 4.0,
+        "avg_goals_for": 0.67,
+        "avg_points": 0.0,
+        "avg_shots_diff": -8.67,
+        "avg_shots_on_target_diff": -4.33,
+        "latest_score": "1-3 vs 荷兰",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-26T07:00:00+08:00",
+      "last_match_id": 58,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "突尼斯近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "突尼斯近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip"
+      ],
+      "team": "突尼斯",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "约旦": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": -1.67,
+        "avg_goals_against": 2.67,
+        "avg_goals_for": 1.0,
+        "avg_points": 0.0,
+        "avg_shots_diff": -5.33,
+        "avg_shots_on_target_diff": -2.33,
+        "latest_score": "1-3 vs 阿根廷",
+        "score": 3.8
+      },
+      "last_match_date": "2026-06-28T10:00:00+08:00",
+      "last_match_id": 72,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky",
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "约旦近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "约旦近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky",
+        "form_dip"
+      ],
+      "team": "约旦",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "美国": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 2.67,
+        "avg_points": 2.0,
+        "avg_shots_diff": 7.0,
+        "avg_shots_on_target_diff": 3.0,
+        "latest_score": "2-3 vs 土耳其",
+        "score": 7.67
+      },
+      "last_match_date": "2026-06-26T10:00:00+08:00",
+      "last_match_id": 59,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "美国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "美国近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot"
+      ],
+      "team": "美国",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "苏格兰": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.67
+      },
+      "form_state": {
+        "avg_goal_diff": -1.0,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 0.33,
+        "avg_points": 1.0,
+        "avg_shots_diff": -6.33,
+        "avg_shots_on_target_diff": -2.0,
+        "latest_score": "0-3 vs 巴西",
+        "score": 4.93
+      },
+      "last_match_date": "2026-06-25T06:00:00+08:00",
+      "last_match_id": 51,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "form_dip"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "苏格兰样本较少，特征库只做低权重提示；当前状态分 4.93。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "苏格兰样本较少，特征库只做低权重提示；当前状态分 4.93。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "form_dip"
+      ],
+      "team": "苏格兰",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "英格兰": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 0.67
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 0.67,
+        "avg_goals_for": 2.0,
+        "avg_points": 2.33,
+        "avg_shots_diff": 11.0,
+        "avg_shots_on_target_diff": 4.0,
+        "latest_score": "2-0 vs 巴拿马",
+        "score": 8.27
+      },
+      "last_match_date": "2026-06-28T05:00:00+08:00",
+      "last_match_id": 67,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "英格兰近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "英格兰近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot"
+      ],
+      "team": "英格兰",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "荷兰": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.0
+      },
+      "form_state": {
+        "avg_goal_diff": 2.0,
+        "avg_goals_against": 1.33,
+        "avg_goals_for": 3.33,
+        "avg_points": 2.33,
+        "avg_shots_diff": 1.33,
+        "avg_shots_on_target_diff": 1.67,
+        "latest_score": "3-1 vs 突尼斯",
+        "score": 8.28
+      },
+      "last_match_date": "2026-06-26T07:00:00+08:00",
+      "last_match_id": 58,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "momentum_up"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "荷兰近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "荷兰近期射正/进球效率偏热，下一场比分池保留多进球上沿。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "momentum_up"
+      ],
+      "team": "荷兰",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "葡萄牙": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": 1.67,
+        "avg_goals_against": 0.33,
+        "avg_goals_for": 2.0,
+        "avg_points": 1.67,
+        "avg_shots_diff": -0.67,
+        "avg_shots_on_target_diff": 0.67,
+        "latest_score": "0-0 vs 哥伦比亚",
+        "score": 7.22
+      },
+      "last_match_date": "2026-06-28T07:30:00+08:00",
+      "last_match_id": 69,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": []
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "葡萄牙样本较少，特征库只做低权重提示；当前状态分 7.22。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "葡萄牙样本较少，特征库只做低权重提示；当前状态分 7.22。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [],
+      "team": "葡萄牙",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    },
+    "西班牙": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "watch",
+        "yellow_cards_for": 0.67
+      },
+      "form_state": {
+        "avg_goal_diff": 1.67,
+        "avg_goals_against": 0.0,
+        "avg_goals_for": 1.67,
+        "avg_points": 2.33,
+        "avg_shots_diff": 13.67,
+        "avg_shots_on_target_diff": 4.33,
+        "latest_score": "1-0 vs 乌拉圭",
+        "score": 7.82
+      },
+      "last_match_date": "2026-06-27T08:00:00+08:00",
+      "last_match_id": 64,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "attack_hot",
+          "momentum_up",
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "西班牙近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "西班牙纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "西班牙样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "西班牙近期射正/进球效率偏热，下一场比分池保留多进球上沿。",
+        "西班牙纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "西班牙样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "attack_hot",
+        "momentum_up",
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "西班牙",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 3
+    },
+    "阿尔及利亚": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.75
+      },
+      "form_state": {
+        "avg_goal_diff": 0.42,
+        "avg_goals_against": 1.5,
+        "avg_goals_for": 1.92,
+        "avg_points": 2.0,
+        "avg_shots_diff": 3.08,
+        "avg_shots_on_target_diff": 1.83,
+        "latest_score": "3-3 vs 奥地利",
+        "score": 7.05
+      },
+      "last_match_date": "2026-06-28T10:00:00+08:00",
+      "last_match_id": 71,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "defense_leaky"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 1,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "阿尔及利亚近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "阿尔及利亚近期失球偏高，双方进球和对手进球预期需要小幅上调。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "defense_leaky"
+      ],
+      "team": "阿尔及利亚",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 2
+    },
+    "阿根廷": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 2,
+        "risk": "watch",
+        "yellow_cards_for": 1.5
+      },
+      "form_state": {
+        "avg_goal_diff": 1.33,
+        "avg_goals_against": 0.58,
+        "avg_goals_for": 1.92,
+        "avg_points": 2.17,
+        "avg_shots_diff": 4.58,
+        "avg_shots_on_target_diff": 2.25,
+        "latest_score": "3-1 vs 约旦",
+        "score": 7.25
+      },
+      "last_match_date": "2026-06-28T10:00:00+08:00",
+      "last_match_id": 72,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "discipline_watch",
+          "red_card_distorted"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 3,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "阿根廷纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "阿根廷样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "pre_world_cup_sample_matches": 3,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "阿根廷纪律风险偏高，黄牌、停赛和防守侵略性要单独复核。",
+        "阿根廷样本含红牌变量，不能把该场大比分完全写入基础实力。"
+      ],
+      "sample_matches": 5,
+      "source": "world_cup_plus_pre_world_cup_team_features",
+      "source_label": "本届世界杯2场 + 世界杯前3场正式赛均值",
+      "tactical_tags": [
+        "discipline_watch",
+        "red_card_distorted"
+      ],
+      "team": "阿根廷",
+      "volatility_state": {
+        "label": "red-card-noise",
+        "red_card_distorted": true
+      },
+      "world_cup_sample_matches": 2
+    },
+    "韩国": {
+      "availability_state": {
+        "note": "伤停/停赛以赛前官方信息覆盖，赛后特征库只记录纪律风险。",
+        "status": "official_absence_feed_required"
+      },
+      "discipline_state": {
+        "red_cards_for": 0,
+        "risk": "normal",
+        "yellow_cards_for": 1.33
+      },
+      "form_state": {
+        "avg_goal_diff": -0.33,
+        "avg_goals_against": 1.0,
+        "avg_goals_for": 0.67,
+        "avg_points": 1.0,
+        "avg_shots_diff": 1.33,
+        "avg_shots_on_target_diff": -0.33,
+        "latest_score": "0-1 vs 南非",
+        "score": 5.61
+      },
+      "last_match_date": "2026-06-25T09:00:00+08:00",
+      "last_match_id": 54,
+      "matchup_preference": {
+        "note": "淘汰赛对手偏好先以战术标签低权重提示，样本不足不直接改基础实力。",
+        "tags": [
+          "draw_resilience"
+        ]
+      },
+      "motivation_state": {
+        "last_points": 0,
+        "note": "小组出线形势在具体比赛预测时按实时积分表重新计算。"
+      },
+      "next_prediction_notes": [
+        "韩国近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "pre_world_cup_sample_matches": 0,
+      "prop_sample_policy": "official_mean",
+      "review_lessons": [
+        "韩国近期平局韧性存在，强弱差不大时保留1-1或0-0保护。"
+      ],
+      "sample_matches": 3,
+      "source": "current_world_cup_team_features",
+      "source_label": "本届世界杯3场正式赛均值",
+      "tactical_tags": [
+        "draw_resilience"
+      ],
+      "team": "韩国",
+      "volatility_state": {
+        "label": "normal",
+        "red_card_distorted": false
+      },
+      "world_cup_sample_matches": 3
+    }
+  },
+  "project_team_count": 48,
+  "version": 1
+}

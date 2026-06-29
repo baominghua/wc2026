@@ -1,0 +1,1018 @@
+{
+  "source": "frontend_wc2026_schedule_generated",
+  "last_updated": "2026-06-15T13:00:00+08:00",
+  "matches": [
+    {
+      "id": 1,
+      "home_team": "墨西哥",
+      "away_team": "南非",
+      "match_date": "2026-06-12T03:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "completed",
+      "group": "A",
+      "round": 1,
+      "home_score": 2,
+      "away_score": 0
+    },
+    {
+      "id": 2,
+      "home_team": "韩国",
+      "away_team": "捷克",
+      "match_date": "2026-06-12T10:00:00+08:00",
+      "venue": "阿克伦体育场，萨波潘",
+      "status": "completed",
+      "group": "A",
+      "round": 1,
+      "home_score": 2,
+      "away_score": 1
+    },
+    {
+      "id": 3,
+      "home_team": "加拿大",
+      "away_team": "波黑",
+      "match_date": "2026-06-13T03:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "group": "B",
+      "round": 1
+    },
+    {
+      "id": 4,
+      "home_team": "美国",
+      "away_team": "巴拉圭",
+      "match_date": "2026-06-13T09:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "group": "D",
+      "round": 1
+    },
+    {
+      "id": 5,
+      "home_team": "卡塔尔",
+      "away_team": "瑞士",
+      "match_date": "2026-06-14T03:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "group": "B",
+      "round": 1
+    },
+    {
+      "id": 6,
+      "home_team": "巴西",
+      "away_team": "摩洛哥",
+      "match_date": "2026-06-14T06:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "group": "C",
+      "round": 1
+    },
+    {
+      "id": 7,
+      "home_team": "海地",
+      "away_team": "苏格兰",
+      "match_date": "2026-06-14T09:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "group": "C",
+      "round": 1
+    },
+    {
+      "id": 8,
+      "home_team": "澳大利亚",
+      "away_team": "土耳其",
+      "match_date": "2026-06-14T12:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "group": "D",
+      "round": 1
+    },
+    {
+      "id": 9,
+      "home_team": "德国",
+      "away_team": "库拉索",
+      "match_date": "2026-06-15T01:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "group": "E",
+      "round": 1
+    },
+    {
+      "id": 10,
+      "home_team": "荷兰",
+      "away_team": "日本",
+      "match_date": "2026-06-15T04:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "group": "F",
+      "round": 1
+    },
+    {
+      "id": 11,
+      "home_team": "科特迪瓦",
+      "away_team": "厄瓜多尔",
+      "match_date": "2026-06-15T07:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "group": "E",
+      "round": 1
+    },
+    {
+      "id": 12,
+      "home_team": "瑞典",
+      "away_team": "突尼斯",
+      "match_date": "2026-06-15T10:00:00+08:00",
+      "venue": "BBVA体育场，蒙特雷",
+      "status": "upcoming",
+      "group": "F",
+      "round": 1
+    },
+    {
+      "id": 13,
+      "home_team": "西班牙",
+      "away_team": "佛得角",
+      "match_date": "2026-06-16T00:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "group": "H",
+      "round": 1
+    },
+    {
+      "id": 14,
+      "home_team": "比利时",
+      "away_team": "埃及",
+      "match_date": "2026-06-16T03:00:00+08:00",
+      "venue": "流明球场，西雅图",
+      "status": "upcoming",
+      "group": "G",
+      "round": 1
+    },
+    {
+      "id": 15,
+      "home_team": "沙特阿拉伯",
+      "away_team": "乌拉圭",
+      "match_date": "2026-06-16T06:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "group": "H",
+      "round": 1
+    },
+    {
+      "id": 16,
+      "home_team": "伊朗",
+      "away_team": "新西兰",
+      "match_date": "2026-06-16T09:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "group": "G",
+      "round": 1
+    },
+    {
+      "id": 17,
+      "home_team": "法国",
+      "away_team": "塞内加尔",
+      "match_date": "2026-06-17T03:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "group": "I",
+      "round": 1
+    },
+    {
+      "id": 18,
+      "home_team": "伊拉克",
+      "away_team": "挪威",
+      "match_date": "2026-06-17T06:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "group": "I",
+      "round": 1
+    },
+    {
+      "id": 19,
+      "home_team": "阿根廷",
+      "away_team": "阿尔及利亚",
+      "match_date": "2026-06-17T09:00:00+08:00",
+      "venue": "箭头体育场，堪萨斯城",
+      "status": "upcoming",
+      "group": "J",
+      "round": 1
+    },
+    {
+      "id": 20,
+      "home_team": "奥地利",
+      "away_team": "约旦",
+      "match_date": "2026-06-17T12:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "group": "J",
+      "round": 1
+    },
+    {
+      "id": 21,
+      "home_team": "葡萄牙",
+      "away_team": "民主刚果",
+      "match_date": "2026-06-18T01:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "group": "K",
+      "round": 1
+    },
+    {
+      "id": 22,
+      "home_team": "英格兰",
+      "away_team": "克罗地亚",
+      "match_date": "2026-06-18T04:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "group": "L",
+      "round": 1
+    },
+    {
+      "id": 23,
+      "home_team": "加纳",
+      "away_team": "巴拿马",
+      "match_date": "2026-06-18T07:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "group": "L",
+      "round": 1
+    },
+    {
+      "id": 24,
+      "home_team": "乌兹别克斯坦",
+      "away_team": "哥伦比亚",
+      "match_date": "2026-06-18T10:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "upcoming",
+      "group": "K",
+      "round": 1
+    },
+    {
+      "id": 25,
+      "home_team": "捷克",
+      "away_team": "南非",
+      "match_date": "2026-06-19T00:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "group": "A",
+      "round": 2
+    },
+    {
+      "id": 26,
+      "home_team": "瑞士",
+      "away_team": "波黑",
+      "match_date": "2026-06-19T03:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "group": "B",
+      "round": 2
+    },
+    {
+      "id": 27,
+      "home_team": "加拿大",
+      "away_team": "卡塔尔",
+      "match_date": "2026-06-19T06:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "group": "B",
+      "round": 2
+    },
+    {
+      "id": 28,
+      "home_team": "墨西哥",
+      "away_team": "韩国",
+      "match_date": "2026-06-19T09:00:00+08:00",
+      "venue": "阿克伦体育场，萨波潘",
+      "status": "upcoming",
+      "group": "A",
+      "round": 2
+    },
+    {
+      "id": 29,
+      "home_team": "美国",
+      "away_team": "澳大利亚",
+      "match_date": "2026-06-20T03:00:00+08:00",
+      "venue": "流明球场，西雅图",
+      "status": "upcoming",
+      "group": "D",
+      "round": 2
+    },
+    {
+      "id": 30,
+      "home_team": "苏格兰",
+      "away_team": "摩洛哥",
+      "match_date": "2026-06-20T06:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "group": "C",
+      "round": 2
+    },
+    {
+      "id": 31,
+      "home_team": "巴西",
+      "away_team": "海地",
+      "match_date": "2026-06-20T08:30:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "group": "C",
+      "round": 2
+    },
+    {
+      "id": 32,
+      "home_team": "土耳其",
+      "away_team": "巴拉圭",
+      "match_date": "2026-06-20T11:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "group": "D",
+      "round": 2
+    },
+    {
+      "id": 33,
+      "home_team": "荷兰",
+      "away_team": "瑞典",
+      "match_date": "2026-06-21T01:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "group": "F",
+      "round": 2
+    },
+    {
+      "id": 34,
+      "home_team": "德国",
+      "away_team": "科特迪瓦",
+      "match_date": "2026-06-21T04:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "group": "E",
+      "round": 2
+    },
+    {
+      "id": 35,
+      "home_team": "厄瓜多尔",
+      "away_team": "库拉索",
+      "match_date": "2026-06-21T08:00:00+08:00",
+      "venue": "箭头体育场，堪萨斯城",
+      "status": "upcoming",
+      "group": "E",
+      "round": 2
+    },
+    {
+      "id": 36,
+      "home_team": "突尼斯",
+      "away_team": "日本",
+      "match_date": "2026-06-21T12:00:00+08:00",
+      "venue": "BBVA体育场，蒙特雷",
+      "status": "upcoming",
+      "group": "F",
+      "round": 2
+    },
+    {
+      "id": 37,
+      "home_team": "西班牙",
+      "away_team": "沙特阿拉伯",
+      "match_date": "2026-06-22T00:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "group": "H",
+      "round": 2
+    },
+    {
+      "id": 38,
+      "home_team": "比利时",
+      "away_team": "伊朗",
+      "match_date": "2026-06-22T03:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "group": "G",
+      "round": 2
+    },
+    {
+      "id": 39,
+      "home_team": "乌拉圭",
+      "away_team": "佛得角",
+      "match_date": "2026-06-22T06:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "group": "H",
+      "round": 2
+    },
+    {
+      "id": 40,
+      "home_team": "新西兰",
+      "away_team": "埃及",
+      "match_date": "2026-06-22T09:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "group": "G",
+      "round": 2
+    },
+    {
+      "id": 41,
+      "home_team": "阿根廷",
+      "away_team": "奥地利",
+      "match_date": "2026-06-23T01:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "group": "J",
+      "round": 2
+    },
+    {
+      "id": 42,
+      "home_team": "法国",
+      "away_team": "伊拉克",
+      "match_date": "2026-06-23T05:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "group": "I",
+      "round": 2
+    },
+    {
+      "id": 43,
+      "home_team": "挪威",
+      "away_team": "塞内加尔",
+      "match_date": "2026-06-23T08:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "group": "I",
+      "round": 2
+    },
+    {
+      "id": 44,
+      "home_team": "约旦",
+      "away_team": "阿尔及利亚",
+      "match_date": "2026-06-23T11:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "group": "J",
+      "round": 2
+    },
+    {
+      "id": 45,
+      "home_team": "葡萄牙",
+      "away_team": "乌兹别克斯坦",
+      "match_date": "2026-06-24T01:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "group": "K",
+      "round": 2
+    },
+    {
+      "id": 46,
+      "home_team": "英格兰",
+      "away_team": "加纳",
+      "match_date": "2026-06-24T04:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "group": "L",
+      "round": 2
+    },
+    {
+      "id": 47,
+      "home_team": "巴拿马",
+      "away_team": "克罗地亚",
+      "match_date": "2026-06-24T07:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "group": "L",
+      "round": 2
+    },
+    {
+      "id": 48,
+      "home_team": "哥伦比亚",
+      "away_team": "民主刚果",
+      "match_date": "2026-06-24T10:00:00+08:00",
+      "venue": "阿克伦体育场，萨波潘",
+      "status": "upcoming",
+      "group": "K",
+      "round": 2
+    },
+    {
+      "id": 49,
+      "home_team": "瑞士",
+      "away_team": "加拿大",
+      "match_date": "2026-06-25T03:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "group": "B",
+      "round": 3
+    },
+    {
+      "id": 50,
+      "home_team": "波黑",
+      "away_team": "卡塔尔",
+      "match_date": "2026-06-25T03:00:00+08:00",
+      "venue": "流明球场，西雅图",
+      "status": "upcoming",
+      "group": "B",
+      "round": 3
+    },
+    {
+      "id": 51,
+      "home_team": "苏格兰",
+      "away_team": "巴西",
+      "match_date": "2026-06-25T06:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "group": "C",
+      "round": 3
+    },
+    {
+      "id": 52,
+      "home_team": "摩洛哥",
+      "away_team": "海地",
+      "match_date": "2026-06-25T06:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "group": "C",
+      "round": 3
+    },
+    {
+      "id": 53,
+      "home_team": "捷克",
+      "away_team": "墨西哥",
+      "match_date": "2026-06-25T09:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "upcoming",
+      "group": "A",
+      "round": 3
+    },
+    {
+      "id": 54,
+      "home_team": "南非",
+      "away_team": "韩国",
+      "match_date": "2026-06-25T09:00:00+08:00",
+      "venue": "BBVA体育场，蒙特雷",
+      "status": "upcoming",
+      "group": "A",
+      "round": 3
+    },
+    {
+      "id": 55,
+      "home_team": "库拉索",
+      "away_team": "科特迪瓦",
+      "match_date": "2026-06-26T04:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "group": "E",
+      "round": 3
+    },
+    {
+      "id": 56,
+      "home_team": "厄瓜多尔",
+      "away_team": "德国",
+      "match_date": "2026-06-26T04:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "group": "E",
+      "round": 3
+    },
+    {
+      "id": 57,
+      "home_team": "日本",
+      "away_team": "瑞典",
+      "match_date": "2026-06-26T07:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "group": "F",
+      "round": 3
+    },
+    {
+      "id": 58,
+      "home_team": "突尼斯",
+      "away_team": "荷兰",
+      "match_date": "2026-06-26T07:00:00+08:00",
+      "venue": "箭头体育场，堪萨斯城",
+      "status": "upcoming",
+      "group": "F",
+      "round": 3
+    },
+    {
+      "id": 59,
+      "home_team": "土耳其",
+      "away_team": "美国",
+      "match_date": "2026-06-26T10:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "group": "D",
+      "round": 3
+    },
+    {
+      "id": 60,
+      "home_team": "巴拉圭",
+      "away_team": "澳大利亚",
+      "match_date": "2026-06-26T10:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "group": "D",
+      "round": 3
+    },
+    {
+      "id": 61,
+      "home_team": "挪威",
+      "away_team": "法国",
+      "match_date": "2026-06-27T03:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "group": "I",
+      "round": 3
+    },
+    {
+      "id": 62,
+      "home_team": "塞内加尔",
+      "away_team": "伊拉克",
+      "match_date": "2026-06-27T03:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "group": "I",
+      "round": 3
+    },
+    {
+      "id": 63,
+      "home_team": "佛得角",
+      "away_team": "沙特阿拉伯",
+      "match_date": "2026-06-27T08:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "group": "H",
+      "round": 3
+    },
+    {
+      "id": 64,
+      "home_team": "乌拉圭",
+      "away_team": "西班牙",
+      "match_date": "2026-06-27T08:00:00+08:00",
+      "venue": "阿克伦体育场，萨波潘",
+      "status": "upcoming",
+      "group": "H",
+      "round": 3
+    },
+    {
+      "id": 65,
+      "home_team": "埃及",
+      "away_team": "伊朗",
+      "match_date": "2026-06-27T11:00:00+08:00",
+      "venue": "流明球场，西雅图",
+      "status": "upcoming",
+      "group": "G",
+      "round": 3
+    },
+    {
+      "id": 66,
+      "home_team": "新西兰",
+      "away_team": "比利时",
+      "match_date": "2026-06-27T11:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "group": "G",
+      "round": 3
+    },
+    {
+      "id": 67,
+      "home_team": "巴拿马",
+      "away_team": "英格兰",
+      "match_date": "2026-06-28T05:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "group": "L",
+      "round": 3
+    },
+    {
+      "id": 68,
+      "home_team": "克罗地亚",
+      "away_team": "加纳",
+      "match_date": "2026-06-28T05:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "group": "L",
+      "round": 3
+    },
+    {
+      "id": 69,
+      "home_team": "哥伦比亚",
+      "away_team": "葡萄牙",
+      "match_date": "2026-06-28T07:30:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "group": "K",
+      "round": 3
+    },
+    {
+      "id": 70,
+      "home_team": "民主刚果",
+      "away_team": "乌兹别克斯坦",
+      "match_date": "2026-06-28T07:30:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "group": "K",
+      "round": 3
+    },
+    {
+      "id": 71,
+      "home_team": "阿尔及利亚",
+      "away_team": "奥地利",
+      "match_date": "2026-06-28T10:00:00+08:00",
+      "venue": "箭头体育场，堪萨斯城",
+      "status": "upcoming",
+      "group": "J",
+      "round": 3
+    },
+    {
+      "id": 72,
+      "home_team": "约旦",
+      "away_team": "阿根廷",
+      "match_date": "2026-06-28T10:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "group": "J",
+      "round": 3
+    },
+    {
+      "id": 73,
+      "home_team": "A1",
+      "away_team": "B2",
+      "match_date": "2026-07-02T03:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 74,
+      "home_team": "C1",
+      "away_team": "D2",
+      "match_date": "2026-07-02T07:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 75,
+      "home_team": "E1",
+      "away_team": "F2",
+      "match_date": "2026-07-03T03:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 76,
+      "home_team": "G1",
+      "away_team": "H2",
+      "match_date": "2026-07-03T07:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 77,
+      "home_team": "I1",
+      "away_team": "J2",
+      "match_date": "2026-07-03T11:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 78,
+      "home_team": "K1",
+      "away_team": "L2",
+      "match_date": "2026-07-04T03:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 79,
+      "home_team": "B1",
+      "away_team": "A3",
+      "match_date": "2026-07-04T07:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 80,
+      "home_team": "D1",
+      "away_team": "C3",
+      "match_date": "2026-07-04T11:00:00+08:00",
+      "venue": "李维斯体育场，旧金山",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 81,
+      "home_team": "F1",
+      "away_team": "E3",
+      "match_date": "2026-07-05T03:00:00+08:00",
+      "venue": "箭头体育场，堪萨斯城",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 82,
+      "home_team": "H1",
+      "away_team": "G3",
+      "match_date": "2026-07-05T07:00:00+08:00",
+      "venue": "NRG体育场，休斯顿",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 83,
+      "home_team": "J1",
+      "away_team": "I3",
+      "match_date": "2026-07-05T11:00:00+08:00",
+      "venue": "吉列体育场，波士顿",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 84,
+      "home_team": "L1",
+      "away_team": "K3",
+      "match_date": "2026-07-06T03:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 85,
+      "home_team": "A2",
+      "away_team": "C2",
+      "match_date": "2026-07-06T07:00:00+08:00",
+      "venue": "流明球场，西雅图",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 86,
+      "home_team": "E2",
+      "away_team": "G2",
+      "match_date": "2026-07-06T11:00:00+08:00",
+      "venue": "BMO球场，多伦多",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 87,
+      "home_team": "I2",
+      "away_team": "K2",
+      "match_date": "2026-07-07T03:00:00+08:00",
+      "venue": "BBVA体育场，蒙特雷",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 88,
+      "home_team": "C2",
+      "away_team": "D3",
+      "match_date": "2026-07-07T07:00:00+08:00",
+      "venue": "阿克伦体育场，萨波潘",
+      "status": "upcoming",
+      "stage": "Round of 32"
+    },
+    {
+      "id": 89,
+      "home_team": "W73",
+      "away_team": "W74",
+      "match_date": "2026-07-09T03:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 90,
+      "home_team": "W75",
+      "away_team": "W76",
+      "match_date": "2026-07-09T07:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 91,
+      "home_team": "W77",
+      "away_team": "W78",
+      "match_date": "2026-07-10T03:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 92,
+      "home_team": "W79",
+      "away_team": "W80",
+      "match_date": "2026-07-10T07:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 93,
+      "home_team": "W81",
+      "away_team": "W82",
+      "match_date": "2026-07-11T03:00:00+08:00",
+      "venue": "林肯金融球场，费城",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 94,
+      "home_team": "W83",
+      "away_team": "W84",
+      "match_date": "2026-07-11T07:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 95,
+      "home_team": "W85",
+      "away_team": "W86",
+      "match_date": "2026-07-12T03:00:00+08:00",
+      "venue": "BC广场，温哥华",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 96,
+      "home_team": "W87",
+      "away_team": "W88",
+      "match_date": "2026-07-12T07:00:00+08:00",
+      "venue": "梅赛德斯-奔驰体育场，亚特兰大",
+      "status": "upcoming",
+      "stage": "Round of 16"
+    },
+    {
+      "id": 97,
+      "home_team": "W89",
+      "away_team": "W90",
+      "match_date": "2026-07-14T03:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "stage": "Quarter-final"
+    },
+    {
+      "id": 98,
+      "home_team": "W91",
+      "away_team": "W92",
+      "match_date": "2026-07-14T07:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "stage": "Quarter-final"
+    },
+    {
+      "id": 99,
+      "home_team": "W93",
+      "away_team": "W94",
+      "match_date": "2026-07-15T03:00:00+08:00",
+      "venue": "SoFi体育场，洛杉矶",
+      "status": "upcoming",
+      "stage": "Quarter-final"
+    },
+    {
+      "id": 100,
+      "home_team": "W95",
+      "away_team": "W96",
+      "match_date": "2026-07-15T07:00:00+08:00",
+      "venue": "阿兹特克体育场，墨西哥城",
+      "status": "upcoming",
+      "stage": "Quarter-final"
+    },
+    {
+      "id": 101,
+      "home_team": "W97",
+      "away_team": "W98",
+      "match_date": "2026-07-18T07:00:00+08:00",
+      "venue": "AT&T体育场，达拉斯",
+      "status": "upcoming",
+      "stage": "Semi-final"
+    },
+    {
+      "id": 102,
+      "home_team": "W99",
+      "away_team": "W100",
+      "match_date": "2026-07-19T07:00:00+08:00",
+      "venue": "大都会人寿体育场，纽约",
+      "status": "upcoming",
+      "stage": "Semi-final"
+    },
+    {
+      "id": 103,
+      "home_team": "L101",
+      "away_team": "L102",
+      "match_date": "2026-07-20T07:00:00+08:00",
+      "venue": "硬石体育场，迈阿密",
+      "status": "upcoming",
+      "stage": "Third place"
+    },
+    {
+      "id": 104,
+      "home_team": "W101",
+      "away_team": "W102",
+      "match_date": "2026-07-21T08:00:00+08:00",
+      "venue": "MetLife体育场，纽约",
+      "status": "upcoming",
+      "stage": "Final"
+    }
+  ]
+}

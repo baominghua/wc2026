@@ -1,0 +1,11 @@
+{
+  "source": "nas_scheduled_feed",
+  "last_updated": "2026-06-13T00:00:00+08:00",
+  "teams": {
+    "示例球队": {
+      "unavailable_players": ["示例停赛球员"],
+      "doubtful_players": ["示例出战成疑球员"],
+      "note": "由 NAS 定时任务或供应商 API 更新"
+    }
+  }
+}

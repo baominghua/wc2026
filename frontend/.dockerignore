@@ -1,0 +1,15 @@
+# 忽略不需要打包进镜像的文件
+node_modules/
+*.log
+*.md
+.vscode/
+.idea/
+git/
+
+# 保留 dist/ 用于 Docker 构建（如果本地构建）
+# dist/  取消注释如果你的构建环境在 Docker 内
+
+# 开发环境文件
+.env
+.env.local
+.env.*.local

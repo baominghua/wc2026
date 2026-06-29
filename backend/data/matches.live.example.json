@@ -1,0 +1,55 @@
+{
+  "source": "fifa_match_centre_or_provider_feed",
+  "last_updated": "2026-06-13T12:00:00+08:00",
+  "matches": [
+    {
+      "id": 4,
+      "status": "completed",
+      "home_score": 0,
+      "away_score": 0,
+      "report": {
+        "attendance": 0,
+        "referee": "待官方确认",
+        "player_of_match": "待官方确认",
+        "goals": [],
+        "lineups": [
+          {
+            "team": "美国",
+            "formation": "4-3-3",
+            "coach": "待官方确认",
+            "starters": [],
+            "substitutes": []
+          },
+          {
+            "team": "巴拉圭",
+            "formation": "4-2-3-1",
+            "coach": "待官方确认",
+            "starters": [],
+            "substitutes": []
+          }
+        ],
+        "stats": {
+          "possession_home": 0,
+          "possession_away": 0,
+          "shots_home": 0,
+          "shots_away": 0,
+          "shots_on_target_home": 0,
+          "shots_on_target_away": 0,
+          "xg_home": 0,
+          "xg_away": 0,
+          "corners_home": 0,
+          "corners_away": 0,
+          "fouls_home": 0,
+          "fouls_away": 0,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 0,
+          "passes_home": 0,
+          "passes_away": 0
+        },
+        "notes": [
+          "将本文件复制为 matches.live.json 后，用真实官方/供应商数据替换示例值。不要把预测比分写入这里。"
+        ]
+      }
+    }
+  ]
+}
