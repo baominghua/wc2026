@@ -168,7 +168,7 @@ class LiveMatchFeedTests(unittest.TestCase):
         self.assertIsNone(merged[0].get("group"))
         self.assertEqual(merged[0].get("stage"), "Round of 32")
 
-    def test_confirmed_knockout_feed_overlays_placeholder_slot(self):
+    def test_confirmed_knockout_feed_does_not_cannibalize_unmatched_placeholder_slots(self):
         with tempfile.TemporaryDirectory() as tmp:
             feed_path = Path(tmp) / "matches.live.json"
             feed_path.write_text(
@@ -225,15 +225,80 @@ class LiveMatchFeedTests(unittest.TestCase):
                 ]
             )
 
-        self.assertEqual(len(merged), 2)
-        self.assertEqual(merged[0]["id"], 73)
-        self.assertEqual(merged[0]["espn_event_id"], 760490)
-        self.assertEqual(merged[0]["home_team"], "Canada")
-        self.assertEqual(merged[0]["away_team"], "South Africa")
-        self.assertEqual(merged[0]["match_date"], "2026-07-01T01:00:00+08:00")
-        self.assertEqual(merged[0]["fixture_status"], "confirmed")
-        self.assertEqual(merged[1]["id"], 74)
-        self.assertEqual(merged[1]["fixture_status"], "placeholder")
+        self.assertEqual(len(merged), 3)
+        by_id = {match["id"]: match for match in merged}
+        self.assertEqual(by_id[73]["home_team"], "A2")
+        self.assertEqual(by_id[73]["away_team"], "B2")
+        self.assertEqual(by_id[73]["match_date"], "2026-07-02T03:00:00+08:00")
+        self.assertEqual(by_id[73]["fixture_status"], "placeholder")
+        self.assertEqual(by_id[74]["fixture_status"], "placeholder")
+        self.assertEqual(by_id[760490]["home_team"], "Canada")
+        self.assertEqual(by_id[760490]["away_team"], "South Africa")
+        self.assertEqual(by_id[760490]["fixture_status"], "confirmed")
+
+    def test_confirmed_knockout_feed_hides_placeholders_on_same_stage_date_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            feed_path = Path(tmp) / "matches.live.json"
+            feed_path.write_text(
+                json.dumps(
+                    {
+                        "source": "espn_scoreboard",
+                        "last_updated": "2026-06-30T10:00:00+08:00",
+                        "matches": [
+                            {
+                                "id": 760497,
+                                "home_team": "Spain",
+                                "away_team": "Austria",
+                                "group": None,
+                                "round": None,
+                                "match_date": "2026-07-03T03:00:00+08:00",
+                                "venue": "SoFi Stadium",
+                                "status": "upcoming",
+                            }
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            os.environ["MATCH_FEED_PATH"] = str(feed_path)
+            os.environ["MATCH_RESULTS_BACKFILL_PATH"] = str(Path(tmp) / "missing.public-results.json")
+            os.environ["LOCAL_MATCH_FEED_ENABLED"] = "true"
+            importlib.reload(live_match_feed)
+
+            merged = live_match_feed.merge_live_matches(
+                [
+                    {
+                        "id": 75,
+                        "home_team": "F1",
+                        "away_team": "C2",
+                        "group": None,
+                        "round": None,
+                        "stage": "Round of 32",
+                        "match_date": "2026-07-03T03:00:00+08:00",
+                        "venue": "AT&T Stadium",
+                        "status": "upcoming",
+                    },
+                    {
+                        "id": 78,
+                        "home_team": "E2",
+                        "away_team": "I2",
+                        "group": None,
+                        "round": None,
+                        "stage": "Round of 32",
+                        "match_date": "2026-07-04T03:00:00+08:00",
+                        "venue": "Hard Rock Stadium",
+                        "status": "upcoming",
+                    },
+                ]
+            )
+
+        by_id = {match["id"]: match for match in merged}
+        self.assertNotIn(75, by_id)
+        self.assertIn(760497, by_id)
+        self.assertEqual(by_id[760497]["fixture_status"], "confirmed")
+        self.assertIn(78, by_id)
+        self.assertEqual(by_id[78]["fixture_status"], "placeholder")
 
     def test_top_level_cards_are_preserved_in_report_when_merging_feed(self):
         with tempfile.TemporaryDirectory() as tmp:
