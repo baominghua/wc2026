@@ -136,7 +136,7 @@ function selectExportMatches(matches: Match[], now = new Date(), targetDayKey?: 
     .filter(match => new Date(match.match_date).getTime() >= nowMs - 30 * 60 * 1000)
     .sort((a, b) => new Date(a.match_date).getTime() - new Date(b.match_date).getTime())
   const dayKeys = Array.from(new Set(candidates.map(match => getBeijingDayKey(match.match_date)))).sort()
-  const selectedDayKey = targetDayKey && dayKeys.includes(targetDayKey)
+  const selectedDayKey = targetDayKey
     ? targetDayKey
     : dayKeys.find(key => key >= todayKey) ?? dayKeys[0] ?? todayKey
   const dayMatches = candidates.filter(match => getBeijingDayKey(match.match_date) === selectedDayKey)

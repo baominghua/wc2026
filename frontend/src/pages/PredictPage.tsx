@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import { Zap, Target, TrendingUp, BarChart3, Calendar, Clock, MapPin, ChevronLeft, ChevronRight, ChevronDown, ChevronUp, Home, CloudRain, Thermometer, Wind, ShieldAlert, Activity, Download, FileText, X } from 'lucide-react'
 import { injuryAPI, matchAPI, predictionAPI } from '../services/api'
 import type { InjuryMatchFeed, InjuryTeamStatus, PredictionResult } from '../services/api'
-import { TEAMS, VENUES, HOST_COUNTRY_MAP, isKnockoutPlaceholder, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch } from '../services/wc2026-data'
+import { TEAMS, VENUES, HOST_COUNTRY_MAP, isPlaceholderFixture, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch } from '../services/wc2026-data'
 import type { Match } from '../services/wc2026-data'
 import TeamFlag from '../components/TeamFlag'
 import TeamFlagLink from '../components/TeamFlagLink'
@@ -652,8 +652,6 @@ export default function PredictPage() {
   const filteredMatches = useMemo(() => timeFilteredMatches.filter(m => {
     if (filterGroup && m.group !== filterGroup) return false
     if (filterRound && m.round !== filterRound) return false
-    // 排除尚未确定的淘汰赛占位符比赛
-    if (isEffectiveKnockoutMatch(m) && (isKnockoutPlaceholder(m.home_team) || isKnockoutPlaceholder(m.away_team))) return false
     return true
   }), [timeFilteredMatches, filterGroup, filterRound])
 
@@ -672,6 +670,7 @@ export default function PredictPage() {
     () => matches.find(m => m.id === effectiveSelectedMatchId) || null,
     [matches, effectiveSelectedMatchId]
   )
+  const selectedFixturePending = isPlaceholderFixture(selectedMatch)
   const selectedEffectiveStage = selectedMatch ? getEffectiveMatchStage(selectedMatch) : null
 
   useEffect(() => {
@@ -761,7 +760,12 @@ export default function PredictPage() {
   const getTeamInfo = useCallback((name: string) => TEAMS.find(t => t.name === name), [])
 
   const runPrediction = useCallback(async () => {
-    if (!selectedMatch || !autoWeather || !selectedInjuryFeed) return
+    if (!selectedMatch) return
+    if (selectedFixturePending) {
+      setDownloadStatus('淘汰赛对阵尚未官方确认，等双方确定后再生成预测')
+      return
+    }
+    if (!autoWeather || !selectedInjuryFeed) return
     const requestId = ++predictionRequestIdRef.current
     const requestMatchId = selectedMatch.id
     setLoading(true)
@@ -805,7 +809,7 @@ export default function PredictPage() {
         setLoading(false)
       }
     }
-  }, [autoWeather, effectiveWeather, modelType, scenarioSettings, selectedInjuryFeed, selectedMatch, venueAdvantage])
+  }, [autoWeather, effectiveWeather, modelType, scenarioSettings, selectedFixturePending, selectedInjuryFeed, selectedMatch, venueAdvantage])
 
   const downloadPredictionImage = useCallback(async () => {
     if (!selectedMatch || !prediction || predictionMatchId !== selectedMatch.id || loading || !selectedInjuryFeed) {
@@ -2104,10 +2108,10 @@ export default function PredictPage() {
             <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-3">
               <button
                 onClick={runPrediction}
-                disabled={loading || !selectedInjuryFeed}
+                disabled={loading || !selectedInjuryFeed || selectedFixturePending}
                 className="rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 text-sm font-black text-white shadow-lg shadow-blue-200 transition-all hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50"
               >
-                {loading ? '分析中...' : '开始预测'}
+                {selectedFixturePending ? '等待对阵确认' : loading ? '分析中...' : '开始预测'}
               </button>
               <button
                 type="button"
@@ -2130,6 +2134,11 @@ export default function PredictPage() {
             {downloadStatus && (
               <p className="mt-3 text-center text-xs font-semibold text-blue-700 sm:text-right">
                 {downloadStatus}
+              </p>
+            )}
+            {selectedFixturePending && (
+              <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-bold leading-5 text-amber-800">
+                这场淘汰赛还只是官方席位占位，真实对阵确认前只展示赛程，不参与单场预测和预测海报下载。
               </p>
             )}
           </div>

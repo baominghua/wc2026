@@ -69,6 +69,21 @@ class FrontendPageContractTests(unittest.TestCase):
         self.assertNotIn("resolveKnockoutTeam", matches_source)
         self.assertIn("isPlaceholderFixture(match)", matches_source)
 
+    def test_predict_page_keeps_placeholder_fixtures_visible_without_predicting_them(self):
+        source = PREDICT_PAGE.read_text(encoding="utf-8")
+
+        self.assertIn("isPlaceholderFixture", source)
+        self.assertNotIn("isEffectiveKnockoutMatch(m) && (isKnockoutPlaceholder(m.home_team) || isKnockoutPlaceholder(m.away_team))) return false", source)
+        self.assertIn("const selectedFixturePending", source)
+        self.assertIn("if (selectedFixturePending)", source)
+        self.assertIn("disabled={loading || !selectedInjuryFeed || selectedFixturePending}", source)
+
+    def test_daily_export_respects_selected_day_even_when_only_placeholders_remain(self):
+        source = DAILY_EXPORT.read_text(encoding="utf-8")
+
+        self.assertIn("const selectedDayKey = targetDayKey", source)
+        self.assertNotIn("targetDayKey && dayKeys.includes(targetDayKey)", source)
+
 
 if __name__ == "__main__":
     unittest.main()
