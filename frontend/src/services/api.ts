@@ -1801,9 +1801,9 @@ const buildTotalGoalsPrediction = (
   const underProbability = mainLine.under_probability
   const sideProbability = Math.max(overProbability, underProbability)
   const signalStrength = Math.abs(overProbability - underProbability)
-  let recommendation = ''
-  let recommendationLevel: 'low' | 'medium' | 'high' = 'medium'
-  let riskNote = ''
+  let recommendation: string
+  let recommendationLevel: 'low' | 'medium' | 'high'
+  let riskNote: string
   if (overProbability >= underProbability) {
     if (overProbability < 0.57) {
       recommendation = '大2.5观察'

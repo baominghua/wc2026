@@ -1494,7 +1494,20 @@ export default function TournamentPage() {
   }
 
   useEffect(() => {
-    void loadProjection(true)
+    let active = true
+    void tournamentAPI.getProjection(true)
+      .then(payload => {
+        if (active) setProjection(payload)
+      })
+      .catch(err => {
+        if (active) setError(err instanceof Error ? err.message : String(err))
+      })
+      .finally(() => {
+        if (active) setLoading(false)
+      })
+    return () => {
+      active = false
+    }
   }, [])
 
   const qualifiedThirdGroups = useMemo(() => (

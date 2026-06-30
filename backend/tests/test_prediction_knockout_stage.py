@@ -4,6 +4,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from fastapi import HTTPException
+
 
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
@@ -57,6 +59,39 @@ class PredictionKnockoutStageTests(unittest.TestCase):
         self.assertTrue(kwargs["is_knockout"])
         self.assertEqual(kwargs["stage"], "Round of 32")
         self.assertIsNone(kwargs["match_round"])
+
+    def test_placeholder_knockout_fixture_is_rejected_before_prediction(self):
+        match = {
+            "id": 73,
+            "home_team": "A2",
+            "away_team": "B2",
+            "group": None,
+            "round": None,
+            "stage": "Round of 32",
+            "match_date": "2026-07-02T03:00:00+08:00",
+            "venue": "Slot 73",
+            "status": "upcoming",
+            "fixture_status": "placeholder",
+        }
+
+        with patch("routers.predictions.load_pre_world_cup_official_matches", return_value=[]), patch(
+            "routers.predictions.merge_live_matches", return_value=[match]
+        ), patch("routers.predictions.predict_match") as predict_mock:
+            with self.assertRaises(HTTPException) as raised:
+                asyncio.run(
+                    predict_match_result(
+                        PredictionRequest(
+                            match_id=73,
+                            home_team="A2",
+                            away_team="B2",
+                            stage="Round of 32",
+                            is_knockout=True,
+                        )
+                    )
+                )
+
+        self.assertEqual(raised.exception.status_code, 400)
+        predict_mock.assert_not_called()
 
 
 if __name__ == "__main__":

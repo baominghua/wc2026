@@ -616,10 +616,13 @@ export default function PredictPage() {
     if (!matches.some(match => match.id === urlMatchId)) return
 
     handledUrlMatchIdRef.current = urlMatchId
-    setSelectedMatchId(urlMatchId)
-    setTimeFilter('all')
-    setFilterGroup('')
-    setFilterRound(0)
+    const timer = window.setTimeout(() => {
+      setSelectedMatchId(urlMatchId)
+      setTimeFilter('all')
+      setFilterGroup('')
+      setFilterRound(0)
+    }, 0)
+    return () => window.clearTimeout(timer)
   }, [matches, searchParams])
 
   // 时间窗口计算
@@ -675,10 +678,13 @@ export default function PredictPage() {
 
   useEffect(() => {
     predictionRequestIdRef.current += 1
-    setPrediction(null)
-    setPredictionMatchId(null)
-    setDownloadStatus(null)
-    setLoading(false)
+    const timer = window.setTimeout(() => {
+      setPrediction(null)
+      setPredictionMatchId(null)
+      setDownloadStatus(null)
+      setLoading(false)
+    }, 0)
+    return () => window.clearTimeout(timer)
   }, [selectedMatch?.id])
 
   // 检测主场优势

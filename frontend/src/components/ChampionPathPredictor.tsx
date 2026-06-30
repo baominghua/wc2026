@@ -156,7 +156,20 @@ export default function ChampionPathPredictor() {
   }
 
   useEffect(() => {
-    void loadProjection()
+    let active = true
+    void tournamentAPI.getProjection(true)
+      .then(data => {
+        if (active) setProjection(data)
+      })
+      .catch(err => {
+        if (active) setError(err instanceof Error ? err.message : '鍑虹嚎棰勬祴鍔犺浇澶辫触')
+      })
+      .finally(() => {
+        if (active) setLoading(false)
+      })
+    return () => {
+      active = false
+    }
   }, [])
 
   const matchMap = useMemo(() => (projection ? buildMatchMap(projection) : new Map<number, TournamentProjectedMatch>()), [projection])

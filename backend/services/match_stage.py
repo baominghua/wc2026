@@ -72,6 +72,14 @@ def _has_placeholder_fixture(match: Mapping[str, Any]) -> bool:
     return _is_knockout_placeholder(match.get("home_team")) or _is_knockout_placeholder(match.get("away_team"))
 
 
+def is_knockout_placeholder(value: Any) -> bool:
+    return _is_knockout_placeholder(value)
+
+
+def has_placeholder_fixture(match: Mapping[str, Any]) -> bool:
+    return _has_placeholder_fixture(match)
+
+
 def is_knockout_stage(stage: Any) -> bool:
     if not _has_value(stage):
         return False
@@ -114,5 +122,6 @@ def normalize_match_stage(match: Mapping[str, Any]) -> dict[str, Any]:
                 "Knockout slot pending official confirmation; simulated bracket results are not used as real fixtures.",
             )
         else:
-            normalized.setdefault("fixture_status", "confirmed")
+            normalized["fixture_status"] = "confirmed"
+            normalized.pop("fixture_message", None)
     return normalized

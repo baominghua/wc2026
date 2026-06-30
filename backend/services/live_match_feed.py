@@ -11,7 +11,7 @@ from typing import Any, Dict, Iterable, List
 
 from services.api_football import api_football_enabled, fetch_api_football_match_feed
 from services.espn_scoreboard import fetch_espn_scoreboard_feed
-from services.match_stage import normalize_match_stage
+from services.match_stage import has_placeholder_fixture, infer_effective_stage, normalize_match_stage
 from services.schedule import enrich_match_from_schedule
 
 
@@ -109,11 +109,51 @@ def _match_id(match: Dict[str, Any]) -> int | None:
         return None
 
 
+def _match_sort_timestamp(match: Dict[str, Any]) -> float:
+    parsed = _parse_datetime(str(match.get("match_date")) if match.get("match_date") else None)
+    return parsed.timestamp() if parsed else float("inf")
+
+
 def _feed_identity(match: Dict[str, Any]) -> str:
     match_id = _match_id(match)
     if match_id is not None:
         return f"id:{match_id}"
     return f"object:{id(match)}"
+
+
+def _is_placeholder_fixture(match: Dict[str, Any]) -> bool:
+    normalized = normalize_match_stage(match)
+    return normalized.get("fixture_status") == "placeholder" or has_placeholder_fixture(normalized)
+
+
+def _effective_stage(match: Dict[str, Any]) -> str | None:
+    return infer_effective_stage(normalize_match_stage(match))
+
+
+def _placeholder_indexes_by_stage(matches: List[Dict[str, Any]]) -> Dict[str, List[int]]:
+    indexes: Dict[str, List[int]] = {}
+    for index, match in enumerate(matches):
+        if not _is_placeholder_fixture(match):
+            continue
+        stage = _effective_stage(match)
+        if stage:
+            indexes.setdefault(stage, []).append(index)
+    return indexes
+
+
+def _claim_placeholder_index(
+    feed_match: Dict[str, Any],
+    placeholders_by_stage: Dict[str, List[int]],
+) -> int | None:
+    if _is_placeholder_fixture(feed_match):
+        return None
+    stage = _effective_stage(feed_match)
+    if not stage:
+        return None
+    indexes = placeholders_by_stage.get(stage)
+    if not indexes:
+        return None
+    return indexes.pop(0)
 
 
 def _with_feed_meta(match: Dict[str, Any], feed: Dict[str, Any], feed_kind: str) -> Dict[str, Any]:
@@ -564,7 +604,10 @@ def merge_live_matches(
             match = _merge_feed_match(match, feed_match)
         match = normalize_match_stage(_mark_match_data_status(match))
         merged_matches.append(match)
-    for match_id, feed_match in feed_by_id.items():
+
+    placeholders_by_stage = _placeholder_indexes_by_stage(merged_matches)
+    feed_items = sorted(feed_by_id.items(), key=lambda item: (_match_sort_timestamp(item[1]), item[0]))
+    for match_id, feed_match in feed_items:
         if _feed_identity(feed_match) in seen_feed_keys:
             continue
         if not feed_match.get("home_team") or not feed_match.get("away_team") or not feed_match.get("match_date"):
@@ -595,6 +638,16 @@ def merge_live_matches(
                     match["espn_event_id"] = existing_id
             match = normalize_match_stage(_mark_match_data_status(match))
             merged_matches[existing_index] = match
+            continue
+        placeholder_index = _claim_placeholder_index(feed_match, placeholders_by_stage)
+        if placeholder_index is not None:
+            match = _merge_feed_match(merged_matches[placeholder_index], feed_match)
+            if match.get("live_source") == "espn_scoreboard":
+                incoming_id = _match_id(feed_match)
+                if incoming_id is not None:
+                    match["espn_event_id"] = incoming_id
+            match = normalize_match_stage(_mark_match_data_status(match))
+            merged_matches[placeholder_index] = match
             continue
         match = _merge_feed_match(feed_match, feed_match)
         match["id"] = match_id

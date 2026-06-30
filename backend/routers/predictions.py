@@ -7,7 +7,7 @@ from services.pre_world_cup_history import load_pre_world_cup_official_matches
 from services.review_engine import build_prediction_audit, build_review_adjustment
 from services.team_feature_library import build_match_feature_adjustment, sync_team_profile_store
 from services.live_match_feed import merge_live_matches
-from services.match_stage import infer_effective_stage, is_knockout_stage, normalize_match_stage
+from services.match_stage import has_placeholder_fixture, infer_effective_stage, is_knockout_stage, normalize_match_stage
 from services.wc2026_skill_audit import build_skill_audit
 from services.injury_feed import get_match_injury_feed
 from routers.matches import mock_matches
@@ -34,6 +34,19 @@ class PredictionRequest(BaseModel):
     stage: Optional[str] = None
     venue_factor: Optional[str] = "normal"
     force_neutral: Optional[bool] = False
+
+
+def _request_context(request: PredictionRequest) -> dict:
+    return request.model_dump() if hasattr(request, "model_dump") else request.dict()
+
+
+def _reject_placeholder_fixture(match: dict | None, request: PredictionRequest) -> None:
+    context = match or _request_context(request)
+    if context.get("fixture_status") == "placeholder" or has_placeholder_fixture(context):
+        raise HTTPException(
+            status_code=400,
+            detail="Knockout fixture is still a placeholder; wait for the official teams before running a prediction.",
+        )
 
 
 def _player_list(items: list[str] | None, limit: int = 4) -> str:
@@ -91,6 +104,7 @@ async def predict_match_result(request: PredictionRequest):
             selected_match = normalize_match_stage(selected_match)
             if not infer_effective_stage(selected_match) and request.stage:
                 selected_match = normalize_match_stage({**selected_match, "stage": request.stage})
+        _reject_placeholder_fixture(selected_match, request)
         profile_store = (
             sync_team_profile_store(live_matches, before=selected_match.get("match_date"))
             if selected_match
@@ -151,6 +165,8 @@ async def predict_match_result(request: PredictionRequest):
             result["factors"] = [*existing_factors, *injury_lines]
         result["skill_audit"] = build_skill_audit(result, match=match_context)
         return result
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

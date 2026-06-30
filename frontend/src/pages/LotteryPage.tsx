@@ -350,13 +350,16 @@ export default function LotteryPage() {
   const selectedModel = selectedMatch ? modelFromPrediction(selectedMatch, modelCache[selectedMatch.id]) : null
 
   useEffect(() => {
-    if (visibleMatches.length === 0) {
-      setSelectedMatchId(null)
-      return
-    }
-    if (!selectedMatchId || !visibleMatches.some(match => match.id === selectedMatchId)) {
-      setSelectedMatchId(visibleMatches[0].id)
-    }
+    const timer = window.setTimeout(() => {
+      if (visibleMatches.length === 0) {
+        setSelectedMatchId(null)
+        return
+      }
+      if (!selectedMatchId || !visibleMatches.some(match => match.id === selectedMatchId)) {
+        setSelectedMatchId(visibleMatches[0].id)
+      }
+    }, 0)
+    return () => window.clearTimeout(timer)
   }, [selectedMatchId, visibleMatches])
 
   useEffect(() => {

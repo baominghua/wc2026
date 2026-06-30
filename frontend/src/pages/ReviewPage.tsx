@@ -205,17 +205,18 @@ export default function ReviewPage() {
   }, [audit, selectedId])
 
   const isCurrentModelBacktest = audit?.evaluation_mode === 'current_model_backtest'
+  const teamProfiles = audit?.team_profiles?.profiles
   const profileEntries = useMemo(
-    () => Object.values(audit?.team_profiles?.profiles || {})
+    () => Object.values(teamProfiles || {})
       .sort((a, b) => (b.form_state?.score || 0) - (a.form_state?.score || 0)),
-    [audit?.team_profiles],
+    [teamProfiles],
   )
   const selectedTeamProfiles = useMemo(() => {
-    if (!selectedRow || !audit?.team_profiles?.profiles) return []
+    if (!selectedRow || !teamProfiles) return []
     return [selectedRow.home_team, selectedRow.away_team]
-      .map(team => audit.team_profiles?.profiles[team])
+      .map(team => teamProfiles[team])
       .filter((profile): profile is TeamFeatureProfile => Boolean(profile))
-  }, [audit?.team_profiles, selectedRow])
+  }, [teamProfiles, selectedRow])
   const profileComparison = audit?.profile_comparison
   const totalTournamentMatches = audit
     ? audit.summary.total_matches || audit.team_profiles?.fixture_match_count || audit.team_profiles?.match_count || 104
@@ -238,7 +239,22 @@ export default function ReviewPage() {
   }
 
   useEffect(() => {
-    void loadAudit()
+    let active = true
+    void reviewAPI.getAudit()
+      .then(payload => {
+        if (!active) return
+        setAudit(payload)
+        setSelectedId(payload.rows[0]?.match_id ?? null)
+      })
+      .catch(err => {
+        if (active) setError(err instanceof Error ? err.message : String(err))
+      })
+      .finally(() => {
+        if (active) setLoading(false)
+      })
+    return () => {
+      active = false
+    }
   }, [])
 
   const handleDownloadCsv = async () => {
