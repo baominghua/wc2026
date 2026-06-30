@@ -14,6 +14,34 @@ ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa
 ESPN_SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary"
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
+ESPN_STAGE_BY_SLUG = {
+    "round-of-32": "Round of 32",
+    "round-of-16": "Round of 16",
+    "quarterfinal": "Quarter-final",
+    "quarterfinals": "Quarter-final",
+    "quarter-final": "Quarter-final",
+    "quarter-finals": "Quarter-final",
+    "semifinal": "Semi-final",
+    "semifinals": "Semi-final",
+    "semi-final": "Semi-final",
+    "semi-finals": "Semi-final",
+    "third-place": "Third place",
+    "third-place-game": "Third place",
+    "final": "Final",
+}
+
+ESPN_STAGE_BY_TEXT = (
+    ("round of 32", "Round of 32"),
+    ("round of 16", "Round of 16"),
+    ("quarterfinal", "Quarter-final"),
+    ("quarter-final", "Quarter-final"),
+    ("semifinal", "Semi-final"),
+    ("semi-final", "Semi-final"),
+    ("third place", "Third place"),
+    ("third-place", "Third place"),
+    ("final", "Final"),
+)
+
 TEAM_ABBR_TO_CN = {
     "ALG": "阿尔及利亚",
     "ARG": "阿根廷",
@@ -185,6 +213,21 @@ def _extract_group(note: str | None) -> str | None:
     return match.group(1).upper() if match else None
 
 
+def _extract_stage(event: Dict[str, Any], competition: Dict[str, Any]) -> str | None:
+    slug = str((event.get("season") or {}).get("slug") or "").strip().lower()
+    if slug in ESPN_STAGE_BY_SLUG:
+        return ESPN_STAGE_BY_SLUG[slug]
+
+    for candidate in (competition.get("altGameNote"), event.get("name"), event.get("shortName")):
+        text = str(candidate or "").strip().lower()
+        if not text:
+            continue
+        for marker, stage in ESPN_STAGE_BY_TEXT:
+            if marker in text:
+                return stage
+    return None
+
+
 def _normalise_status(competition: Dict[str, Any]) -> str:
     status_type = ((competition.get("status") or {}).get("type") or {})
     if status_type.get("completed"):
@@ -281,14 +324,16 @@ def _normalise_competition(
     country = address.get("country")
     venue_display = "，".join(part for part in [venue_name, city or country] if part)
     group = _extract_group(competition.get("altGameNote"))
+    stage = _extract_stage(event, competition)
 
     return {
         "id": _safe_int(event.get("id")),
         "espn_event_id": str(event.get("id") or ""),
         "home_team": home_team,
         "away_team": away_team,
-        "group": group,
-        "round": 1 if group else None,
+        "group": None if stage else group,
+        "round": None if stage else (1 if group else None),
+        "stage": stage,
         "match_date": _to_iso_shanghai(competition.get("date") or event.get("date")),
         "venue": venue_display,
         "status": _normalise_status(competition),
@@ -374,7 +419,7 @@ def _date_values() -> list[str]:
     if configured:
         return [item.strip() for item in configured.split(",") if item.strip()]
     today = _now().date()
-    days_forward = max(_safe_int(os.getenv("ESPN_SCOREBOARD_DAYS_FORWARD"), 2), 0)
+    days_forward = max(_safe_int(os.getenv("ESPN_SCOREBOARD_DAYS_FORWARD"), 14), 0)
     start_date = _parse_scoreboard_date(os.getenv("ESPN_SCOREBOARD_START_DATE", "20260611"))
     if start_date:
         max_days = max(_safe_int(os.getenv("ESPN_SCOREBOARD_MAX_DAYS"), 60), 1)

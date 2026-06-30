@@ -26,6 +26,15 @@ _SYNC_STATUS: Dict[str, Any] = {
 }
 _SYNC_TASK: asyncio.Task | None = None
 
+KNOCKOUT_STAGE_SLOT_COUNTS = {
+    "Round of 32": 16,
+    "Round of 16": 8,
+    "Quarter-final": 4,
+    "Semi-final": 2,
+    "Third place": 1,
+    "Final": 1,
+}
+
 
 def _default_feed_path() -> Path:
     return Path(__file__).resolve().parent.parent / "data" / "matches.live.json"
@@ -139,9 +148,24 @@ def _confirmed_external_knockout_keys(matches: Iterable[Dict[str, Any]]) -> set[
     return keys
 
 
+def _officially_replaced_stages(matches: Iterable[Dict[str, Any]]) -> set[str]:
+    counts: Dict[str, int] = {}
+    for match in matches:
+        stage = match.get("stage")
+        if stage and not match.get("group") and match.get("live_source"):
+            stage_key = str(stage)
+            counts[stage_key] = counts.get(stage_key, 0) + 1
+    return {
+        stage
+        for stage, count in counts.items()
+        if count >= KNOCKOUT_STAGE_SLOT_COUNTS.get(stage, 999)
+    }
+
+
 def _remove_shadowed_placeholder_knockouts(matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     confirmed_keys = _confirmed_external_knockout_keys(matches)
-    if not confirmed_keys:
+    replaced_stages = _officially_replaced_stages(matches)
+    if not confirmed_keys and not replaced_stages:
         return matches
     filtered: List[Dict[str, Any]] = []
     for match in matches:
@@ -149,9 +173,12 @@ def _remove_shadowed_placeholder_knockouts(matches: List[Dict[str, Any]]) -> Lis
         day_key = _match_day_key(match)
         if (
             stage
-            and day_key
             and match.get("fixture_status") == "placeholder"
-            and (str(stage), day_key) in confirmed_keys
+            and not match.get("live_source")
+            and (
+                str(stage) in replaced_stages
+                or (day_key and (str(stage), day_key) in confirmed_keys)
+            )
         ):
             continue
         filtered.append(match)

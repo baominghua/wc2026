@@ -80,7 +80,7 @@ grep -v '^ESPN_SCOREBOARD_ENABLED=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_E
 grep -v '^ESPN_SCOREBOARD_START_DATE=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_START_DATE=20260611\n' >> .env.tmp && mv .env.tmp .env &&
 grep -v '^ESPN_SCOREBOARD_MAX_DAYS=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_MAX_DAYS=60\n' >> .env.tmp && mv .env.tmp .env &&
 grep -v '^ESPN_SCOREBOARD_DAYS_BACK=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_DAYS_BACK=14\n' >> .env.tmp && mv .env.tmp .env &&
-grep -v '^ESPN_SCOREBOARD_DAYS_FORWARD=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_DAYS_FORWARD=2\n' >> .env.tmp && mv .env.tmp .env &&
+grep -v '^ESPN_SCOREBOARD_DAYS_FORWARD=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_DAYS_FORWARD=14\n' >> .env.tmp && mv .env.tmp .env &&
 grep -v '^ESPN_SCOREBOARD_TIMEOUT_SECONDS=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_TIMEOUT_SECONDS=8\n' >> .env.tmp && mv .env.tmp .env &&
 grep -v '^ESPN_SCOREBOARD_MAX_WORKERS=' .env > .env.tmp && printf 'ESPN_SCOREBOARD_MAX_WORKERS=6\n' >> .env.tmp && mv .env.tmp .env &&
 grep -v '^LOCAL_MATCH_FEED_ENABLED=' .env > .env.tmp && printf 'LOCAL_MATCH_FEED_ENABLED=true\n' >> .env.tmp && mv .env.tmp .env &&

@@ -9,6 +9,7 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
 
 from services import espn_scoreboard
+from services.match_stage import normalize_match_stage
 
 
 class EspnScoreboardWindowTests(unittest.TestCase):
@@ -31,6 +32,68 @@ class EspnScoreboardWindowTests(unittest.TestCase):
         self.assertIn("20260612", dates)
         self.assertIn("20260613", dates)
         self.assertIn("20260620", dates)
+
+    def test_default_scoreboard_window_reaches_announced_knockout_dates(self):
+        with patch.dict(
+            "os.environ",
+            {
+                "ESPN_SCOREBOARD_START_DATE": "20260611",
+            },
+            clear=True,
+        ), patch.object(
+            espn_scoreboard,
+            "_now",
+            return_value=datetime(2026, 6, 30, 12, tzinfo=espn_scoreboard.SHANGHAI_TZ),
+        ):
+            dates = espn_scoreboard._date_values()
+
+        self.assertIn("20260704", dates)
+        self.assertIn("20260707", dates)
+        self.assertIn("20260714", dates)
+
+    def test_normalise_scoreboard_uses_official_knockout_stage_and_placeholders(self):
+        raw_feed = {
+            "events": [
+                {
+                    "id": "760503",
+                    "date": "2026-07-04T21:00Z",
+                    "name": "Round of 32 5 Winner at Paraguay",
+                    "season": {"slug": "round-of-16"},
+                    "competitions": [
+                        {
+                            "date": "2026-07-04T21:00Z",
+                            "altGameNote": "FIFA World Cup, Round of 16",
+                            "status": {"type": {"state": "pre", "completed": False}},
+                            "competitors": [
+                                {
+                                    "homeAway": "home",
+                                    "score": "0",
+                                    "team": {"id": "1", "abbreviation": "PAR", "displayName": "Paraguay"},
+                                },
+                                {
+                                    "homeAway": "away",
+                                    "score": "0",
+                                    "team": {
+                                        "id": "2",
+                                        "abbreviation": "RD32",
+                                        "displayName": "Round of 32 5 Winner",
+                                    },
+                                },
+                            ],
+                        }
+                    ],
+                }
+            ]
+        }
+
+        feed = espn_scoreboard.normalise_espn_scoreboard(raw_feed, fetched_at="2026-06-30T12:00:00+08:00")
+        match = normalize_match_stage(feed["matches"][0])
+
+        self.assertEqual(match["stage"], "Round of 16")
+        self.assertIsNone(match["group"])
+        self.assertIsNone(match["round"])
+        self.assertEqual(match["away_team"], "Round of 32 5 Winner")
+        self.assertEqual(match["fixture_status"], "placeholder")
 
     def test_fetch_scoreboard_combines_multiple_dates(self):
         def fake_read_json_url(url):

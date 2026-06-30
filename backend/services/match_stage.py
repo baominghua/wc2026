@@ -24,7 +24,14 @@ GROUP_STAGE_MARKERS = (
     "league stage",
 )
 
-KNOCKOUT_PLACEHOLDER_PATTERN = re.compile(r"^([A-L][1-4]|1[A-L]|W\d+\??|L\d+\??)$")
+KNOCKOUT_PLACEHOLDER_PATTERN = re.compile(
+    r"^("
+    r"[A-L][1-4]|1[A-L]|W\d+\??|L\d+\??|"
+    r"(?:RD|R)?(?:32|16)\s*W\d+\??|"
+    r"(?:Round\s+of\s+(?:32|16)|Quarterfinal|Quarter-final|Semifinal|Semi-final)\s+\d+\s+Winner"
+    r")$",
+    re.IGNORECASE,
+)
 
 
 def _has_value(value: Any) -> bool:

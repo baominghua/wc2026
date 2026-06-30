@@ -300,6 +300,121 @@ class LiveMatchFeedTests(unittest.TestCase):
         self.assertIn(78, by_id)
         self.assertEqual(by_id[78]["fixture_status"], "placeholder")
 
+    def test_official_placeholder_from_feed_is_preserved_on_same_day_as_confirmed_match(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            feed_path = Path(tmp) / "matches.live.json"
+            feed_path.write_text(
+                json.dumps(
+                    {
+                        "source": "espn_scoreboard",
+                        "last_updated": "2026-06-30T10:00:00+08:00",
+                        "matches": [
+                            {
+                                "id": 760502,
+                                "home_team": "Canada",
+                                "away_team": "Morocco",
+                                "group": None,
+                                "round": None,
+                                "stage": "Round of 16",
+                                "match_date": "2026-07-05T01:00:00+08:00",
+                                "venue": "NRG Stadium",
+                                "status": "upcoming",
+                            },
+                            {
+                                "id": 760503,
+                                "home_team": "Paraguay",
+                                "away_team": "Round of 32 5 Winner",
+                                "group": None,
+                                "round": None,
+                                "stage": "Round of 16",
+                                "match_date": "2026-07-05T05:00:00+08:00",
+                                "venue": "Lincoln Financial Field",
+                                "status": "upcoming",
+                            },
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            os.environ["MATCH_FEED_PATH"] = str(feed_path)
+            os.environ["MATCH_RESULTS_BACKFILL_PATH"] = str(Path(tmp) / "missing.public-results.json")
+            os.environ["LOCAL_MATCH_FEED_ENABLED"] = "true"
+            importlib.reload(live_match_feed)
+
+            merged = live_match_feed.merge_live_matches([])
+
+        by_id = {match["id"]: match for match in merged}
+        self.assertEqual(by_id[760502]["fixture_status"], "confirmed")
+        self.assertEqual(by_id[760503]["fixture_status"], "placeholder")
+        self.assertEqual(by_id[760503]["live_source"], "espn_scoreboard")
+
+    def test_complete_official_knockout_stage_replaces_static_stage_templates(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            feed_path = Path(tmp) / "matches.live.json"
+            feed_path.write_text(
+                json.dumps(
+                    {
+                        "source": "espn_scoreboard",
+                        "last_updated": "2026-06-30T10:00:00+08:00",
+                        "matches": [
+                            {
+                                "id": 9000 + index,
+                                "home_team": f"Official Home {index}",
+                                "away_team": f"Official Away {index}",
+                                "group": None,
+                                "round": None,
+                                "stage": "Round of 32",
+                                "match_date": f"2026-07-{1 + index // 3:02d}T03:00:00+08:00",
+                                "venue": "Official Stadium",
+                                "status": "upcoming",
+                            }
+                            for index in range(16)
+                        ],
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            os.environ["MATCH_FEED_PATH"] = str(feed_path)
+            os.environ["MATCH_RESULTS_BACKFILL_PATH"] = str(Path(tmp) / "missing.public-results.json")
+            os.environ["LOCAL_MATCH_FEED_ENABLED"] = "true"
+            importlib.reload(live_match_feed)
+
+            merged = live_match_feed.merge_live_matches(
+                [
+                    {
+                        "id": 73,
+                        "home_team": "A2",
+                        "away_team": "B2",
+                        "group": None,
+                        "round": None,
+                        "stage": "Round of 32",
+                        "match_date": "2026-07-02T03:00:00+08:00",
+                        "venue": "Template Stadium",
+                        "status": "upcoming",
+                    },
+                    {
+                        "id": 78,
+                        "home_team": "E2",
+                        "away_team": "I2",
+                        "group": None,
+                        "round": None,
+                        "stage": "Round of 32",
+                        "match_date": "2026-07-04T03:00:00+08:00",
+                        "venue": "Template Stadium",
+                        "status": "upcoming",
+                    },
+                ]
+            )
+
+        ids = {match["id"] for match in merged}
+        self.assertEqual(len(merged), 16)
+        self.assertNotIn(73, ids)
+        self.assertNotIn(78, ids)
+        self.assertIn(9000, ids)
+        self.assertIn(9015, ids)
+
     def test_top_level_cards_are_preserved_in_report_when_merging_feed(self):
         with tempfile.TemporaryDirectory() as tmp:
             feed_path = Path(tmp) / "matches.live.json"

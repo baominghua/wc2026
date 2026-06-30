@@ -561,7 +561,7 @@ export function resolveKnockoutTeam(placeholder: string): string {
 
 // 判断是否为淘汰赛占位符（非实际球队名）
 export function isKnockoutPlaceholder(team: string): boolean {
-  return /^([A-L][1-4]|1[A-L]|W\d+\??|L\d+\??)$/.test(team)
+  return /^([A-L][1-4]|1[A-L]|W\d+\??|L\d+\??|(?:RD|R)?(?:32|16)\s*W\d+\??|(?:Round\s+of\s+(?:32|16)|Quarterfinal|Quarter-final|Semifinal|Semi-final)\s+\d+\s+Winner)$/i.test(team)
 }
 
 export function isPlaceholderFixture(match?: Partial<Pick<Match, 'id' | 'stage' | 'group' | 'home_team' | 'away_team' | 'match_date' | 'fixture_status'>> | null): boolean {
