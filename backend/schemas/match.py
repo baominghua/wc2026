@@ -17,6 +17,8 @@ class MatchResponse(BaseModel):
     report: Optional[dict[str, Any]] = None
     data_status: Optional[str] = None
     data_message: Optional[str] = None
+    fixture_status: Optional[str] = None
+    fixture_message: Optional[str] = None
     live_source: Optional[str] = None
     last_updated: Optional[str] = None
 
@@ -35,6 +37,8 @@ class MatchDetail(BaseModel):
     report: Optional[dict[str, Any]] = None
     data_status: Optional[str] = None
     data_message: Optional[str] = None
+    fixture_status: Optional[str] = None
+    fixture_message: Optional[str] = None
     live_source: Optional[str] = None
     last_updated: Optional[str] = None
     weather: Optional[str] = None

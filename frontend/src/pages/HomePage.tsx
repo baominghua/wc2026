@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Calendar, BarChart3, Users, MapPin, Clock, Flame, Radio, Star, Trophy, ClipboardCheck, Brain } from 'lucide-react'
 import { predictionAPI, matchAPI } from '../services/api'
 import type { LiveSyncStatus, ModelPerformance } from '../services/api'
-import { TEAMS, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch } from '../services/wc2026-data'
+import { TEAMS, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch, isPlaceholderFixture } from '../services/wc2026-data'
 import type { Match } from '../services/wc2026-data'
 import TeamFlagLink from '../components/TeamFlagLink'
 import ChampionPathPredictor from '../components/ChampionPathPredictor'
@@ -205,7 +205,7 @@ export default function HomePage() {
           setAllMatches(matches)
           setUpcomingMatches(
             matches
-              .filter(match => (!match.status || match.status === 'upcoming') && new Date(match.match_date).getTime() > now)
+              .filter(match => (!match.status || match.status === 'upcoming') && new Date(match.match_date).getTime() > now && !isPlaceholderFixture(match))
               .slice(0, 6)
           )
         } else {

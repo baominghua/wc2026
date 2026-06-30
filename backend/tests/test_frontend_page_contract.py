@@ -60,6 +60,15 @@ class FrontendPageContractTests(unittest.TestCase):
         self.assertNotIn("is_knockout: !!selectedMatch.stage", lottery_source)
         self.assertNotIn("Boolean(match.stage && !match.group)", daily_source)
 
+    def test_matches_page_does_not_resolve_placeholder_fixtures_as_real_schedule(self):
+        data_source = WC2026_DATA.read_text(encoding="utf-8")
+        matches_source = MATCHES_PAGE.read_text(encoding="utf-8")
+
+        self.assertIn("fixture_status?:", data_source)
+        self.assertIn("isPlaceholderFixture", data_source)
+        self.assertNotIn("resolveKnockoutTeam", matches_source)
+        self.assertIn("isPlaceholderFixture(match)", matches_source)
+
 
 if __name__ == "__main__":
     unittest.main()

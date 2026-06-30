@@ -113,6 +113,26 @@ class MatchesApiTests(unittest.TestCase):
         self.assertEqual(len(knockout_matches), 32)
         self.assertTrue(all("group" in match for match in knockout_matches))
 
+    def test_knockout_schedule_templates_are_marked_as_placeholders(self):
+        login_status, login_headers, _ = asyncio.run(
+            asgi_request("POST", "/api/v1/auth/login", json_body={"password": "correct-password"})
+        )
+        self.assertEqual(login_status, 200)
+
+        cookie = login_headers["set-cookie"].split(";", 1)[0]
+        status, _, payload = asyncio.run(
+            asgi_request("GET", "/api/v1/matches/", headers={"cookie": cookie})
+        )
+
+        self.assertEqual(status, 200)
+        by_id = {match["id"]: match for match in payload}
+        self.assertEqual(by_id[73]["home_team"], "A2")
+        self.assertEqual(by_id[73]["away_team"], "B2")
+        self.assertEqual(by_id[73]["fixture_status"], "placeholder")
+        self.assertEqual(by_id[89]["home_team"], "W73")
+        self.assertEqual(by_id[89]["away_team"], "W74")
+        self.assertEqual(by_id[89]["fixture_status"], "placeholder")
+
     def test_team_detail_endpoint_uses_backend_team_catalog_and_official_squad(self):
         login_status, login_headers, _ = asyncio.run(
             asgi_request("POST", "/api/v1/auth/login", json_body={"password": "correct-password"})

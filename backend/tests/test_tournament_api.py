@@ -10,6 +10,7 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND_ROOT))
 
 from main import app
+from services import live_match_feed
 
 
 async def asgi_request(method, path, *, json_body=None, headers=None):
@@ -79,12 +80,23 @@ class TournamentApiTests(unittest.TestCase):
             "API_FOOTBALL_ENABLED": os.environ.get("API_FOOTBALL_ENABLED"),
             "ODDS_MARKET_ENABLED": os.environ.get("ODDS_MARKET_ENABLED"),
             "LIVE_SYNC_ENABLED": os.environ.get("LIVE_SYNC_ENABLED"),
+            "LOCAL_MATCH_FEED_ENABLED": os.environ.get("LOCAL_MATCH_FEED_ENABLED"),
+            "MATCH_FEED_URL": os.environ.get("MATCH_FEED_URL"),
+            "MATCH_FEED_PATH": os.environ.get("MATCH_FEED_PATH"),
+            "MATCH_RESULTS_BACKFILL_URL": os.environ.get("MATCH_RESULTS_BACKFILL_URL"),
+            "MATCH_RESULTS_BACKFILL_PATH": os.environ.get("MATCH_RESULTS_BACKFILL_PATH"),
         }
         os.environ["AUTH_ENABLED"] = "false"
         os.environ["ESPN_SCOREBOARD_ENABLED"] = "false"
         os.environ["API_FOOTBALL_ENABLED"] = "false"
         os.environ["ODDS_MARKET_ENABLED"] = "false"
         os.environ["LIVE_SYNC_ENABLED"] = "false"
+        os.environ.pop("LOCAL_MATCH_FEED_ENABLED", None)
+        os.environ.pop("MATCH_FEED_URL", None)
+        os.environ.pop("MATCH_FEED_PATH", None)
+        os.environ.pop("MATCH_RESULTS_BACKFILL_URL", None)
+        os.environ.pop("MATCH_RESULTS_BACKFILL_PATH", None)
+        live_match_feed._CACHE = None
 
     def tearDown(self):
         for key, value in self._old_env.items():
@@ -92,6 +104,7 @@ class TournamentApiTests(unittest.TestCase):
                 os.environ.pop(key, None)
             else:
                 os.environ[key] = value
+        live_match_feed._CACHE = None
 
     def test_projection_endpoint_returns_dynamic_qualification_payload(self):
         status, _, payload = asyncio.run(

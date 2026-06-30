@@ -1,11 +1,20 @@
+import json
+import sys
 from pathlib import Path
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[2]
+BACKEND_ROOT = ROOT / "backend"
+sys.path.insert(0, str(BACKEND_ROOT))
+
+from services.tournament_projection import ROUND_OF_32_TEMPLATE
+
 TOURNAMENT_PAGE = ROOT / "frontend" / "src" / "pages" / "TournamentPage.tsx"
 TOURNAMENT_PROJECTION = ROOT / "backend" / "services" / "tournament_projection.py"
 TOURNAMENT_ROUTER = ROOT / "backend" / "routers" / "tournament.py"
+SCHEDULE_JSON = ROOT / "backend" / "data" / "matches.schedule.json"
+WC2026_DATA = ROOT / "frontend" / "src" / "services" / "wc2026-data.ts"
 
 
 class TournamentProjectionSyncTests(unittest.TestCase):
@@ -38,6 +47,25 @@ class TournamentProjectionSyncTests(unittest.TestCase):
 
         self.assertIn("load_pre_world_cup_official_matches", source)
         self.assertIn("[*load_pre_world_cup_official_matches(), *merge_live_matches(mock_matches)]", source)
+
+    def test_schedule_templates_share_official_round_of_32_slots(self):
+        schedule = json.loads(SCHEDULE_JSON.read_text(encoding="utf-8"))
+        schedule_slots = {
+            match["id"]: (match["home_team"], match["away_team"])
+            for match in schedule["matches"]
+            if 73 <= int(match["id"]) <= 88
+        }
+        expected_slots = {
+            match_id: (home_slot, away_slot)
+            for match_id, home_slot, away_slot in ROUND_OF_32_TEMPLATE
+        }
+
+        self.assertEqual(schedule_slots, expected_slots)
+
+        frontend_source = WC2026_DATA.read_text(encoding="utf-8")
+        self.assertIn("{ id: 73, home_team: 'A2', away_team: 'B2'", frontend_source)
+        self.assertIn("{ id: 74, home_team: 'E1', away_team: '1E'", frontend_source)
+        self.assertNotIn("{ id: 73, home_team: 'A1', away_team: 'B2'", frontend_source)
 
 
 if __name__ == "__main__":

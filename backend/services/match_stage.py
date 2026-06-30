@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from datetime import datetime
+import re
 from typing import Any, Mapping
 
 
@@ -22,6 +23,8 @@ GROUP_STAGE_MARKERS = (
     "regular season",
     "league stage",
 )
+
+KNOCKOUT_PLACEHOLDER_PATTERN = re.compile(r"^([A-L][1-4]|1[A-L]|W\d+\??|L\d+\??)$")
 
 
 def _has_value(value: Any) -> bool:
@@ -61,6 +64,14 @@ def _has_teams(match: Mapping[str, Any]) -> bool:
     return _has_value(match.get("home_team")) and _has_value(match.get("away_team"))
 
 
+def _is_knockout_placeholder(value: Any) -> bool:
+    return isinstance(value, str) and bool(KNOCKOUT_PLACEHOLDER_PATTERN.fullmatch(value.strip()))
+
+
+def _has_placeholder_fixture(match: Mapping[str, Any]) -> bool:
+    return _is_knockout_placeholder(match.get("home_team")) or _is_knockout_placeholder(match.get("away_team"))
+
+
 def is_knockout_stage(stage: Any) -> bool:
     if not _has_value(stage):
         return False
@@ -96,4 +107,12 @@ def normalize_match_stage(match: Mapping[str, Any]) -> dict[str, Any]:
             normalized["group"] = None
             if not _has_value(normalized.get("round")):
                 normalized["round"] = None
+        if _has_placeholder_fixture(normalized):
+            normalized["fixture_status"] = "placeholder"
+            normalized.setdefault(
+                "fixture_message",
+                "Knockout slot pending official confirmation; simulated bracket results are not used as real fixtures.",
+            )
+        else:
+            normalized.setdefault("fixture_status", "confirmed")
     return normalized

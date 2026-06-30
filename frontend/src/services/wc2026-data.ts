@@ -77,6 +77,8 @@ export interface Match {
   report?: CompletedMatchReport
   data_status?: string
   data_message?: string
+  fixture_status?: 'confirmed' | 'placeholder' | string
+  fixture_message?: string
   live_source?: string
   last_updated?: string
 }
@@ -338,27 +340,27 @@ export const MATCHES: Match[] = [
   // 初始时使用小组排名占位符（如A1 = A组第一），小组赛结束后替换为实际球队
   // Round of 32 (32强赛) - 2026年7月2-7日
   // 7月2日
-  { id: 73, home_team: 'A1', away_team: 'B2', stage: 'Round of 32', match_date: '2026-07-02T03:00:00+08:00', venue: '阿兹特克体育场，墨西哥城' },
-  { id: 74, home_team: 'C1', away_team: 'D2', stage: 'Round of 32', match_date: '2026-07-02T07:00:00+08:00', venue: 'SoFi体育场，洛杉矶' },
+  { id: 73, home_team: 'A2', away_team: 'B2', stage: 'Round of 32', match_date: '2026-07-02T03:00:00+08:00', venue: '阿兹特克体育场，墨西哥城' },
+  { id: 74, home_team: 'E1', away_team: '1E', stage: 'Round of 32', match_date: '2026-07-02T07:00:00+08:00', venue: 'SoFi体育场，洛杉矶' },
   // 7月3日
-  { id: 75, home_team: 'E1', away_team: 'F2', stage: 'Round of 32', match_date: '2026-07-03T03:00:00+08:00', venue: 'AT&T体育场，达拉斯' },
-  { id: 76, home_team: 'G1', away_team: 'H2', stage: 'Round of 32', match_date: '2026-07-03T07:00:00+08:00', venue: '大都会人寿体育场，纽约' },
-  { id: 77, home_team: 'I1', away_team: 'J2', stage: 'Round of 32', match_date: '2026-07-03T11:00:00+08:00', venue: '林肯金融球场，费城' },
+  { id: 75, home_team: 'F1', away_team: 'C2', stage: 'Round of 32', match_date: '2026-07-03T03:00:00+08:00', venue: 'AT&T体育场，达拉斯' },
+  { id: 76, home_team: 'C1', away_team: 'F2', stage: 'Round of 32', match_date: '2026-07-03T07:00:00+08:00', venue: '大都会人寿体育场，纽约' },
+  { id: 77, home_team: 'I1', away_team: '1I', stage: 'Round of 32', match_date: '2026-07-03T11:00:00+08:00', venue: '林肯金融球场，费城' },
   // 7月4日
-  { id: 78, home_team: 'K1', away_team: 'L2', stage: 'Round of 32', match_date: '2026-07-04T03:00:00+08:00', venue: '硬石体育场，迈阿密' },
-  { id: 79, home_team: 'B1', away_team: 'A3', stage: 'Round of 32', match_date: '2026-07-04T07:00:00+08:00', venue: 'BC广场，温哥华' },
-  { id: 80, home_team: 'D1', away_team: 'C3', stage: 'Round of 32', match_date: '2026-07-04T11:00:00+08:00', venue: '李维斯体育场，旧金山' },
+  { id: 78, home_team: 'E2', away_team: 'I2', stage: 'Round of 32', match_date: '2026-07-04T03:00:00+08:00', venue: '硬石体育场，迈阿密' },
+  { id: 79, home_team: 'A1', away_team: '1A', stage: 'Round of 32', match_date: '2026-07-04T07:00:00+08:00', venue: 'BC广场，温哥华' },
+  { id: 80, home_team: 'L1', away_team: '1L', stage: 'Round of 32', match_date: '2026-07-04T11:00:00+08:00', venue: '李维斯体育场，旧金山' },
   // 7月5日
-  { id: 81, home_team: 'F1', away_team: 'E3', stage: 'Round of 32', match_date: '2026-07-05T03:00:00+08:00', venue: '箭头体育场，堪萨斯城' },
-  { id: 82, home_team: 'H1', away_team: 'G3', stage: 'Round of 32', match_date: '2026-07-05T07:00:00+08:00', venue: 'NRG体育场，休斯顿' },
-  { id: 83, home_team: 'J1', away_team: 'I3', stage: 'Round of 32', match_date: '2026-07-05T11:00:00+08:00', venue: '吉列体育场，波士顿' },
+  { id: 81, home_team: 'D1', away_team: '1D', stage: 'Round of 32', match_date: '2026-07-05T03:00:00+08:00', venue: '箭头体育场，堪萨斯城' },
+  { id: 82, home_team: 'G1', away_team: '1G', stage: 'Round of 32', match_date: '2026-07-05T07:00:00+08:00', venue: 'NRG体育场，休斯顿' },
+  { id: 83, home_team: 'K2', away_team: 'L2', stage: 'Round of 32', match_date: '2026-07-05T11:00:00+08:00', venue: '吉列体育场，波士顿' },
   // 7月6日
-  { id: 84, home_team: 'L1', away_team: 'K3', stage: 'Round of 32', match_date: '2026-07-06T03:00:00+08:00', venue: '梅赛德斯-奔驰体育场，亚特兰大' },
-  { id: 85, home_team: 'A2', away_team: 'C2', stage: 'Round of 32', match_date: '2026-07-06T07:00:00+08:00', venue: '流明球场，西雅图' },
-  { id: 86, home_team: 'E2', away_team: 'G2', stage: 'Round of 32', match_date: '2026-07-06T11:00:00+08:00', venue: 'BMO球场，多伦多' },
+  { id: 84, home_team: 'H1', away_team: 'J2', stage: 'Round of 32', match_date: '2026-07-06T03:00:00+08:00', venue: '梅赛德斯-奔驰体育场，亚特兰大' },
+  { id: 85, home_team: 'B1', away_team: '1B', stage: 'Round of 32', match_date: '2026-07-06T07:00:00+08:00', venue: '流明球场，西雅图' },
+  { id: 86, home_team: 'J1', away_team: 'H2', stage: 'Round of 32', match_date: '2026-07-06T11:00:00+08:00', venue: 'BMO球场，多伦多' },
   // 7月7日
-  { id: 87, home_team: 'I2', away_team: 'K2', stage: 'Round of 32', match_date: '2026-07-07T03:00:00+08:00', venue: 'BBVA体育场，蒙特雷' },
-  { id: 88, home_team: 'C2', away_team: 'D3', stage: 'Round of 32', match_date: '2026-07-07T07:00:00+08:00', venue: '阿克伦体育场，萨波潘' },
+  { id: 87, home_team: 'K1', away_team: '1K', stage: 'Round of 32', match_date: '2026-07-07T03:00:00+08:00', venue: 'BBVA体育场，蒙特雷' },
+  { id: 88, home_team: 'D2', away_team: 'G2', stage: 'Round of 32', match_date: '2026-07-07T07:00:00+08:00', venue: '阿克伦体育场，萨波潘' },
 
   // ===== Round of 16 (16强赛) - 2026年7月9-12日 =====
   // 7月9日
@@ -559,7 +561,17 @@ export function resolveKnockoutTeam(placeholder: string): string {
 
 // 判断是否为淘汰赛占位符（非实际球队名）
 export function isKnockoutPlaceholder(team: string): boolean {
-  return /^([A-L][1-4]|W\d+|L\d+|W\d+\?|L\d+\?)$/.test(team)
+  return /^([A-L][1-4]|1[A-L]|W\d+\??|L\d+\??)$/.test(team)
+}
+
+export function isPlaceholderFixture(match?: Partial<Pick<Match, 'id' | 'stage' | 'group' | 'home_team' | 'away_team' | 'match_date' | 'fixture_status'>> | null): boolean {
+  if (!match) return false
+  if (match.fixture_status === 'placeholder') return true
+  if (!isEffectiveKnockoutMatch(match)) return false
+  return Boolean(
+    (match.home_team && isKnockoutPlaceholder(match.home_team))
+    || (match.away_team && isKnockoutPlaceholder(match.away_team))
+  )
 }
 
 const GROUP_STAGE_CUTOFF_MS = new Date('2026-06-29T00:00:00+08:00').getTime()

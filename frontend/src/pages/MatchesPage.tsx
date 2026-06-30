@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo, type KeyboardEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MapPin, Clock, BarChart3 } from 'lucide-react'
 import { matchAPI } from '../services/api'
-import { TEAMS, calculateGroupStandingsFromMatches, resolveKnockoutTeam, isKnockoutPlaceholder, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch } from '../services/wc2026-data'
+import { TEAMS, calculateGroupStandingsFromMatches, isKnockoutPlaceholder, isPlaceholderFixture, getStageNameCN, getEffectiveMatchStage, isEffectiveKnockoutMatch } from '../services/wc2026-data'
 import type { Match, StandingEntry } from '../services/wc2026-data'
 import TeamFlagLink from '../components/TeamFlagLink'
 import { getPredictMatchPath } from '../utils/navigation'
@@ -246,9 +246,12 @@ export default function MatchesPage() {
           <div className="space-y-3">
             {filteredKnockoutMatches.map((match) => {
               const effectiveStage = getEffectiveMatchStage(match)
-              const homeDisplay = isKnockoutPlaceholder(match.home_team) ? resolveKnockoutTeam(match.home_team) : match.home_team
-              const awayDisplay = isKnockoutPlaceholder(match.away_team) ? resolveKnockoutTeam(match.away_team) : match.away_team
-              const isResolved = !isKnockoutPlaceholder(match.home_team) && !isKnockoutPlaceholder(match.away_team)
+              const isPlaceholder = isPlaceholderFixture(match)
+              const homeIsPlaceholder = isKnockoutPlaceholder(match.home_team)
+              const awayIsPlaceholder = isKnockoutPlaceholder(match.away_team)
+              const homeDisplay = match.home_team
+              const awayDisplay = match.away_team
+              const isResolved = !isPlaceholder
 
               return (
                 <article
@@ -261,7 +264,7 @@ export default function MatchesPage() {
                 >
                   <div className="mb-3 flex items-center justify-between gap-2 md:mb-0 md:w-20 md:flex-shrink-0 md:flex-col md:justify-center md:text-center">
                     <div className="text-xs font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">{getStageNameCN(effectiveStage ?? '')}</div>
-                    {isKnockoutPlaceholder(match.home_team) && (
+                    {isPlaceholder && (
                       <div className="text-[10px] text-gray-400 mt-1">
                         {match.home_team.includes('W') ? '胜者' : match.home_team.includes('L') ? '败者' : match.home_team}
                       </div>
@@ -269,10 +272,10 @@ export default function MatchesPage() {
                   </div>
                   <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 md:flex md:flex-1 md:justify-between">
                     <div className="flex min-w-0 items-center justify-end gap-2">
-                      <span className={`font-bold ${isKnockoutPlaceholder(match.home_team) ? 'text-gray-400 italic' : 'text-gray-900'}`}>
+                      <span className={`font-bold ${homeIsPlaceholder ? 'text-gray-400 italic' : 'text-gray-900'}`}>
                         {homeDisplay}
                       </span>
-                      {!isKnockoutPlaceholder(match.home_team) && <TeamFlagLink teamName={match.home_team} flagCode={getTeamFlagCode(match.home_team)} size="md" />}
+                      {!homeIsPlaceholder && <TeamFlagLink teamName={match.home_team} flagCode={getTeamFlagCode(match.home_team)} size="md" />}
                     </div>
                     <div className="px-1 text-center flex-shrink-0 sm:px-4">
                       <div className="flex items-center justify-center gap-1 text-[11px] text-gray-400 sm:text-xs">
@@ -282,8 +285,8 @@ export default function MatchesPage() {
                       {renderScore(match)}
                     </div>
                     <div className="flex min-w-0 items-center gap-2">
-                      {!isKnockoutPlaceholder(match.away_team) && <TeamFlagLink teamName={match.away_team} flagCode={getTeamFlagCode(match.away_team)} size="md" />}
-                      <span className={`font-bold ${isKnockoutPlaceholder(match.away_team) ? 'text-gray-400 italic' : 'text-gray-900'}`}>
+                      {!awayIsPlaceholder && <TeamFlagLink teamName={match.away_team} flagCode={getTeamFlagCode(match.away_team)} size="md" />}
+                      <span className={`font-bold ${awayIsPlaceholder ? 'text-gray-400 italic' : 'text-gray-900'}`}>
                         {awayDisplay}
                       </span>
                     </div>
